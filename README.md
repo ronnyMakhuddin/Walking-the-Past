@@ -1,1 +1,4 @@
 # Schnitzeljagd
+
+Mapbox Setup Key:
+pk.eyJ1IjoiY3VydW5pcm8iLCJhIjoiY2t3dXI3dTZlMHp6NzJvbWhnbHlmdW5wMCJ9.7PLe9Uw8xZUqCyJLowk85A
