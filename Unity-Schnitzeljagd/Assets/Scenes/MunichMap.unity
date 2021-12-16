@@ -1174,6 +1174,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
   m_PrefabInstance: {fileID: 2011585865}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1688932096
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688932094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beb5136ff9ab64c41929043ee2267ca3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CharacterAnimator: {fileID: 0}
+  walkingSpeed: 1
 --- !u!114 &1688932098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1204,6 +1218,55 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7760043eea2cd452ba7117f2c97e0038, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1690927529
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1690927530}
+  - component: {fileID: 1690927531}
+  m_Layer: 0
+  m_Name: EditorLocationProvider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1690927530
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690927529}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4556514559693321}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1690927531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1690927529}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 60712efc3153a4819b0c79437175846d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _accuracy: 0
+  _autoFireEvent: 1
+  _updateInterval: 0
+  _sendEvent: 0
+  _latitudeLongitude: 48.13719775, 11.57532925
+  _targetTransform: {fileID: 0}
 --- !u!1 &1944394325
 GameObject:
   m_ObjectHideFlags: 0
@@ -1428,15 +1491,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
       propertyPath: m_LocalScale.x
-      value: 70
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
       propertyPath: m_LocalScale.y
-      value: 70
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
       propertyPath: m_LocalScale.z
-      value: 70
+      value: 150
       objectReference: {fileID: 0}
     - target: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1919,6 +1982,7 @@ Transform:
   - {fileID: 4109424701915985}
   - {fileID: 4730854284674757}
   - {fileID: 4684201260792259}
+  - {fileID: 1690927530}
   m_Father: {fileID: 4886152211323333}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2113,7 +2177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _options:
     locationOptions:
-      latitudeLongitude: 48,13719775, 11,57532925
+      latitudeLongitude: 48.13719775,11.57532925
       zoom: 18
     extentOptions:
       extentType: 0
@@ -2139,7 +2203,7 @@ MonoBehaviour:
       unityTileSize: 100
     loadingTexture: {fileID: 1214314471}
     tileMaterial: {fileID: 2100000, guid: b9f23e9bce724fa4daac57ecded470b8, type: 2}
-  _initializeOnStart: 1
+  _initializeOnStart: 0
   _imagery:
     _layerProperty:
       sourceType: 6
@@ -2462,7 +2526,7 @@ MonoBehaviour:
   _autoFireEvent: 1
   _updateInterval: 0.1
   _sendEvent: 0
-  _locationLogFile: {fileID: 4900000, guid: 5e6bb7224cef35c4788a4817b1c9778d, type: 3}
+  _locationLogFile: {fileID: 0}
 --- !u!114 &114330637304671281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2519,7 +2583,7 @@ MonoBehaviour:
   mapManager: {fileID: 114105501909648895}
   _deviceLocationProviderUnity: {fileID: 114811608300066055}
   _deviceLocationProviderAndroid: {fileID: 114352100037565815}
-  _editorLocationProvider: {fileID: 114275891366926527}
+  _editorLocationProvider: {fileID: 1690927531}
   _transformLocationProvider: {fileID: 114011131211007611}
   _dontDestroyOnLoad: 0
 --- !u!114 &114658503733990461
@@ -2574,7 +2638,7 @@ MonoBehaviour:
   _userHeadingSmoothing: {fileID: 114005715679964755}
   _deviceOrientationSmoothing: {fileID: 114338583239485889}
   _editorDebuggingOnly:
-    _mockUnityInputLocation: 1
+    _mockUnityInputLocation: 0
     _locationLogFile: {fileID: 4900000, guid: 5e6bb7224cef35c4788a4817b1c9778d, type: 3}
 --- !u!114 &114884900379263201
 MonoBehaviour:
