@@ -9,7 +9,6 @@
 
 	public class LocationStatus : MonoBehaviour
 	{
-
 		[SerializeField]
 		Text _statusText;
 
@@ -46,6 +45,7 @@
 					else
 					{
 						_statusText.text = string.Format("{0}", currLoc.LatitudeLongitude);
+						GameManager.Instance.playerMapboxLocation = currLoc;
 					}
 				}
 			}

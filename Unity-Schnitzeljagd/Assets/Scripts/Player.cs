@@ -19,8 +19,9 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distance = Vector3.Distance(currPosition, prevPosition);
-        if (distance > 0.1f)
+        currPosition = transform.position;
+        float distance = Mathf.Abs(Vector3.Distance(currPosition, prevPosition));
+        if (distance > 0.00000001f)
         {
             transform.Translate(Vector3.forward * walkingSpeed);
             CharacterAnimator.SetBool("IsWalking", true);
@@ -29,5 +30,7 @@ public class Player : MonoBehaviour
         {
             CharacterAnimator.SetBool("IsWalking", false);
         }
+
+        prevPosition = currPosition;
     }
 }
