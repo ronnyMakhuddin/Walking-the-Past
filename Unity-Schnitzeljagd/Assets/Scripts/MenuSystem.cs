@@ -46,6 +46,7 @@ public class MenuSystem : MonoBehaviour
     [SerializeField] private Quest currentQuest;
     public GameObject questMenuUI;
     public Text questText;
+    public UnityEngine.UI.Image questImage;
     [SerializeField] private float writingSpeed = 0.5f;
     private String currentText = "";
 
@@ -72,6 +73,7 @@ public class MenuSystem : MonoBehaviour
         questMenuUI.SetActive(true);
         // pause the game
         QuestMenuOpen = true;
+        questImage.sprite = currentQuest.getCharacter();
         StartCoroutine(DisplayQuest());
         currentText = "";
     }
