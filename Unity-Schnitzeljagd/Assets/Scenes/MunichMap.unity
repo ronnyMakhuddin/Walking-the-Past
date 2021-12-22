@@ -705,6 +705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 950570227}
   - component: {fileID: 950570226}
+  - component: {fileID: 950570228}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -739,6 +740,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &950570228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 950570225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23a145d4994b1c34397e9ff08a264d9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1163076553
 GameObject:
   m_ObjectHideFlags: 0
@@ -1253,6 +1266,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterAnimator: {fileID: 1688932100}
   walkingSpeed: 0.005
+--- !u!65 &1688932097
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1688932094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.058005232, y: 0.08885461, z: 0.04652036}
+  m_Center: {x: -0.001517075, y: 0.056647614, z: -0.00029479663}
 --- !u!114 &1688932098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,6 +1579,10 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1438539700862716, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
       propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1438539700862716, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4601729990306218, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
@@ -2248,7 +2278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _options:
     locationOptions:
-      latitudeLongitude: 48.13719775,11.57532925
+      latitudeLongitude: 48.13719775, 11.57532925
       zoom: 17
     extentOptions:
       extentType: 0
@@ -2647,7 +2677,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 1064074361305596, guid: 748e2c1db1257594bb438fbb7bd185f0, type: 3}
+          prefab: {fileID: 4676184484911782183, guid: ba4f1164fb5d4644fb55174d698a2cc1, type: 3}
           scaleDownWithWorld: 1
         findByType: 2
         categories: -1
