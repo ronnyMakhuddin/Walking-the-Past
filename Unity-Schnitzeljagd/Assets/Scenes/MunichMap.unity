@@ -2282,7 +2282,7 @@ MonoBehaviour:
         isActive: 1
         layerSource:
           Name: Streets
-          Id: mapbox://styles/curuniro/ckx65lrxp7qiu14o4nsplkyun
+          Id: mapbox://styles/curuniro/ckx937lzc0vr114qpcco5t146
           Modified: 
           UserName: 
       rasterOptions:
