@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 424510}
   - component: {fileID: 3375288}
   - component: {fileID: 2317682}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cinderDebris6_LOD00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 436558}
   - component: {fileID: 20512396}
-  m_Layer: 0
+  - component: {fileID: 4509029938980291221}
+  - component: {fileID: 6564037175328009808}
+  m_Layer: 6
   m_Name: cinderDebris6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,6 +144,31 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2355116}
   m_Enabled: 1
+--- !u!114 &4509029938980291221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb27d5506613a24ea2990aa8aa36c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &6564037175328009808
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 143942}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.78801787, y: 0.4444036, z: 0.5496532}
+  m_Center: {x: 0.016139686, y: 0.029894926, z: 0.013497353}
 --- !u!1 &182674
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +180,7 @@ GameObject:
   - component: {fileID: 447076}
   - component: {fileID: 3301028}
   - component: {fileID: 2325232}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cinderDebris6_LOD01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +261,7 @@ GameObject:
   - component: {fileID: 424738}
   - component: {fileID: 3316648}
   - component: {fileID: 2355116}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cinderDebris6_LOD02
   m_TagString: Untagged
   m_Icon: {fileID: 0}

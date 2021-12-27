@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 463012}
   - component: {fileID: 3389856}
   - component: {fileID: 2386812}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: brokenBrick3_LOD00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -91,7 +91,9 @@ GameObject:
   m_Component:
   - component: {fileID: 486346}
   - component: {fileID: 20500796}
-  m_Layer: 0
+  - component: {fileID: -2589509688118234983}
+  - component: {fileID: 5012053582617076197}
+  m_Layer: 6
   m_Name: brokenBrick3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -142,6 +144,31 @@ LODGroup:
     renderers:
     - renderer: {fileID: 2365090}
   m_Enabled: 1
+--- !u!114 &-2589509688118234983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abb27d5506613a24ea2990aa8aa36c64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &5012053582617076197
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 116248}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.43099812, y: 0.23227507, z: 0.3708266}
+  m_Center: {x: 0.016975597, y: -0.023729488, z: 0.0013178587}
 --- !u!1 &138770
 GameObject:
   m_ObjectHideFlags: 0
@@ -153,7 +180,7 @@ GameObject:
   - component: {fileID: 494278}
   - component: {fileID: 3303342}
   - component: {fileID: 2365090}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: brokenBrick3_LOD02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -234,7 +261,7 @@ GameObject:
   - component: {fileID: 477472}
   - component: {fileID: 3314120}
   - component: {fileID: 2389206}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: brokenBrick3_LOD01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
