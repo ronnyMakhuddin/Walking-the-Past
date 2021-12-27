@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Mapbox/Examples/2_AstronautGame/AstronautGame.unity
     guid: 23b3522d4f6fa450eb781397db4b26ed
+  - enabled: 1
+    path: Assets/Scenes/RubbleScene.unity
+    guid: d7e48e6663c5e8e4083f6c51ca92e773
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5882e13233e9344488312f1a841dde03, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b7c18ef5e2a0e1f499201275de86b6d1, type: 2}
