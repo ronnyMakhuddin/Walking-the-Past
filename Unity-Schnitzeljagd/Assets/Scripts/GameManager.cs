@@ -31,8 +31,10 @@ public class GameManager : MonoBehaviour
     bool started = false;
     bool running = false;
     bool arPossible = false;
-    
-    
+
+    public Vector3 arOriginRelativeToPlayer = Vector3.zero;
+    SceneTransitionManager sceneTransitionManager;
+
 
     static GameManager instance;
 
@@ -48,8 +50,8 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-
-        if(instance == null)
+        sceneTransitionManager = FindObjectOfType<SceneTransitionManager>().GetComponent<SceneTransitionManager>();
+        if (instance == null)
         {
             instance = this;
         }
@@ -69,6 +71,8 @@ public class GameManager : MonoBehaviour
     {
         
     }
+
+
 
     public GAMESTATE GetGameState()
     {
@@ -98,15 +102,25 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void EnterAR(AR_SITE site)
+    public void EnterAR(Vector3 POI2PlayerPos, AR_SITE site)
     {
+        arOriginRelativeToPlayer = POI2PlayerPos;
+        string name = "";
+        switch (site)
+        {
+            case AR_SITE.MAXBURG: name = Schnitzelconstants.MAXBURG_SCENE; break;
+            default: break;
+        }
 
+        sceneTransitionManager.GoToScene(name, null);
     }
 
     private bool checkARLocation(AR_SITE site)
     {
         return false;
     }
+
+
 
 
 }

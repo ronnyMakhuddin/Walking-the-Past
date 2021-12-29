@@ -5,15 +5,16 @@ using UnityEngine;
 [RequireComponent(typeof(SphereCollider))]
 public class ARZone : MonoBehaviour
 {
-    public string scene;
+    public GameManager.AR_SITE scene;
     public float secondsUntilTrigger = 10f;
     float timeSpentInZone = 0f;
     bool listening = true;
+    private Vector3 playerPos;
     SceneTransitionManager sceneTransitionManager;
     // Start is called before the first frame update
     void Start()
     {
-        scene = Schnitzelconstants.MAXBURG_SCENE;
+        scene = GameManager.AR_SITE.MAXBURG;
         sceneTransitionManager = FindObjectOfType<SceneTransitionManager>().GetComponent<SceneTransitionManager>();
     }
 
@@ -25,7 +26,8 @@ public class ARZone : MonoBehaviour
             // for now instant switch
             listening = false;
             Debug.Log("Success");
-            sceneTransitionManager.GoToScene(scene, null);
+            // sceneTransitionManager.GoToScene(scene, null);
+            GameManager.Instance.EnterAR(transform.InverseTransformPoint(playerPos), scene);
         }
     }
 
@@ -33,6 +35,7 @@ public class ARZone : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            playerPos = other.transform.position;
             timeSpentInZone += Time.deltaTime;
         }
     }

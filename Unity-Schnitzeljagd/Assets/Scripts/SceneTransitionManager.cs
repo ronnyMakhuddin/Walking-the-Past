@@ -21,9 +21,12 @@ public class SceneTransitionManager : Singleton<SceneTransitionManager>
         };
 
         Scene sceneToLoad = SceneManager.GetSceneByName(sceneName);
-        foreach(GameObject obj in objectsToCarryOver)
+        if (objectsToCarryOver != null)
         {
-            SceneManager.MoveGameObjectToScene(obj, sceneToLoad);
+            foreach (GameObject obj in objectsToCarryOver)
+            {
+                SceneManager.MoveGameObjectToScene(obj, sceneToLoad);
+            }
         }
         yield return null;
     }
