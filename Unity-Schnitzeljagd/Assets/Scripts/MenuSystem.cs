@@ -5,11 +5,14 @@ using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using Image = UnityEngine.UI.Image;
 
 public class MenuSystem : MonoBehaviour
 {
     public static bool ItemMenuOpen = false;
     public GameObject itemMenuUI;
+
+    [SerializeField] private GameObject[] sprites;
 
     public void ItemMenu()
     {
@@ -38,7 +41,15 @@ public class MenuSystem : MonoBehaviour
 
     void DisplayItems()
     {
-        
+        for (int i = 0; i < sprites.Length && i < Inventory.getCount(); ++i)
+        {
+            Collectible item = Inventory.items[i];
+            if (item != null)
+            {
+                sprites[i].GetComponent<Image>().sprite = item.GetItem2D().GetComponent<SpriteRenderer>().sprite;
+                Debug.Log("Setting sprite nr. " + i);
+            }
+        }
     }
     
     
@@ -92,4 +103,5 @@ public class MenuSystem : MonoBehaviour
     {
         questText.text = currentQuest.getTask();
     }
+ 
 }
