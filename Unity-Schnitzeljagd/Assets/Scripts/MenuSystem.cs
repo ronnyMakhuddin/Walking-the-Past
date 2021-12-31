@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
@@ -12,7 +13,19 @@ public class MenuSystem : MonoBehaviour
     public static bool ItemMenuOpen = false;
     public GameObject itemMenuUI;
 
-    [SerializeField] private GameObject[] sprites;
+    [SerializeField] private GameObject[] itemSlots;
+    private bool[] filled;
+    
+    private float width;
+    private float height;
+
+    private void Start()
+    {
+        filled = new bool[itemSlots.Length];
+        width = (float)Screen.width / 2.0f;
+        height = (float) Screen.height / 2.0f;
+    }
+    
 
     public void ItemMenu()
     {
@@ -39,15 +52,21 @@ public class MenuSystem : MonoBehaviour
         DisplayItems();
     }
 
-    void DisplayItems()
+    public void DisplayItems()
     {
-        for (int i = 0; i < sprites.Length && i < Inventory.getCount(); ++i)
+        for (int i = 0; i < itemSlots.Length && i < Inventory.getCount(); ++i)
         {
-            Collectible item = Inventory.items[i];
+            QuestItem item = Inventory.items[i];
             if (item != null)
             {
-                sprites[i].GetComponent<Image>().sprite = item.GetItem2D().GetComponent<SpriteRenderer>().sprite;
+                Debug.Log("Item in menu! Nr. " + i);
+                itemSlots[i].GetComponent<Image>().sprite = item.GetSprite();
                 Debug.Log("Setting sprite nr. " + i);
+                filled[i] = true;
+            }
+            else
+            {
+                filled[i] = false;
             }
         }
     }
@@ -98,10 +117,21 @@ public class MenuSystem : MonoBehaviour
             yield return new WaitForSeconds(writingSpeed);
         }
     }
-    
-    void DisplayQuestz()
+
+    public void Respawn(int i)
     {
-        questText.text = currentQuest.getTask();
+        if (!filled[i])
+        {
+            Debug.Log("Empty!");
+            return;
+        }
+        Debug.Log("Spawning nr. " + i);
+        Debug.Log(Inventory.items[i].GetItem3D());
+        Debug.Log(Inventory.items[i].gameObject);
+        Inventory.items[i].gameObject.transform.position = Vector3.forward * 5;
+        Inventory.items[i].GetItem3D().transform.position = Vector3.zero + Inventory.items[i].gameObject.transform.position;
+        Inventory.items[i].GetItem3D().SetActive(true);
+        itemSlots[i].GetComponent<Image>().sprite = null;
+        Inventory.items[i].Select(true);
     }
- 
 }

@@ -5,27 +5,146 @@ using UnityEngine;
 public class QuestItem : MonoBehaviour
 {
     [SerializeField] private GameObject item3D;
-    [SerializeField] private GameObject item2D;
+    [SerializeField] private Sprite sprite;
+    private MenuSystem menuSystem;
+    
+    // Serialized for debugging
+    [SerializeField] bool collected = false;
+    [SerializeField] bool selected = false;
+    [SerializeField] bool moving = false;
+
+    private float width;
+    private float height;
+    private Vector2 pos = Vector2.zero;
+    private Vector2 oldPos;
+    [SerializeField] private float factor = 5f;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        width = (float)Screen.width / 2.0f;
+        height = (float) Screen.height / 2.0f;
+        menuSystem = FindObjectOfType<MenuSystem>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        if (!collected) {
+            if (Input.touchCount > 0)
+            {
+                Touch touch = Input.GetTouch(0);
+
+                pos = touch.position;
+                pos.x = (pos.x - width) / width;
+                pos.y = (pos.y - height) / height;
+                var position = new Vector3(-pos.x, pos.y, 0.0f);
+
+                RaycastHit hit;
+                Physics.Raycast(position, Vector3.forward, out hit);
+
+                if (hit.collider != null)
+                {
+                    Debug.Log("Hit: " + hit.collider.gameObject);
+                    if (hit.collider.gameObject.CompareTag("Item"))
+                    {
+                        Debug.Log("Hit Item!");
+                    }
+
+                    if (!collected)
+                    {
+                         bool added = Inventory.AddItem(this);
+                         collected = true;
+                         item3D.gameObject.SetActive(false);
+                    }
+                }
+            }
+        } else if (selected) {
+                    if (Input.touchCount > 0)
+                    {
+                        Touch touch = Input.GetTouch(0);
+                        oldPos = pos;
+                        pos = touch.position;
+                        pos.x = (pos.x - width) / width;
+                        pos.y = (pos.y - height) / height;
+                        var position = new Vector3(-pos.x, pos.y, 0.0f);
+        
+                        RaycastHit hit;
+                        Physics.Raycast(position, Vector3.forward, out hit);
+        
+                        switch (touch.phase)
+                        {
+                            case TouchPhase.Began:
+        
+                                if (hit.collider != null && hit.collider.gameObject.Equals(this.gameObject))
+                                {
+                                    Debug.Log("Selected item");
+                                    moving = true;
+                                }
+        
+                                break;
+            
+                            case TouchPhase.Moved:
+                                if (moving)
+                                {
+                                    Vector3 toMove = new Vector3((pos.x - oldPos.x) * factor, (pos.y - oldPos.y) * factor, 0);
+                                    this.gameObject.transform.position += toMove;
+                                }
+        
+                                break;
+                            
+                            case TouchPhase.Ended:
+                                if (moving)
+                                {
+                                    Debug.Log("Item back into inventory");
+                                    moving = false;
+                                    // back into inventory
+                                    selected = false;
+                                    item3D.SetActive(false);
+                                    menuSystem.DisplayItems();
+                                       
+                                }
+                                break;
+                        }
+        
+                        if (hit.collider != null)
+                        {
+                            Debug.Log("Hit: " + hit.collider.gameObject);
+                            if (hit.collider.gameObject.CompareTag("Item"))
+                            {
+                                Debug.Log("Hit Item!");
+                            }
+        
+                        }
+                    }
+        }
+    }
 
     public GameObject GetItem3D()
     {
         return item3D;
     }
-    
-    public GameObject GetItem2D()
+
+    public Sprite GetSprite()
     {
-        return item2D;
+        return sprite;
     }
 
-    public void switchTo3D()
+    public bool Collect()
     {
-        item2D.SetActive(false);
-        item3D.SetActive(true);
+        if (!collected)
+        {
+            collected = true;
+            return true;
+        }
+        return false;
     }
     
-    public void switchTo2D()
+    public void Select(bool select)
     {
-        item3D.SetActive(false);
-        item2D.SetActive(true);
+        selected = select;
     }
+    
+    
+    
 }

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    // serialized for debugging
-    [SerializeField] public static Collectible[] items = new Collectible[3];
+    public static QuestItem[] items = new QuestItem[3];
     private static int itemCount = 0;
     
     // Start is called before the first frame update
@@ -20,8 +19,9 @@ public class Inventory : MonoBehaviour
         
     }
 
-    public static bool AddItem(Collectible item)
+    public static bool AddItem(QuestItem item)
     {
+        Debug.Log("Adding Item: " + item);
         for (int i = 0; i < items.Length; ++i)
         {
             if (items[i] == null)
@@ -34,7 +34,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
     
-    public bool RemoveItem(GameObject item)
+    public bool RemoveItem(QuestItem item)
     {
         for (int i = 0; i < items.Length; ++i)
         {
