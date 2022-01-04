@@ -45,13 +45,7 @@ public class QuestItem : MonoBehaviour
 
                 if (hit.collider != null)
                 {
-                    Debug.Log("Hit: " + hit.collider.gameObject);
-                    if (hit.collider.gameObject.CompareTag("Item"))
-                    {
-                        Debug.Log("Hit Item!");
-                    }
-
-                    if (!collected)
+                    if (hit.collider.gameObject.CompareTag("Item") && !collected)
                     {
                          bool added = Inventory.AddItem(this);
                          collected = true;
@@ -87,8 +81,10 @@ public class QuestItem : MonoBehaviour
                             case TouchPhase.Moved:
                                 if (moving)
                                 {
-                                    Vector3 toMove = new Vector3((pos.x - oldPos.x) * factor, (pos.y - oldPos.y) * factor, 0);
-                                    this.gameObject.transform.position += toMove;
+                                    Vector3 touchPos = new Vector3(touch.position.x, touch.position.y,
+                                        Camera.main.WorldToScreenPoint(gameObject.transform.position).z);
+                                    Vector3 toMove = Camera.main.ScreenToWorldPoint(touchPos);
+                                    this.gameObject.transform.position = toMove;
                                 }
         
                                 break;
@@ -106,16 +102,7 @@ public class QuestItem : MonoBehaviour
                                 }
                                 break;
                         }
-        
-                        if (hit.collider != null)
-                        {
-                            Debug.Log("Hit: " + hit.collider.gameObject);
-                            if (hit.collider.gameObject.CompareTag("Item"))
-                            {
-                                Debug.Log("Hit Item!");
-                            }
-        
-                        }
+                        
                     }
         }
     }
