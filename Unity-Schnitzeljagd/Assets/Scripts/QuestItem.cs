@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class QuestItem : MonoBehaviour
 {
-    [SerializeField] private GameObject item3D;
     [SerializeField] private Sprite sprite;
     private MenuSystem menuSystem;
     
@@ -16,9 +15,7 @@ public class QuestItem : MonoBehaviour
     private float width;
     private float height;
     private Vector2 pos = Vector2.zero;
-    private Vector2 oldPos;
-    [SerializeField] private float factor = 5f;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,18 +35,28 @@ public class QuestItem : MonoBehaviour
                 pos = touch.position;
                 pos.x = (pos.x - width) / width;
                 pos.y = (pos.y - height) / height;
-                var position = new Vector3(-pos.x, pos.y, 0.0f);
-
+                // var position = new Vector3(-pos.x, pos.y, 0.0f);
+                Vector3 touchPosNear = new Vector3(touch.position.x, touch.position.y,
+                    Camera.main.nearClipPlane);
+                Vector3 touchPosFar = new Vector3(touch.position.x, touch.position.y,
+                    Camera.main.farClipPlane);
+                Debug.Log("Touch position: " + touchPosNear);
+                Vector3 worldNear = Camera.main.ScreenToWorldPoint(touchPosNear);
+                Vector3 worldFar = Camera.main.ScreenToWorldPoint(touchPosFar);
+                Debug.Log("To world: " + worldNear);
                 RaycastHit hit;
-                Physics.Raycast(position, Vector3.forward, out hit);
-
+                Physics.Raycast(worldNear, worldFar - worldNear, out hit);
+                
+                
                 if (hit.collider != null)
                 {
+                    Debug.Log("Hit something!");
                     if (hit.collider.gameObject.CompareTag("Item") && !collected)
                     {
+                        Debug.Log("Hit uncollected item!");
                          bool added = Inventory.AddItem(this);
                          collected = true;
-                         item3D.gameObject.SetActive(false);
+                         this.gameObject.SetActive(false);
                     }
                 }
             }
@@ -57,7 +64,6 @@ public class QuestItem : MonoBehaviour
                     if (Input.touchCount > 0)
                     {
                         Touch touch = Input.GetTouch(0);
-                        oldPos = pos;
                         pos = touch.position;
                         pos.x = (pos.x - width) / width;
                         pos.y = (pos.y - height) / height;
@@ -96,7 +102,7 @@ public class QuestItem : MonoBehaviour
                                     moving = false;
                                     // back into inventory
                                     selected = false;
-                                    item3D.SetActive(false);
+                                    this.gameObject.SetActive(false);
                                     menuSystem.DisplayItems();
                                        
                                 }
@@ -105,11 +111,6 @@ public class QuestItem : MonoBehaviour
                         
                     }
         }
-    }
-
-    public GameObject GetItem3D()
-    {
-        return item3D;
     }
 
     public Sprite GetSprite()

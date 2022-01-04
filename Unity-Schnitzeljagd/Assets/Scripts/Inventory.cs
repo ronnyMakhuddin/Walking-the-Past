@@ -6,18 +6,6 @@ public class Inventory : MonoBehaviour
 {
     public static QuestItem[] items = new QuestItem[3];
     private static int itemCount = 0;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public static bool AddItem(QuestItem item)
     {

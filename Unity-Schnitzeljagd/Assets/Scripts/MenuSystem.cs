@@ -15,15 +15,10 @@ public class MenuSystem : MonoBehaviour
 
     [SerializeField] private GameObject[] itemSlots;
     private bool[] filled;
-    
-    private float width;
-    private float height;
 
     private void Start()
     {
         filled = new bool[itemSlots.Length];
-        width = (float)Screen.width / 2.0f;
-        height = (float) Screen.height / 2.0f;
     }
     
 
@@ -126,11 +121,11 @@ public class MenuSystem : MonoBehaviour
             return;
         }
         Debug.Log("Spawning nr. " + i);
-        Debug.Log(Inventory.items[i].GetItem3D());
+        Debug.Log(Inventory.items[i]);
         Debug.Log(Inventory.items[i].gameObject);
         Inventory.items[i].gameObject.transform.position = Vector3.forward * 5;
-        Inventory.items[i].GetItem3D().transform.position = Vector3.zero + Inventory.items[i].gameObject.transform.position;
-        Inventory.items[i].GetItem3D().SetActive(true);
+        Inventory.items[i].transform.position = Vector3.zero + Inventory.items[i].gameObject.transform.position;
+        Inventory.items[i].gameObject.SetActive(true);
         itemSlots[i].GetComponent<Image>().sprite = null;
         Inventory.items[i].Select(true);
     }
