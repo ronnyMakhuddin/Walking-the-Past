@@ -21,16 +21,22 @@ public class Player : MonoBehaviour
     {
         currPosition = transform.position;
         float distance = Mathf.Abs(Vector3.Distance(currPosition, prevPosition));
-        if (distance > 0.00000001f)
+        if (distance != 0f)
         {
             transform.Translate(Vector3.forward * walkingSpeed);
             CharacterAnimator.SetBool("IsWalking", true);
         }
         else
         {
-            CharacterAnimator.SetBool("IsWalking", false);
+            StartCoroutine(StopWalking());
         }
 
         prevPosition = currPosition;
+    }
+
+    IEnumerator StopWalking()
+    {
+        yield return new WaitForSeconds(2f);
+        CharacterAnimator.SetBool("IsWalking", false);
     }
 }
