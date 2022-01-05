@@ -455,7 +455,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4676184484911782183, guid: ba4f1164fb5d4644fb55174d698a2cc1, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4676184484911782187, guid: ba4f1164fb5d4644fb55174d698a2cc1, type: 3}
       propertyPath: m_RootOrder
@@ -2893,7 +2893,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 1064074361305596, guid: 748e2c1db1257594bb438fbb7bd185f0, type: 3}
+          prefab: {fileID: 4676184484911782183, guid: a0e87089356f1da4c85e2f124535e817, type: 3}
           scaleDownWithWorld: 1
         findByType: 2
         categories: 0

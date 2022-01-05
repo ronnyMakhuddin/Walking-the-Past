@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4676184484911782189}
   - component: {fileID: -2109587100614637799}
   m_Layer: 0
-  m_Name: AR_Zone_Trigger
+  m_Name: OldTownhall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: 0
-  secondsUntilTrigger: 2
+  secondsUntilTrigger: 5
 --- !u!54 &4676184484911782189
 Rigidbody:
   m_ObjectHideFlags: 0
