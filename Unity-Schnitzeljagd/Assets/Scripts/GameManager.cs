@@ -16,6 +16,13 @@ public class GameManager : MonoBehaviour
         AR
     }
 
+    List<AR_SITE> completedCheckpoints;
+    public AR_SITE currCheckpoint;
+
+    public List<AR_SITE> GetCompletedCheckpoints()
+    {
+        return completedCheckpoints;
+    }
     public enum AR_SITE
     {
         OLD_TOWNHALL,
@@ -32,7 +39,7 @@ public class GameManager : MonoBehaviour
     bool running = false;
     bool arPossible = false;
 
-    public Vector3 arOriginRelativeToPlayer = Vector3.zero;
+    public Vector3 arOriginRelativeToPlayer;
     SceneTransitionManager sceneTransitionManager;
 
 
@@ -69,7 +76,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        
+        completedCheckpoints = new List<AR_SITE>();
     }
 
 
@@ -99,11 +106,17 @@ public class GameManager : MonoBehaviour
                 //show AR enable button
             }
         }
-
     }
 
-    public void EnterAR(Vector3 POI2PlayerPos, AR_SITE site)
+    public void ARCompleted()
     {
+        completedCheckpoints.Add(currCheckpoint);
+        EnterMapbox();
+    }
+
+    public void EnterAR(AR_SITE zone, Vector3 POI2PlayerPos, AR_SITE site)
+    {
+        currCheckpoint = zone;
         arOriginRelativeToPlayer = POI2PlayerPos;
         string name = "";
         switch (site)
@@ -113,6 +126,12 @@ public class GameManager : MonoBehaviour
         }
 
         sceneTransitionManager.GoToScene(name, null);
+    }
+
+    public void EnterMapbox()
+    {
+        sceneTransitionManager.GoToScene("MunichMap", null);
+
     }
 
     private bool checkARLocation(AR_SITE site)

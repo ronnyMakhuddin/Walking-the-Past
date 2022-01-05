@@ -10,24 +10,33 @@ public class ARZone : MonoBehaviour
     float timeSpentInZone = 0f;
     bool listening = true;
     private Vector3 playerPos;
-    SceneTransitionManager sceneTransitionManager;
     // Start is called before the first frame update
     void Start()
     {
         scene = GameManager.AR_SITE.MAXBURG;
-        sceneTransitionManager = FindObjectOfType<SceneTransitionManager>().GetComponent<SceneTransitionManager>();
     }
 
+    private void Awake()
+    {
+        if (GameManager.Instance.GetCompletedCheckpoints() != null)
+        {
+            if (GameManager.Instance.GetCompletedCheckpoints().Contains(scene))
+            {
+                Destroy(gameObject);
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if(listening && timeSpentInZone >= secondsUntilTrigger)
+        if (listening && timeSpentInZone >= secondsUntilTrigger)
         {
             // for now instant switch
             listening = false;
             Debug.Log("Success");
-            // sceneTransitionManager.GoToScene(scene, null);
-            GameManager.Instance.EnterAR(transform.InverseTransformPoint(playerPos), scene);
+            GameManager.Instance.EnterAR(scene, transform.InverseTransformPoint(playerPos), scene);
+            timeSpentInZone = 0;
+            Destroy(gameObject);
         }
     }
 

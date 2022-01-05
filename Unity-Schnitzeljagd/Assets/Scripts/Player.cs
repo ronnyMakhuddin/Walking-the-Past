@@ -21,9 +21,11 @@ public class Player : MonoBehaviour
     {
         currPosition = transform.position;
         float distance = Mathf.Abs(Vector3.Distance(currPosition, prevPosition));
+        CharacterAnimator.SetBool("IsWalking", true);
+
         if (distance != 0f)
         {
-            transform.Translate(Vector3.forward * walkingSpeed);
+            //transform.Translate(Vector3.forward * walkingSpeed);
             CharacterAnimator.SetBool("IsWalking", true);
         }
         else

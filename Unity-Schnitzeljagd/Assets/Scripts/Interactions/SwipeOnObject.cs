@@ -9,7 +9,7 @@ public class SwipeOnObject : MonoBehaviour
     Vector2 swipeEnd = Vector2.zero;
 
     [SerializeField]
-    float swipeDistance = 50f;
+    float swipeDistance = 200f;
     [SerializeField]
     float depthReach = 3f;
 
@@ -28,7 +28,6 @@ public class SwipeOnObject : MonoBehaviour
     void Update()
     {
         if (Input.touchCount > 0) {
-            Debug.Log("Touched");
             foreach (Touch touch in Input.touches)
             {
                 switch (touch.phase)
@@ -47,11 +46,8 @@ public class SwipeOnObject : MonoBehaviour
                             int mask = LayerMask.GetMask("Swipeable");
                             if (selectObject && Physics.Raycast(ray, out hit, depthReach, mask))
                             {
-                                Debug.Log("scanning");
-                                Debug.DrawRay(swipeEnd, transform.forward, Color.green);
                                 objectBeneathSwipe = hit.transform.gameObject;
                                 selectObject = false;
-                                Debug.Log("Object " + objectBeneathSwipe.name);
                             }
 
                             if (Mathf.Abs(swipeStart.x - swipeEnd.x) >= swipeDistance || Mathf.Abs(swipeStart.y - swipeEnd.y) >= swipeDistance)
