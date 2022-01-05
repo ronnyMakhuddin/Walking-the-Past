@@ -7,6 +7,14 @@ using UnityEngine.Serialization;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
+using Object = UnityEngine.Object;
+
+[Serializable]
+public struct QuestText
+{
+    public int id;
+    public string text;
+}
 
 public class MenuSystem : MonoBehaviour
 {
@@ -15,10 +23,28 @@ public class MenuSystem : MonoBehaviour
 
     [SerializeField] private GameObject[] itemSlots;
     private bool[] filled;
+    
+    private Dictionary<int, QuestText> texts;
+    // serialized for debug
+    [SerializeField] private List<QuestText> quests;
+    [SerializeField] private string filename = "questText.json";
+    
 
     private void Start()
     {
         filled = new bool[itemSlots.Length];
+        texts = new Dictionary<int, QuestText>();
+        quests = new List<QuestText>();
+        
+        // only works if json file is already there
+        texts = FileManager.LoadQuests(filename);
+        
+        // List for debugging
+        List<int> keys = new List<int>(texts.Keys);
+        foreach (var key in keys)
+        {
+            quests.Add(texts[key]);
+        }
     }
     
 
@@ -98,16 +124,17 @@ public class MenuSystem : MonoBehaviour
         questMenuUI.SetActive(true);
         // pause the game
         QuestMenuOpen = true;
-        questImage.sprite = currentQuest.getCharacter();
+        questImage.sprite = currentQuest.GetCharacter();
         StartCoroutine(DisplayQuest());
         currentText = "";
     }
 
     IEnumerator DisplayQuest()
     {
-        for (int i = 0; i < currentQuest.getTask().Length; ++i)
+        string text = texts[currentQuest.GetID()].text;
+        for (int i = 0; i < text.Length; ++i)
         {
-            currentText = currentQuest.getTask().Substring(0, i);
+            currentText = text.Substring(0, i);
             questText.text = currentText;
             yield return new WaitForSeconds(writingSpeed);
         }

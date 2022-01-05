@@ -1745,6 +1745,8 @@ MonoBehaviour:
   - {fileID: 1157947652}
   - {fileID: 976884506}
   - {fileID: 1240198221}
+  quests: []
+  filename: questText.json
   currentQuest: {fileID: 11400000, guid: c8e33d669cbbfda40aa9b8bf4b5fd20e, type: 2}
   questMenuUI: {fileID: 455664730}
   questText: {fileID: 802954173}
