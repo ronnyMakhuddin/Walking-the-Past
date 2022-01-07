@@ -14,9 +14,13 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/RubbleScene.unity
     guid: d7e48e6663c5e8e4083f6c51ca92e773
+  - enabled: 0
+    path: Assets/Scenes/AR.unity
+    guid: b86a0b9957c70254b86fd3139cdde454
   - enabled: 1
     path: Assets/Scenes/test.unity
-    guid: b86a0b9957c70254b86fd3139cdde454
+    guid: 7aba5e1b7d9c1754b9e5fd10b776a19f
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 5882e13233e9344488312f1a841dde03, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: b7c18ef5e2a0e1f499201275de86b6d1, type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 9b47903744179f0489c56bff6fb016be, type: 2}

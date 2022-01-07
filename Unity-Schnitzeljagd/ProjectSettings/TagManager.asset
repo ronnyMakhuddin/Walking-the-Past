@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Building
   - POI
+  - Item
+  - Item Slot
   layers:
   - Default
   - TransparentFX
@@ -14,7 +16,7 @@ TagManager:
   - Water
   - UI
   - Swipeable
-  - 
+  - Inventory
   - 
   - 
   - 
@@ -42,4 +44,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 1453741583
+    locked: 0
+  - name: Inventory
+    uniqueID: 192876083
     locked: 0
