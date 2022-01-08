@@ -3228,7 +3228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d3d557417079b1446999d2d86ff71dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _updateDistanceInMeters: 0.5
+  _updateDistanceInMeters: 0.1
   _updateTimeInMilliSeconds: 500
 --- !u!114 &114467466944693313
 MonoBehaviour:

@@ -7,6 +7,7 @@ public class Player : MonoBehaviour
 
     public Animator CharacterAnimator;
     public float walkingSpeed = 1;
+    bool walking = false;
     Vector3 prevPosition = Vector3.zero;
     Vector3 currPosition = Vector3.zero;
     // Start is called before the first frame update
@@ -17,28 +18,38 @@ public class Player : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         currPosition = transform.position;
         float distance = Mathf.Abs(Vector3.Distance(currPosition, prevPosition));
-        CharacterAnimator.SetBool("IsWalking", true);
 
-        if (distance != 0f)
+        if (!walking)
         {
-            //transform.Translate(Vector3.forward * walkingSpeed);
-            CharacterAnimator.SetBool("IsWalking", true);
+            if (distance > 0.01f)
+            {
+                StartCoroutine(StartWalking());
+            }
+            else
+            {
+                StartCoroutine(StopWalking());
+            }
         }
-        else
-        {
-            StartCoroutine(StopWalking());
-        }
-
         prevPosition = currPosition;
+
     }
 
     IEnumerator StopWalking()
     {
-        yield return new WaitForSeconds(2f);
         CharacterAnimator.SetBool("IsWalking", false);
+        walking = false;
+        yield return null;
+    }
+
+    IEnumerator StartWalking()
+    {
+        CharacterAnimator.SetBool("IsWalking", true);
+        walking = true;
+        yield return new WaitForSeconds(2f);
+        walking = false;
     }
 }

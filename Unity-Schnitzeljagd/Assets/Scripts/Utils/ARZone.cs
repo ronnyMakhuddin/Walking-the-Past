@@ -29,7 +29,7 @@ public class ARZone : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("Zone Pos: " + transform.position);
+        //Debug.Log("Zone Pos: " + transform.position);
 
         if (listening && timeSpentInZone >= secondsUntilTrigger)
         {
