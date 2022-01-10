@@ -10,7 +10,7 @@ using Image = UnityEngine.UI.Image;
 using Object = UnityEngine.Object;
 
 [Serializable]
-public struct QuestText
+public class QuestText
 {
     public int id;
     public string text;
@@ -23,22 +23,30 @@ public class MenuSystem : MonoBehaviour
 
     [SerializeField] private GameObject[] itemSlots;
     private bool[] filled;
-    
-    private Dictionary<int, QuestText> texts;
+
+
+    [SerializeField] private GameObject dialogueSys;
+    private static Dictionary<int, QuestText> texts;
     // serialized for debug
     [SerializeField] private List<QuestText> quests;
     [SerializeField] private string filename = "questText.json";
-    
 
-    private void Start()
+    private void Awake()
     {
         filled = new bool[itemSlots.Length];
         texts = new Dictionary<int, QuestText>();
         quests = new List<QuestText>();
-        
+                
         // only works if json file is already there
         texts = FileManager.LoadQuests(filename);
-        
+        Debug.Log("Number texts loaded: " + texts.Keys.Count);
+        //dialogueSys.GetComponent<DialogueSystem>().SetTexts(texts);
+        Debug.Log("Testing for index 10: " + texts[10].text);
+    }
+
+    private void Start()
+    {
+
         // List for debugging
         List<int> keys = new List<int>(texts.Keys);
         foreach (var key in keys)
@@ -46,7 +54,12 @@ public class MenuSystem : MonoBehaviour
             quests.Add(texts[key]);
         }
     }
-    
+
+    public static Dictionary<int, QuestText> GetTexts()
+    {
+        return texts;
+    }
+
 
     public void ItemMenu()
     {
@@ -134,7 +147,7 @@ public class MenuSystem : MonoBehaviour
         string text = texts[currentQuest.GetID()].text;
         for (int i = 0; i < text.Length; ++i)
         {
-            currentText = text.Substring(0, i);
+            currentText = text.Substring(0, i+1);
             questText.text = currentText;
             yield return new WaitForSeconds(writingSpeed);
         }
