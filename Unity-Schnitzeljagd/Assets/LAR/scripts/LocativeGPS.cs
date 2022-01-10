@@ -112,14 +112,16 @@ public class LocativeGPS : MonoBehaviour
     private void Start()
     {
         Instance = this;
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
+
 
         // load debugUI
+        /*
         DebugGPS        = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("DebugGPS").gameObject.GetComponent<Text>();
         DebugConsole    = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("DebugConsole").gameObject.GetComponent<Text>();
         background      = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("Background").gameObject.GetComponent<RawImage>();
         fit             = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("Background").gameObject.GetComponent<AspectRatioFitter>();
-
+        */
         // Show/hide DebugConsole
         if (!ShowDebugConsole)
         {
@@ -176,6 +178,45 @@ public class LocativeGPS : MonoBehaviour
                 if (gpsMode == gpsModes.Unity3D)
                 {
                     Debug.Log("Warning: NativeToolkit installed, please set GPS Mode to NativeToolkit in the inspector for better GPS precision!");
+
+                    // BACKGROUND CAMERA
+                    if (ShowLARCameraOnBackground)
+                    {
+                        // turn on RawImage
+                        background.GetComponent<RawImage>().enabled = true;
+
+                        // check if we support cam
+                        for (int i = 0; i < WebCamTexture.devices.Length; i++)
+                        {
+                            if (WebCamTexture.devices[i].isFrontFacing)
+                            {
+                                cam = new WebCamTexture(WebCamTexture.devices[i].name, Screen.width, Screen.height);
+                                break;
+                            }
+                        }
+
+                        if (cam == null)
+                        {
+                            Debug.Log("no back Camera");
+                            cam = new WebCamTexture(WebCamTexture.devices[1].name, Screen.width, Screen.height);
+                            //return;
+                        }
+
+
+
+                        cam.Play();
+                        background.texture = cam;
+                    }
+
+                    if (!ShowLARCameraOnBackground)
+                    {
+                        background.enabled = false;
+                        fit.enabled = false;
+                    }
+
+
+                    // flag
+                    arReady = true;
                 }
             }
 
@@ -355,8 +396,8 @@ public class LocativeGPS : MonoBehaviour
         if (Application.isEditor)
         {
             // no need to show video on rawimage background so
-            background.enabled = false;
-            fit.enabled = false;
+            background.enabled = true;
+            fit.enabled = true;
 
             // COORDINATES
             latitude    = EdLatitude;
@@ -372,7 +413,22 @@ public class LocativeGPS : MonoBehaviour
                     currentRotation.y = Mathf.Clamp(currentRotation.y, -80, 80);
                     Camera.main.transform.rotation = Quaternion.Euler(currentRotation.y, currentRotation.x, 0);
             }
+            if (arReady)
+            {
 
+                if (ShowLARCameraOnBackground)
+                {
+                    //update Camera
+                    float ratio = (float)cam.width / (float)cam.height;
+                    fit.aspectRatio = ratio;
+
+                    float scaleY = cam.videoVerticallyMirrored ? -1.0f : 1.0f;
+                    background.rectTransform.localScale = new Vector3(1f, scaleY, 1f);
+                    int orient = -cam.videoRotationAngle;
+                    background.rectTransform.localEulerAngles = new Vector3(0, 0, orient);
+                }
+
+            }
 
             // keyboard
             double slat= 0.000001;

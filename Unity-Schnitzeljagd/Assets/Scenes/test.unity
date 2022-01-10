@@ -5079,6 +5079,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb27d5506613a24ea2990aa8aa36c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  special: 0
+  toSpawn: {fileID: 0}
 --- !u!1001 &902898529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15079,6 +15081,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: abb27d5506613a24ea2990aa8aa36c64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  special: 0
+  toSpawn: {fileID: 0}
 --- !u!198 &1124930980
 ParticleSystem:
   m_ObjectHideFlags: 0
