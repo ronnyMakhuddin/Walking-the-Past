@@ -13,6 +13,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Android;
 
+
 public enum gpsModes {
     Unity3D,
     NativeToolkit,
@@ -21,7 +22,7 @@ public enum gpsModes {
 
 public class LocativeGPS : MonoBehaviour
 {
-    
+    public LocativeTarget target;
     
     public static LocativeGPS Instance { set; get; }
 
@@ -416,7 +417,8 @@ public class LocativeGPS : MonoBehaviour
 
         if (ShowDebugConsole)
         {
-            DebugGPS.text = "LAT: " + latitude.ToString() + "   LON: " + longitude.ToString();
+            Vector3 distance = target.transform.position - transform.position;
+            DebugGPS.text = ""+distance;// "LAT: " + latitude.ToString() + "   LON: " + longitude.ToString();
         }
 
     }
