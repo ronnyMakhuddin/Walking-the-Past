@@ -13,8 +13,7 @@ public class DialogueSystem : MonoBehaviour
     private int end = 20;
     private int index = 10;
     [SerializeField] private float writingSpeed = 0.3f;
-    // for Debug
-    public List<QuestText> test;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,17 +32,13 @@ public class DialogueSystem : MonoBehaviour
             {
                 Debug.Log("Cannot get text at index " + index);
             }
-            Debug.Log("Index: " + index);
-            Debug.Log("Text: " + texts[index].text);
-            //Debug.Log("Textfield: " + textfield.text);
+
             if (!String.IsNullOrEmpty(textfield.text) && textfield.text == texts[index].text)
             {
-                Debug.Log("Continuing with next Paragraph.");
                 NextParagraph();
             }
             else
             {
-                Debug.Log("Displaying whole text + stopping Coroutines.");
                 StopAllCoroutines();
                 textfield.text = texts[index].text;
             }
@@ -82,12 +77,5 @@ public class DialogueSystem : MonoBehaviour
             gameObject.SetActive(false);
         }
     }
-
-    public void SetTexts(Dictionary<int, QuestText> dictionary)
-    {
-        this.texts = dictionary;
-        Debug.Log("Dictionary in Dialogue System set.");
-    }
-
     
 }
