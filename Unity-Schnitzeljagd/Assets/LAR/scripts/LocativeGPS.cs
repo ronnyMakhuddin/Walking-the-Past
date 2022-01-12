@@ -116,12 +116,12 @@ public class LocativeGPS : MonoBehaviour
 
 
         // load debugUI
-        /*
+        
         DebugGPS        = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("DebugGPS").gameObject.GetComponent<Text>();
         DebugConsole    = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("DebugConsole").gameObject.GetComponent<Text>();
         background      = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("Background").gameObject.GetComponent<RawImage>();
         fit             = transform.Find("LAR_BackgroundCamera").Find("UI_Background").Find("Background").gameObject.GetComponent<AspectRatioFitter>();
-        */
+        
         // Show/hide DebugConsole
         if (!ShowDebugConsole)
         {
@@ -141,7 +141,7 @@ public class LocativeGPS : MonoBehaviour
             //set horizon visible on editor mode
             // UNLESS ShowLARCameraOnBackground (USING VUFORIA OR ARCORE)
             if (ShowLARCameraOnBackground)
-                GetComponent<Camera>().clearFlags = CameraClearFlags.Skybox;
+                //GetComponent<Camera>().clearFlags = CameraClearFlags.Skybox;
 
             if (!ReceiveShadows)
             {

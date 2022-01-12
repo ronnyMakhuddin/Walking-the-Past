@@ -20071,6 +20071,7 @@ GameObject:
   - component: {fileID: 1568459664}
   - component: {fileID: 1568459663}
   - component: {fileID: 1568459665}
+  - component: {fileID: 1568459666}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -20160,6 +20161,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   swipeDistance: 200
   depthReach: 200
+--- !u!114 &1568459666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568459659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647dfaf05163ea841ab8340ad87ecd65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bodyHeight: 1.7
 --- !u!1 &1629619085
 GameObject:
   m_ObjectHideFlags: 0
@@ -20203,9 +20217,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1629619085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f07244e5e2e52c4f9f66dc65418cec6, type: 3}
+  m_Script: {fileID: 11500000, guid: 00ed9298505581f4da641cb7401981b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  altitude: 0
+  latitude: 48.1840500122348
+  longitude: 11.4919943120518
 --- !u!1 &1971333177
 GameObject:
   m_ObjectHideFlags: 0
