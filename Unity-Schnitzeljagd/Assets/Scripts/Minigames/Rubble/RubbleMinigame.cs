@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class RubbleMinigame : MonoBehaviour
 {
-    private Transform sceneOrigin;
+    public Transform sceneOrigin;
     List<RubbleHealth> rubblePiles;
-    // Start is called before the first frame update
+
     void Awake()
     {
-        sceneOrigin = GameObject.Find("SceneOrigin").transform;
-        rubblePiles = GetAllRubbleInScene();
+        GetAllRubbleInScene();
 
     }
 
@@ -24,16 +23,15 @@ public class RubbleMinigame : MonoBehaviour
         }
     }
 
-    List<RubbleHealth> GetAllRubbleInScene()
+    void GetAllRubbleInScene()
     {
-        List<RubbleHealth> rubble = new List<RubbleHealth>();
-        foreach (Transform child in sceneOrigin)
+        rubblePiles = new List<RubbleHealth>();
+        foreach (Transform child in sceneOrigin.GetComponentsInChildren<Transform>())
         {
             if (child == null) continue;
             RubbleHealth rh = child.GetComponent<RubbleHealth>();
-            if (rh != null) rubble.Add(rh);
+            if (rh != null) rubblePiles.Add(rh);
         }
-        return rubble;
     }
 
     void OnMinigameCompleted()

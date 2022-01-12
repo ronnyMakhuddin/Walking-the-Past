@@ -12,7 +12,10 @@ public class GPSPositioningCam : MonoBehaviour
     double longitude_cam = 0;
     double altitude = 0;
 
+    bool GPS;
+
     public static GPSPositioningCam Instance { set; get; }
+    private GameObject cameraContainer;
 
     Gyroscope gyroscope;
     Quaternion rotation;
@@ -24,41 +27,87 @@ public class GPSPositioningCam : MonoBehaviour
         isEditor = Application.isEditor;
         if (!isEditor)
         {
-            isCam = GetComponent<ARSessionOrigin>() != null ? true : false;
+            Instance = this;
+            altitude = bodyHeight;
 
-            if (isCam)
-            {
-                latitude_cam = Input.location.lastData.latitude;
-                longitude_cam = Input.location.lastData.longitude;
-                altitude = bodyHeight;
+            transform.position = new Vector3(0, bodyHeight, 0);
 
-                gyroscope = Input.gyro;
-                gyroscope.enabled = true;
-                rotation = new Quaternion(0, 0, 1, 0);
+            StartCoroutine(StartLocationService());
 
-                transform.position = new Vector3(0, bodyHeight, 0);
+        }
+        else
+        {
+            Instance = this;
+            latitude_cam = 48.1834f;
+            longitude_cam = 11.4923f;
+            altitude = bodyHeight;
 
-                Instance = this;
-            }
+            transform.localPosition = new Vector3(0, bodyHeight, 0);
+
+
         }
     }
 
     private void Update()
     {
-        if (isCam)
+        if (!Application.isEditor)
         {
-            latitude_cam = Input.location.lastData.latitude;
-            longitude_cam = Input.location.lastData.longitude;
-            //transform.rotation = gyroscope.attitude * rotation;
+            if (GPS)
+            {
+                latitude_cam = Input.location.lastData.latitude;
+                longitude_cam = Input.location.lastData.longitude;
+
+                transform.position = GPSARCoord.CalculateRelativePosFromCoord(latitude_cam, longitude_cam, altitude, true);
+                //transform.rotation = gyroscope.attitude * rotation;
+            }
+        }
+        else
+        {
+            latitude_cam = 48.1834f;
+            longitude_cam = 11.4923f;
+            transform.position = GPSARCoord.CalculateRelativePosFromCoord(latitude_cam, longitude_cam, altitude, true);
         }
     }
 
     public double GetCamLat()
     {
-        return latitude_cam;
+        return Application.isEditor ? 48.1834f : latitude_cam;
     }
     public double GetCamLon()
     {
-        return longitude_cam;
+        return Application.isEditor ? 11.4923f : longitude_cam;
+    }
+
+    public double GetAltitude()
+    {
+        return altitude;
+    }
+
+    private IEnumerator StartLocationService()
+    {
+        if (!Input.location.isEnabledByUser)
+        {
+            yield break;
+        }
+        Input.location.Start(0.1f, 0.1f);
+
+        int maxWait = 20;
+        while (Input.location.status == LocationServiceStatus.Initializing && maxWait > 0)
+        {
+            yield return new WaitForSeconds(1);
+            maxWait--;
+        }
+        if (maxWait <= 0)
+        {
+            yield break;
+        }
+        if (Input.location.status == LocationServiceStatus.Failed)
+        {
+            yield break;
+        }
+        latitude_cam = (double)Input.location.lastData.latitude;
+        longitude_cam = (double)Input.location.lastData.longitude;
+        GPS = true;
+        yield break;
     }
 }
