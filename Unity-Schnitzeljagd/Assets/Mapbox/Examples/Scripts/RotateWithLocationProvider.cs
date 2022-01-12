@@ -98,10 +98,6 @@ namespace Mapbox.Examples
 		{
 
 			float rotationAngle = _useDeviceOrientation ? location.DeviceOrientation : location.UserHeading;
-			if(_useDeviceOrientation && Screen.orientation == ScreenOrientation.Landscape)
-            {
-				rotationAngle += 90;
-            }
 
 			if (_useNegativeAngle) { rotationAngle *= -1f; }
 
