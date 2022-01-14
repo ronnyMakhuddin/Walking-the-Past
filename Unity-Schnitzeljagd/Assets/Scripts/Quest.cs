@@ -6,23 +6,34 @@ using UnityEngine;
 public class Quest : ScriptableObject
 {
     [SerializeField] private string task = "This is the task.";
-
-    public string getTask()
+    [SerializeField] private int questID = 1;
+    
+    /*public string GetTask()
     {
         return task;
-    }
+    }*/
 
     [SerializeField] private Sprite character;
 
-    public Sprite getCharacter()
+    public Sprite GetCharacter()
     {
         return character;
     }
+    
+    public int GetID()
+    {
+        return questID;
+    }
+
+    public void SetID(int id)
+    {
+        questID = id;
+    }
 
     [SerializeField] private Quest nextQuest;
-
-    public Quest getNextQuest()
+    public Quest GetNextQuest()
     {
         return nextQuest;
     }
+    
 }
