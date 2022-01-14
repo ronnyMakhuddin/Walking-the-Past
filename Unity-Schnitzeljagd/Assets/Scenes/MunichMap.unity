@@ -1435,7 +1435,7 @@ MonoBehaviour:
   _autoFireEvent: 1
   _updateInterval: 0
   _sendEvent: 0
-  _latitudeLongitude: 48.1834, 11.4923
+  _latitudeLongitude: 48.13678351890525, 11.576991418027529
   _targetTransform: {fileID: 0}
 --- !u!21 &1707791543
 Material:
@@ -1872,6 +1872,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 137659039767429366, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 276cd9304c22e3646852c72873914550, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
 --- !u!21 &2054153455
@@ -2642,7 +2646,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _options:
     locationOptions:
-      latitudeLongitude: 48,1815608, 11,4918127
+      latitudeLongitude: 48.13678351890525, 11.576991418027529
       zoom: 17
     extentOptions:
       extentType: 0
@@ -2959,7 +2963,7 @@ MonoBehaviour:
         categories: 0
         nameString: 
         coordinates:
-        - 48.13543575, 11.570783
+        - 48.13678351890525, 11.576991418027529
         density: 15
       - coreOptions:
           sourceId: 
