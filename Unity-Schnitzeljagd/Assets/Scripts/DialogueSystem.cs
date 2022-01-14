@@ -5,18 +5,25 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
 using TMPro;
+using Image = UnityEngine.UI.Image;
 
 public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textfield;
-    private Dictionary<int, QuestText> texts = new Dictionary<int, QuestText>();
+    [SerializeField] private Image spritefield;
+    [SerializeField] private Sprite spriteKarl;
+    [SerializeField] private Sprite spriteOtto;
+    private Dictionary<int, QuestText> texts;
+    
     private int end = 20;
     private int index = 10;
-    [SerializeField] private float writingSpeed = 0.3f;
+    private bool dialogueRunning;
+    [SerializeField] private float writingSpeed = 0.05f;
 
     // Start is called before the first frame update
     void Start()
     {
+        dialogueRunning = false;
         textfield.text = String.Empty;
         texts = MenuSystem.GetTexts();
         StartDialogue(10, 20);
@@ -25,7 +32,7 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.touchCount > 0 || Input.GetMouseButtonDown(0))
+        if (dialogueRunning && (Input.touchCount > 0 || Input.GetMouseButtonDown(0)))
         {
             QuestText text = texts[index];
             if (text == null)
@@ -45,8 +52,9 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    void StartDialogue(int start, int stop)
+    public void StartDialogue(int start, int stop)
     {
+        dialogueRunning = true;
         index = start;
         end = stop;
         StartCoroutine(TypeParagraph());
@@ -54,8 +62,23 @@ public class DialogueSystem : MonoBehaviour
 
     IEnumerator TypeParagraph()
     {
+        if (texts[index] == null)
+        {
+            Debug.Log("No text saved under index " + index);
+            yield break;
+        }
+        
         string current = "";
         string text = texts[index].text;
+        int character = texts[index].character;
+
+        switch (character)
+        {
+            case 0: spritefield.sprite = spriteKarl; break;
+            case 1: spritefield.sprite = spriteOtto; break;
+            default: Debug.Log("Could not find sprite."); break;
+        }
+        
         for (int i = 0; i < text.Length; ++i)
         {
             current = text.Substring(0, i+1);
@@ -64,7 +87,7 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    void NextParagraph()
+    private void NextParagraph()
     {
         if (index < end - 1)
         {

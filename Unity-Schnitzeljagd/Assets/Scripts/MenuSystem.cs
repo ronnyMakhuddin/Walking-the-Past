@@ -9,41 +9,36 @@ using UnityEngine.UIElements;
 using Image = UnityEngine.UI.Image;
 using Object = UnityEngine.Object;
 
+// class to help save dicionary to json
 [Serializable]
 public class QuestText
 {
     public int id;
+    public int character;
     public string text;
 }
 
 public class MenuSystem : MonoBehaviour
-{
-    public static bool ItemMenuOpen = false;
-    public GameObject itemMenuUI;
-
-    [SerializeField] private GameObject[] itemSlots;
-    private bool[] filled;
-
-
+{   
+    [Header("Dialogue System")]
     [SerializeField] private GameObject dialogueSys;
     private static Dictionary<int, QuestText> texts;
-    // serialized for debug
-    [SerializeField] private List<QuestText> quests;
     [SerializeField] private string filename = "questText.json";
-
+    // for debug
+    // [SerializeField] private List<QuestText> quests;
+    
     private void Awake()
     {
         filled = new bool[itemSlots.Length];
         texts = new Dictionary<int, QuestText>();
-        quests = new List<QuestText>();
-                
+
         // only works if json file is already there
         texts = FileManager.LoadQuests(filename);
         Debug.Log("Number texts loaded: " + texts.Keys.Count);
-        //dialogueSys.GetComponent<DialogueSystem>().SetTexts(texts);
-        Debug.Log("Testing for index 10: " + texts[10].text);
     }
-
+    
+    // create list of json texts for debug
+    /*
     private void Start()
     {
 
@@ -53,14 +48,20 @@ public class MenuSystem : MonoBehaviour
         {
             quests.Add(texts[key]);
         }
-    }
+    }*/
 
     public static Dictionary<int, QuestText> GetTexts()
     {
         return texts;
     }
-
-
+    
+    
+    [Header("Item Menu")]
+    [SerializeField] private GameObject itemMenuUI;
+    [SerializeField] private GameObject[] itemSlots;
+    private bool[] filled;
+    public static bool ItemMenuOpen = false;
+    
     public void ItemMenu()
     {
         if (ItemMenuOpen)
@@ -105,18 +106,19 @@ public class MenuSystem : MonoBehaviour
         }
     }
     
-    
-    public static bool QuestMenuOpen = false;
+    [Header("Quest Menu")]
     [SerializeField] private Quest currentQuest;
-    public GameObject questMenuUI;
-    public Text questText;
-    public UnityEngine.UI.Image questImage;
+    [SerializeField] private GameObject questMenuUI;
+    [SerializeField] private Text questText;
+    [SerializeField] private UnityEngine.UI.Image questImage;
     [SerializeField] private float writingSpeed = 0.5f;
+    
+    private bool questMenuOpen = false;
     private String currentText = "";
 
     public void QuestMenu()
     {
-        if (QuestMenuOpen)
+        if (questMenuOpen)
         {
             CloseQuestMenu();
         }
@@ -129,14 +131,13 @@ public class MenuSystem : MonoBehaviour
     void CloseQuestMenu()
     {
         questMenuUI.SetActive(false);
-        QuestMenuOpen = false;
+        questMenuOpen = false;
     }
 
     void ShowQuest()
     {
         questMenuUI.SetActive(true);
-        // pause the game
-        QuestMenuOpen = true;
+        questMenuOpen = true;
         questImage.sprite = currentQuest.GetCharacter();
         StartCoroutine(DisplayQuest());
         currentText = "";
@@ -153,6 +154,7 @@ public class MenuSystem : MonoBehaviour
         }
     }
 
+    // respawning item into the scene
     public void Respawn(int i)
     {
         if (!filled[i])
