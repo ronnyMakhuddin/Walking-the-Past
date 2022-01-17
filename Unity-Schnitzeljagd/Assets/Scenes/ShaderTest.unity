@@ -5220,6 +5220,7 @@ GameObject:
   - component: {fileID: 1112353317}
   - component: {fileID: 1112353316}
   - component: {fileID: 1112353315}
+  - component: {fileID: 1112353321}
   m_Layer: 0
   m_Name: AR Session Origin
   m_TagString: Untagged
@@ -5309,6 +5310,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1112353321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112353314}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SerializedLibrary: {fileID: 11400000, guid: 75dd3db4c84dcde48a46946bb1d50741, type: 2}
+  m_MaxNumberOfMovingImages: 1
+  m_TrackedImagePrefab: {fileID: 5258897474765057070, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
 --- !u!1 &1134184438
 GameObject:
   m_ObjectHideFlags: 0

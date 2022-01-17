@@ -8,6 +8,7 @@ TagManager:
   - POI
   - Item
   - Item Slot
+  - ARLoadButton
   layers:
   - Default
   - TransparentFX

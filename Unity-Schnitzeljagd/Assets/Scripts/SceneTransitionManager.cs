@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+//Based on official Mapbox tutorial
 public class SceneTransitionManager : Singleton<SceneTransitionManager>
 {
     private AsyncOperation sceneAsync;

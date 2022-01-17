@@ -33,15 +33,11 @@ public class ARZone : MonoBehaviour
 
         if (listening && timeSpentInZone >= secondsUntilTrigger)
         {
-            // for now instant switch
-            listening = false;
 
             Vector3 relativeToPlayer = transform.position - playerPos;
 
             Debug.Log(relativeToPlayer);
-            GameManager.Instance.EnterAR(scene, relativeToPlayer, scene);
-            timeSpentInZone = 0;
-            Destroy(gameObject);
+            GameManager.Instance.ConfigureAR(scene, relativeToPlayer);
         }
     }
 

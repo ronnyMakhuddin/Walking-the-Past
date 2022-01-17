@@ -4,20 +4,20 @@ using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using Mapbox.Unity.Location;
 using Mapbox.Unity.Map;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public enum GAMESTATE
     {
-        STARTED,
         WORLD,
-        PAUSED,
-        BACKGROUND,
         AR
     }
 
     List<AR_SITE> completedCheckpoints;
     public AR_SITE currCheckpoint;
+    Button EnterARButton;
+    string arSceneName = "";
 
     public List<AR_SITE> GetCompletedCheckpoints()
     {
@@ -37,7 +37,7 @@ public class GameManager : MonoBehaviour
 
     bool started = false;
     bool running = false;
-    bool arPossible = false;
+    public bool arPossible = false;
 
     public Vector3 arOriginRelativeToPlayer;
     SceneTransitionManager sceneTransitionManager;
@@ -58,6 +58,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         sceneTransitionManager = FindObjectOfType<SceneTransitionManager>().GetComponent<SceneTransitionManager>();
+
+        if (state == GAMESTATE.WORLD)
+        {
+            EnterARButton = GameObject.FindGameObjectWithTag("ARLoadButton").GetComponent<Button>();
+            ToggleEnterARButton(false);
+            EnterARButton.onClick.AddListener(EnterAR);
+        }
+
         if (instance == null)
         {
             instance = this;
@@ -86,25 +94,14 @@ public class GameManager : MonoBehaviour
         return state;
     }
 
-    void AnchorAdded(ARAnchor anchor)
-    {
-        started = true;
-        running = true;
-    }
-
-    void AnchorRemoved(ARAnchor anchor)
-    {
-        running = false;
-    }
 
     private void Update()
     {
-        if(state == GAMESTATE.WORLD)
+        if (state == GAMESTATE.WORLD)
         {
-            if (arPossible)
-            {
-                //show AR enable button
-            }
+
+            //show enter AR button
+            ToggleEnterARButton(arPossible);
         }
     }
 
@@ -114,32 +111,38 @@ public class GameManager : MonoBehaviour
         EnterMapbox();
     }
 
-    public void EnterAR(AR_SITE zone, Vector3 POI2PlayerPos, AR_SITE site)
+    public void ConfigureAR(AR_SITE site, Vector3 POI2PlayerPos)
     {
-        currCheckpoint = zone;
+
+        currCheckpoint = site;
         arOriginRelativeToPlayer = POI2PlayerPos;
-        string name = "";
+        arSceneName = "";
         switch (site)
         {
-            case AR_SITE.MAXBURG: name = Schnitzelconstants.MAXBURG_SCENE; break;
+            case AR_SITE.MAXBURG: arSceneName = Schnitzelconstants.MAXBURG_SCENE; break;
+            case AR_SITE.OLD_TOWNHALL: arSceneName = Schnitzelconstants.OLD_TOWNHALL_SCENE; break;
             default: break;
         }
-
-        sceneTransitionManager.GoToScene(name, null);
+        arPossible = true;
     }
 
     public void EnterMapbox()
     {
-        sceneTransitionManager.GoToScene("MunichMap", null);
-
+        arPossible = false;
+        state = GAMESTATE.WORLD;
+        sceneTransitionManager.GoToScene(Schnitzelconstants.WORLD_SCENE, null);
     }
 
-    private bool checkARLocation(AR_SITE site)
+    public void EnterAR()
     {
-        return false;
+        state = GAMESTATE.AR;
+        sceneTransitionManager.GoToScene(arSceneName, null);
     }
 
-
-
-
+    void ToggleEnterARButton(bool active)
+    {
+        EnterARButton.enabled = active;
+        EnterARButton.image.enabled = active;
+        EnterARButton.transform.GetChild(0).gameObject.SetActive(active);
+    }
 }
