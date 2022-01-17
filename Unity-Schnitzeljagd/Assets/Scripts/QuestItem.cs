@@ -41,10 +41,8 @@ public class QuestItem : MonoBehaviour
                     Camera.main.nearClipPlane);
                 Vector3 touchPosFar = new Vector3(touch.position.x, touch.position.y,
                     Camera.main.farClipPlane);
-                Debug.Log("Touch position: " + touchPosNear);
                 Vector3 worldNear = Camera.main.ScreenToWorldPoint(touchPosNear);
                 Vector3 worldFar = Camera.main.ScreenToWorldPoint(touchPosFar);
-                Debug.Log("To world: " + worldNear);
                 RaycastHit hit;
                 Physics.Raycast(worldNear, worldFar - worldNear, out hit);
                 
@@ -93,6 +91,16 @@ public class QuestItem : MonoBehaviour
                                 Camera.main.WorldToScreenPoint(gameObject.transform.position).z);
                             Vector3 toMove = Camera.main.ScreenToWorldPoint(touchPos);
                             this.gameObject.transform.position = toMove;
+                            
+                            // test if infront of tiggerzone
+                            RaycastHit testhit;
+                            bool triggered = Physics.Raycast(this.transform.position, Vector3.forward, out testhit);
+                            if (triggered &&testhit.collider.isTrigger)
+                            {
+                                Debug.Log("Raycast hit Trigger!");
+                                TriggerZoneEntered();
+                                
+                            }
                         }
         
                         break;
@@ -112,6 +120,22 @@ public class QuestItem : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void TriggerZoneEntered()
+    {
+        selected = false;
+        moving = false;
+        //Handheld.Vibrate();
+        VibrateHelper.Vibrate(300);
+        StartCoroutine(Freeze());
+        Inventory.AddItem(this);
+        this.gameObject.SetActive(false);
+    }
+
+    public IEnumerator Freeze()
+    {
+        yield return new WaitForSeconds(1);
     }
 
     public Sprite GetSprite()
