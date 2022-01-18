@@ -42,7 +42,7 @@ public class ARLighting : MonoBehaviour
         //TODO Get correct direction (nice to have)
         if (args.lightEstimation.mainLightDirection.HasValue)
         {
-            //arLight.transform.Rotate(args.lightEstimation.mainLightDirection.Value); this causes light to spin in circle...
+            //arLight.transform.Rotate(args.lightEstimation.mainLightDirection.Value); //this causes light to spin in circle...
         }
     }
 }
