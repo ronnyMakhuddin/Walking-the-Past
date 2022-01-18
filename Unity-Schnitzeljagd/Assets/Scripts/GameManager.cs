@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
     public AR_SITE currCheckpoint;
     Button EnterARButton;
     string arSceneName = "";
+    public bool useAbsolutePos = true;
 
     public List<AR_SITE> GetCompletedCheckpoints()
     {
@@ -41,6 +42,8 @@ public class GameManager : MonoBehaviour
     public bool arPossible = false;
 
     public Vector3 arOriginRelativeToPlayer;
+    public Vector3 playerPos = Vector3.zero;
+    public Vector3 arOriginPos = Vector3.zero;
     SceneTransitionManager sceneTransitionManager;
 
 

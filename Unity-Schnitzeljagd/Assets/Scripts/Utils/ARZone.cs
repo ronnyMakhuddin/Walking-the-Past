@@ -38,6 +38,11 @@ public class ARZone : MonoBehaviour
 
             Debug.Log(relativeToPlayer);
             GameManager.Instance.ConfigureAR(scene, relativeToPlayer);
+            if (GameManager.Instance.useAbsolutePos)
+            {
+                GameManager.Instance.playerPos = playerPos;
+                GameManager.Instance.arOriginPos = transform.position;
+            }
         }
     }
 
