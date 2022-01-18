@@ -112,7 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: 1
-  secondsUntilTrigger: 10
+  secondsUntilTrigger: 5
 --- !u!54 &4676184484911782189
 Rigidbody:
   m_ObjectHideFlags: 0

@@ -54,8 +54,10 @@ public class ARZone : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            GameManager.Instance.arPossible = false;
             timeSpentInZone = 0f;
             listening = true;
         }
+
     }
 }

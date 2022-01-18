@@ -5,6 +5,7 @@ using UnityEngine.XR.ARFoundation;
 using Mapbox.Unity.Location;
 using Mapbox.Unity.Map;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -117,13 +118,29 @@ public class GameManager : MonoBehaviour
         currCheckpoint = site;
         arOriginRelativeToPlayer = POI2PlayerPos;
         arSceneName = "";
+        ARSiteToScene(site);
+
+        arPossible = true;
+    }
+
+    private void ARSiteToScene(AR_SITE site)
+    {
         switch (site)
         {
             case AR_SITE.MAXBURG: arSceneName = Schnitzelconstants.MAXBURG_SCENE; break;
             case AR_SITE.OLD_TOWNHALL: arSceneName = Schnitzelconstants.OLD_TOWNHALL_SCENE; break;
             default: break;
         }
-        arPossible = true;
+    }
+
+    private string ARSiteToTitle(AR_SITE site)
+    {
+        switch (site)
+        {
+            case AR_SITE.MAXBURG: return "Maxburg";
+            case AR_SITE.OLD_TOWNHALL: return "Old Town Hall";
+            default: return "$undefined$";
+        }
     }
 
     public void EnterMapbox()
@@ -135,14 +152,15 @@ public class GameManager : MonoBehaviour
 
     public void EnterAR()
     {
-        state = GAMESTATE.AR;
         sceneTransitionManager.GoToScene(arSceneName, null);
+        state = GAMESTATE.AR;
     }
 
     void ToggleEnterARButton(bool active)
     {
         EnterARButton.enabled = active;
         EnterARButton.image.enabled = active;
+        EnterARButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = ARSiteToTitle(currCheckpoint);
         EnterARButton.transform.GetChild(0).gameObject.SetActive(active);
     }
 }

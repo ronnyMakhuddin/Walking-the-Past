@@ -6,5 +6,5 @@ public static class Schnitzelconstants
 {
     public static string WORLD_SCENE = "Munich_Map";
     public static string MAXBURG_SCENE = "test";
-    public static string OLD_TOWNHALL_SCENE = "Old Townhall";
+    public static string OLD_TOWNHALL_SCENE = "Old Town Hall";
 }
