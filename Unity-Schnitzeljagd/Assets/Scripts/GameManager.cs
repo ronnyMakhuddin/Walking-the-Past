@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     public enum GAMESTATE
     {
         WORLD,
-        AR
+        AR,
+        STORY
     }
 
     List<AR_SITE> completedCheckpoints;
