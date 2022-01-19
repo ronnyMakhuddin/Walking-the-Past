@@ -9,6 +9,7 @@ TagManager:
   - Item
   - Item Slot
   - ARLoadButton
+  - ARSessionOrigin
   layers:
   - Default
   - TransparentFX

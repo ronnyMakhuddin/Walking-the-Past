@@ -12,9 +12,11 @@ public class CamPos : MonoBehaviour
         
     }
 
+    public Transform sceneOrigin;
+
     // Update is called once per frame
     void Update()
     {
-        text.text = transform.position.x + " " + transform.position.y + " " + transform.position.z;
+        text.text = "origin pos: " + transform.parent.position + "\nPile at: " + sceneOrigin.transform.position;
     }
 }
