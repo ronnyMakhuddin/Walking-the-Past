@@ -94,9 +94,7 @@ public class MenuSystem : MonoBehaviour
             QuestItem item = Inventory.items[i];
             if (item != null)
             {
-                Debug.Log("Item in menu! Nr. " + i);
                 itemSlots[i].GetComponent<Image>().sprite = item.GetSprite();
-                Debug.Log("Setting sprite nr. " + i);
                 filled[i] = true;
             }
             else
@@ -107,12 +105,13 @@ public class MenuSystem : MonoBehaviour
     }
     
     [Header("Quest Menu")]
-    [SerializeField] private Quest currentQuest;
+    [SerializeField] private QuestSystem questSys;
     [SerializeField] private GameObject questMenuUI;
     [SerializeField] private Text questText;
     [SerializeField] private UnityEngine.UI.Image questImage;
     [SerializeField] private float writingSpeed = 0.5f;
-    
+
+    private Quest currentQuest;
     private bool questMenuOpen = false;
     private String currentText = "";
 
@@ -138,6 +137,14 @@ public class MenuSystem : MonoBehaviour
     {
         questMenuUI.SetActive(true);
         questMenuOpen = true;
+        if (questSys.GetMain() != null)
+        {
+            currentQuest = questSys.GetMain();
+        }
+        if (questSys.GetSide() != null)
+        {
+            currentQuest = questSys.GetSide();
+        }
         questImage.sprite = currentQuest.GetCharacter();
         StartCoroutine(DisplayQuest());
         currentText = "";

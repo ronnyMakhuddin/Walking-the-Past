@@ -54,6 +54,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(int start, int stop)
     {
+        this.gameObject.SetActive(true);
         dialogueRunning = true;
         index = start;
         end = stop;
