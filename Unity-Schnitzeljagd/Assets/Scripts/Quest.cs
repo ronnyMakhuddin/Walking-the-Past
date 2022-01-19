@@ -5,15 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Quest", fileName = "New Quest")]
 public class Quest : ScriptableObject
 {
-    [SerializeField] private string task = "This is the task.";
     [SerializeField] private int questID = 1;
-    
-    /*public string GetTask()
-    {
-        return task;
-    }*/
 
     [SerializeField] private Sprite character;
+    [SerializeField] private int dialogueStart = 1;
+    [SerializeField] private int dialogueEnd = 1;
 
     public Sprite GetCharacter()
     {
@@ -25,6 +21,21 @@ public class Quest : ScriptableObject
         return questID;
     }
 
+    public int getDialogueStart()
+    {
+        return dialogueStart;
+    }
+
+    public int getDialogueStop()
+    {
+        return dialogueEnd;
+    }
+
+    public void SetSprite(Sprite sprite)
+    {
+        character = sprite;
+    }
+    
     public void SetID(int id)
     {
         questID = id;
@@ -35,5 +46,5 @@ public class Quest : ScriptableObject
     {
         return nextQuest;
     }
-    
+
 }

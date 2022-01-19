@@ -126,10 +126,8 @@ public class QuestItem : MonoBehaviour
     {
         selected = false;
         moving = false;
-        //Handheld.Vibrate();
-        VibrateHelper.Vibrate(300);
+        Handheld.Vibrate();
         StartCoroutine(Freeze());
-        Inventory.AddItem(this);
         this.gameObject.SetActive(false);
     }
 

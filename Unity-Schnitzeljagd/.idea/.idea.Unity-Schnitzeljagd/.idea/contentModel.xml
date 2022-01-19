@@ -701,9 +701,11 @@
           <e p="Player.cs" t="Include" />
           <e p="Quest.cs" t="Include" />
           <e p="QuestItem.cs" t="Include" />
+          <e p="QuestSystem.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SceneTransitionManager.cs" t="Include" />
           <e p="Utils" t="Include">
+            <e p="ARLighting.cs" t="Include" />
             <e p="ARZone.cs" t="Include" />
             <e p="CamPos.cs" t="Include" />
             <e p="Schnitzelconstants.cs" t="Include" />
@@ -711,7 +713,9 @@
             <e p="SnapToGround.cs" t="Include" />
             <e p="WaypointHandler.cs" t="Include" />
           </e>
-          <e p="VibrateHelper.cs" t="Include" />
+        </e>
+        <e p="ShaderGraph" t="Include">
+          <e p="URP AR Shadow Receiver.shader" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

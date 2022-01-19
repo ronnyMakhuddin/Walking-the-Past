@@ -18,15 +18,21 @@ public static class FileManager
 
     public static List<T> ReadFromJSON<T>(string filename)
     {
-        string read = ReadFile(GetPath(filename));
-        if (string.IsNullOrEmpty(read) || read == "{}")
+        var jsonFile = Resources.Load<TextAsset>(GetLoadPath(filename)).ToString();
+        if (string.IsNullOrEmpty(jsonFile) || jsonFile == "{}")
         {
             Debug.Log("Was not able to properly read from json: " + filename);
             return new List<T>();
         }
-        return JsonHelper.FromJson<T>(read).ToList();
+        return JsonHelper.FromJson<T>(jsonFile).ToList();
     }
 
+    private static string GetLoadPath(string filename)
+    {
+        //return Application.persistentDataPath + "/" + filename;
+        return "Text/" + filename.Replace(".json", "");
+    }
+    
     private static string GetPath(string filename)
     {
         return Application.persistentDataPath + "/" + filename;
