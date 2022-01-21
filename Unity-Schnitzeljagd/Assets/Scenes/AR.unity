@@ -1171,6 +1171,8 @@ GameObject:
   - component: {fileID: 610616865}
   - component: {fileID: 610616863}
   - component: {fileID: 610616868}
+  - component: {fileID: 610616870}
+  - component: {fileID: 610616869}
   m_Layer: 0
   m_Name: Collectible Cube
   m_TagString: Item
@@ -1287,6 +1289,32 @@ MonoBehaviour:
   collected: 0
   selected: 0
   moving: 0
+--- !u!114 &610616869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610616862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
+--- !u!114 &610616870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610616862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
 --- !u!1 &649075000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1635,9 +1663,9 @@ GameObject:
   - component: {fileID: 921328228}
   - component: {fileID: 921328227}
   - component: {fileID: 921328226}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: TriggerZone
-  m_TagString: Untagged
+  m_TagString: Triggerzone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1960,6 +1988,8 @@ GameObject:
   - component: {fileID: 1212576728}
   - component: {fileID: 1212576727}
   - component: {fileID: 1212576726}
+  - component: {fileID: 1212576733}
+  - component: {fileID: 1212576732}
   m_Layer: 0
   m_Name: Collectible Cube (1)
   m_TagString: Item
@@ -2076,6 +2106,32 @@ RectTransform:
   m_AnchoredPosition: {x: -2.025, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1212576732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212576725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa17d122634046b4a8e23048891fafc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_RaycastPrefab: {fileID: 0}
+--- !u!114 &1212576733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212576725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520bb47c46cf8624fafb307b7d1b862a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Camera: {fileID: 0}
 --- !u!1 &1240198221 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1113745242275243390, guid: 16741320cd612e048ab90e69593c5967, type: 3}

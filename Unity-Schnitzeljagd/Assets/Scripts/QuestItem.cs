@@ -1,11 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class QuestItem : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
     private MenuSystem menuSystem;
+    private float maxDistanceOnSelection = 100f;
+    private Vector2 touchposition;
     
     // Serialized for debugging
     [Header ("Serialized for Debug only")]
@@ -64,45 +69,27 @@ public class QuestItem : MonoBehaviour
             if (Input.touchCount > 0)
             {
                 Touch touch = Input.GetTouch(0);
-                pos = touch.position;
-                pos.x = (pos.x - width) / width;
-                pos.y = (pos.y - height) / height;
-                var position = new Vector3(-pos.x, pos.y, 0.0f);
-        
-                RaycastHit hit;
-                Physics.Raycast(position, Vector3.forward, out hit);
-        
+
                 switch (touch.phase)
                 {
                     case TouchPhase.Began:
-        
-                        if (hit.collider != null && hit.collider.gameObject.Equals(this.gameObject))
+
+                        Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                        RaycastHit hitObject;
+
+                        if (Physics.Raycast(ray, out hitObject, maxDistanceOnSelection))
                         {
-                            Debug.Log("Selected item");
-                            moving = true;
+                            if (hitObject.collider.gameObject == this.gameObject)
+                            {
+                                Debug.Log("Object detected!");
+                                moving = true;
+                            }
                         }
-        
+
                         break;
             
                     case TouchPhase.Moved:
-                        if (moving)
-                        {
-                            Vector3 touchPos = new Vector3(touch.position.x, touch.position.y,
-                                Camera.main.WorldToScreenPoint(gameObject.transform.position).z);
-                            Vector3 toMove = Camera.main.ScreenToWorldPoint(touchPos);
-                            this.gameObject.transform.position = toMove;
-                            
-                            // test if infront of tiggerzone
-                            RaycastHit testhit;
-                            bool triggered = Physics.Raycast(this.transform.position, Vector3.forward, out testhit);
-                            if (triggered &&testhit.collider.isTrigger)
-                            {
-                                Debug.Log("Raycast hit Trigger!");
-                                TriggerZoneEntered();
-                                
-                            }
-                        }
-        
+                        touchposition = touch.position;
                         break;
                             
                     case TouchPhase.Ended:
@@ -117,6 +104,27 @@ public class QuestItem : MonoBehaviour
                                        
                         }
                         break;
+                }
+                
+                if (moving)
+                {
+                    Vector3 touchPos = new Vector3(touch.position.x, touch.position.y, Camera.main.WorldToScreenPoint(gameObject.transform.position).z
+                        );//
+                    Vector3 toMove = Camera.main.ScreenToWorldPoint(touchPos);
+                    this.gameObject.transform.position = toMove;
+                    
+                    Ray ray = Camera.main.ScreenPointToRay(touch.position);
+                    RaycastHit hitObject;
+
+                    LayerMask mask = LayerMask.GetMask("TriggerZone");
+                    if (Physics.Raycast(ray, out hitObject, maxDistanceOnSelection, mask)) // 
+                    {
+                        if (hitObject.collider.isTrigger)
+                        {
+                            Debug.Log("trigger");
+                            TriggerZoneEntered();
+                        }
+                    }
                 }
             }
         }
@@ -155,7 +163,5 @@ public class QuestItem : MonoBehaviour
     {
         selected = select;
     }
-    
-    
-    
+
 }

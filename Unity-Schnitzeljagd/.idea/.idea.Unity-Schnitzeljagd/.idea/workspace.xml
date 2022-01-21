@@ -2,21 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/StreamingAssets/HiddenARCore.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AR.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FileManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FileManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VibrateHelper.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/VibrateHelper.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test_Quest.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test_Quest.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/HiddenARCore.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,13 +41,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FileTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VibrateHelper.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FileManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Quest.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22NJncHpYac7XvoDnmzVaqdAYyZ" />
@@ -115,6 +111,8 @@
       <workItem from="1642544538808" duration="2926000" />
       <workItem from="1642597095004" duration="3220000" />
       <workItem from="1642606462056" duration="374000" />
+      <workItem from="1642770795361" duration="2006000" />
+      <workItem from="1642780604329" duration="8302000" />
     </task>
     <servers />
   </component>

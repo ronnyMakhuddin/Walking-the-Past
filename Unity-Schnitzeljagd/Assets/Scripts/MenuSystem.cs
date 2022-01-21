@@ -172,8 +172,9 @@ public class MenuSystem : MonoBehaviour
         Debug.Log("Spawning nr. " + i);
         Debug.Log(Inventory.items[i]);
         Debug.Log(Inventory.items[i].gameObject);
-        Inventory.items[i].gameObject.transform.position = Vector3.forward * 5;
-        Inventory.items[i].transform.position = Vector3.zero + Inventory.items[i].gameObject.transform.position;
+        Inventory.items[i].gameObject.transform.position = Camera.main.transform.forward * 1f;
+        Inventory.items[i].transform.position = Vector3.zero+ Inventory.items[i].gameObject.transform.position;// 
+        Inventory.items[i].transform.localScale = Vector3.one * 0.1f;
         Inventory.items[i].gameObject.SetActive(true);
         itemSlots[i].GetComponent<Image>().sprite = null;
         Inventory.items[i].Select(true);
