@@ -20428,7 +20428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneOrigin: {fileID: 1629619086}
-  rubbleMaxHealth: 3
+  rubbleMaxHealth: 5
 --- !u!4 &1987382494
 Transform:
   m_ObjectHideFlags: 0

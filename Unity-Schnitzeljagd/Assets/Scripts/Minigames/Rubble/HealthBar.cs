@@ -25,6 +25,7 @@ public class HealthBar : MonoBehaviour
     public void InitSlider(int maxHP)
     {
         slider.maxValue = maxHP;
+        slider.value = maxHP;
         hpText.text = (int)slider.value + "/" + slider.maxValue;
     }
 

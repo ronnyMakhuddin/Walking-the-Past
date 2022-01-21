@@ -5,7 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(ParticleSystem))]
 public class RubbleHealth : MonoBehaviour
 {
-    private int hp = 3;
+    private int hp = 0;
     public bool special = false;
     public GameObject toSpawn;
     private Color feedbackCol = Color.grey;
