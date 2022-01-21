@@ -6,6 +6,7 @@ public class RubbleMinigame : MonoBehaviour
 {
     public Transform sceneOrigin;
     List<RubbleHealth> rubblePiles;
+    public int rubbleMaxHealth = 3;
 
     void Awake()
     {

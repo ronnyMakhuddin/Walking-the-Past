@@ -5082,6 +5082,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   special: 0
   toSpawn: {fileID: 0}
+  healthBar: {fileID: 0}
+  colorBlinkDuration: 0.2
+  destructionMat: {fileID: 0}
 --- !u!1001 &568320696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5089,6 +5092,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1629619086}
     m_Modifications:
+    - target: {fileID: 1065738619849609721, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1065738619849609721, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4826064511288938822, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
       propertyPath: toSpawn
       value: 
@@ -15150,6 +15161,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   special: 0
   toSpawn: {fileID: 0}
+  healthBar: {fileID: 0}
+  colorBlinkDuration: 0.2
+  destructionMat: {fileID: 0}
 --- !u!198 &1124930980
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -20414,6 +20428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneOrigin: {fileID: 1629619086}
+  rubbleMaxHealth: 3
 --- !u!4 &1987382494
 Transform:
   m_ObjectHideFlags: 0

@@ -10,10 +10,18 @@ public class RubbleHealth : MonoBehaviour
     public GameObject toSpawn;
     private Color feedbackCol = Color.grey;
     RubbleMinigame minigame;
+    [SerializeField]
+    private HealthBar healthBar;
+    [SerializeField]
+    private float colorBlinkDuration = .2f;
+    [SerializeField]
+    private Material destructionMat;
     // Start is called before the first frame update
     void Awake()
     {
         minigame = FindObjectOfType<RubbleMinigame>();
+        hp = minigame.rubbleMaxHealth;
+        healthBar.InitSlider(hp);
     }
 
     // Update is called once per frame
@@ -23,8 +31,7 @@ public class RubbleHealth : MonoBehaviour
        if (Input.GetKeyDown(KeyCode.P))
         {
             DecreaseHP();
-            DecreaseHP();
-            DecreaseHP();
+
         }
     }
 
@@ -32,6 +39,7 @@ public class RubbleHealth : MonoBehaviour
     {
         hp--;
         StartCoroutine(HitFeedback());
+        healthBar.UpdateSlider(hp);
 
         if(hp <= 0)
         {
@@ -39,6 +47,7 @@ public class RubbleHealth : MonoBehaviour
             HandleDestruction();
         }
     }
+
 
     IEnumerator HitFeedback()
     {
@@ -48,7 +57,7 @@ public class RubbleHealth : MonoBehaviour
         {
             childRenderer.material.color = feedbackCol;
         }
-        yield return new WaitForSeconds(.2f);
+        yield return new WaitForSeconds(colorBlinkDuration);
         foreach (Renderer childRenderer in GetComponentsInChildren<Renderer>())
         {
             childRenderer.material.color = Color.white;
