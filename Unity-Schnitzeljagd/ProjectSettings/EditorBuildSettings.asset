@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MunichMap.unity
     guid: a1203ebb682f70c47865b76168be4e40
   - enabled: 0
@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/ShaderTest.unity
     guid: c386fd769b1cf3e4b87a37f695aa22e3
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/AR.unity
     guid: b86a0b9957c70254b86fd3139cdde454
   m_configObjects:

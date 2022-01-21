@@ -49,6 +49,8 @@ public class Tap2PlaceObject : MonoBehaviour
                 spawnedObj.transform.position = pose.position;
             }
 
+            //VibrationTypes.OnTapVibrate(true);
+
         }
     }
 }
