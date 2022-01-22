@@ -10,6 +10,8 @@ TagManager:
   - Item Slot
   - ARLoadButton
   - ARSessionOrigin
+  - Triggerzone
+  - Path
   layers:
   - Default
   - TransparentFX

@@ -52,4 +52,13 @@ public class Player : MonoBehaviour
         yield return new WaitForSeconds(2f);
         walking = false;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "Path")
+        {
+            Debug.Log("Path found");
+            other.gameObject.SetActive(false);
+        }
+    }
 }

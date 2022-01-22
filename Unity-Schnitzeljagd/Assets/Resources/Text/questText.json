@@ -28,17 +28,17 @@
         {
             "id": 10,
             "character": 0,
-            "text": "Welcome to the Munich of the 1950s! I am Karl Meitinger."
+            "text": "Welcome to 1950s Munich! I’m Karl Meitinger. It is a pleasure to see you here."
         },
         {
             "id": 11,
             "character": 0,
-            "text": "As you might know, during the second world war, I already imagined how we could rebuild the city after the Nazis. In 1945, so, ten years ago, I presented my vision to the city council, and they were delighted! But of course, rebuilding a city the size of Munich is a lot of work."
+            "text": "As you might know, during the second world war, I already imagined how we could rebuild this city after the Nazis regime has ended. Ten years ago in 1945, I presented my vision to the city council and they were delighted! But as you can imagine, rebuilding a city the size and beauty of Munich is a lot of work."
         },
         {
             "id": 12,
             "character": 0,
-            "text": "Luckily, my son, Otto, is an architect, too. In 1953, he was asked to become a member of the governmental building council. Since then, he’s also been deeply involved in the plans for the city. Currently, he is very busy with the Old Town hall that you are standing right in front of. Iit is an old building, however, and due to the war much information and many pieces were scattered all over the city. Will you help him find some missing links?"
+            "text": "But luckily for us, my son Otto is an architect, too. You see, in 1953, he was asked to become a member of the governmental building council. Since then, he’s also been deeply involved in the plans for the city. Currently, he is very busy with the Old Town Hall that you are standing in front of right now. It is an old building, however, and due to the war much information and many pieces were scattered all over the city. Will you help him find some missing links?"
         },
         {
             "id": 13,
@@ -108,12 +108,12 @@
         {
             "id": 32,
             "character": 1,
-            "text": "Our next task is to redecorate the big hall on the first level! If you walk underneath the Town Hall and look up, you can see into it!"
+            "text": "Our next task is to redecorate the big hall on the first level! If you walk underneath the Town Hall and look up, you can see right into it!"
         },
         {
             "id": 33,
             "character": 1,
-            "text": "So, place the spire on the façade to see how it fits!"
+            "text": "So, let's place the spire on the façade and see how it fits!"
         }
     ]
 }

@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RubbleMinigame : MonoBehaviour
+public class RubbleMinigame : Minigame
 {
     public Transform sceneOrigin;
     List<RubbleHealth> rubblePiles;
     public int rubbleMaxHealth = 3;
+    int phase = 1;
 
     void Awake()
     {
@@ -19,8 +20,8 @@ public class RubbleMinigame : MonoBehaviour
     {
         if (rubblePiles.Count == 0)
         {
-            //All rubble destroyed, trigger ending
-            OnMinigameCompleted();
+            //All rubble destroyed, trigger second phase
+            base.OnMinigameFinished();
         }
     }
 
@@ -35,15 +36,6 @@ public class RubbleMinigame : MonoBehaviour
         }
     }
 
-    void OnMinigameCompleted()
-    {
-        //Maybe have a dialogue over the found item here?
-        //...
-
-        //After resolved load mapbox
-        GameManager.Instance.ARCompleted();
-        Debug.Log("Rubble Completed");
-    }
 
     public void RemoveRubble(RubbleHealth toRemove)
     {

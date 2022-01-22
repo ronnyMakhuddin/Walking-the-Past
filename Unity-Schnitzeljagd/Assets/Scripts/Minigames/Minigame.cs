@@ -4,10 +4,14 @@ using UnityEngine;
 
 public abstract class Minigame : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    protected PHASE currentPhase;
+    protected int numTasks = 1;
+    protected int completedTasks = 0;
+    protected enum PHASE
     {
-        
+        START,
+        TASK,
+        END
     }
 
     // Update is called once per frame
@@ -16,9 +20,33 @@ public abstract class Minigame : MonoBehaviour
         
     }
 
-    protected void OnMinigameFinished()
+    protected void AdvancePhase()
+    {
+        switch (currentPhase)
+        {
+            case PHASE.START: currentPhase = PHASE.TASK; break;
+            case PHASE.TASK:
+                completedTasks++;
+                if (completedTasks == numTasks)
+                {
+                    currentPhase = PHASE.END; break;
+                }
+                else
+                {
+                    //next task?
+                }
+                break;
+        }
+    }
+
+    private void StartTaskSetup()
     {
 
+    }
+
+    protected void OnMinigameFinished()
+    {
+        GameManager.Instance.ARCompleted();
     }
 
 }
