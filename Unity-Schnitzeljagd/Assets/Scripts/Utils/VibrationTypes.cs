@@ -21,7 +21,7 @@ public static class VibrationTypes
 
     private static void Success()
     {
-        CustomVibrate.Vibrate(250);
+        CustomVibrate.Vibrate(100);
     }
 
     private static void Failure()

@@ -6,13 +6,14 @@ using Mapbox.Unity.Location;
 using Mapbox.Unity.Map;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public enum GAMESTATE
     {
-        WORLD,
         AR,
+        WORLD,
         STORY
     }
 
@@ -63,6 +64,14 @@ public class GameManager : MonoBehaviour
     private void Awake()
     {
         sceneTransitionManager = FindObjectOfType<SceneTransitionManager>().GetComponent<SceneTransitionManager>();
+
+        if(SceneManager.GetActiveScene().name.Equals(Schnitzelconstants.WORLD_SCENE)) {
+            state = GAMESTATE.WORLD;
+        }
+        else
+        {
+            state = GAMESTATE.AR;
+        }
 
         if (state == GAMESTATE.WORLD)
         {

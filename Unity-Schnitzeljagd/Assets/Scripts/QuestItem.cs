@@ -134,7 +134,8 @@ public class QuestItem : MonoBehaviour
     {
         selected = false;
         moving = false;
-        Handheld.Vibrate();
+        //Handheld.Vibrate();
+        VibrationTypes.OnTapVibrate(true);
         StartCoroutine(Freeze());
         this.gameObject.SetActive(false);
     }

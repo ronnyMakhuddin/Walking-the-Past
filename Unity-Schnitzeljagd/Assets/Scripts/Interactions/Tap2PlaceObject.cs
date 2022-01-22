@@ -38,6 +38,10 @@ public class Tap2PlaceObject : MonoBehaviour
 
         if(aRRaycastManager.Raycast(touchPos, hits, TrackableType.PlaneWithinPolygon))
         {
+            if(Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                VibrationTypes.OnTapVibrate(true);
+            }
             Pose pose = hits[0].pose;
 
             if(spawnedObj == null)
