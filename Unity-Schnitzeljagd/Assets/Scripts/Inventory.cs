@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public static QuestItem[] items = new QuestItem[8];
+    public static int inventorySize = 8;
+    public static QuestItem[] items = new QuestItem[inventorySize];
+    public static bool[] filled = new bool[inventorySize];
     private static int itemCount = 0;
 
     public static bool AddItem(QuestItem item)
@@ -12,10 +14,11 @@ public class Inventory : MonoBehaviour
         Debug.Log("Adding Item: " + item);
         for (int i = 0; i < items.Length; ++i)
         {
-            if (items[i] == null)
+            if (!filled[i])
             {
                 items[i] = item;
                 itemCount += 1;
+                filled[i] = true;
                 return true;
             }
         }
@@ -30,6 +33,7 @@ public class Inventory : MonoBehaviour
             {
                 items[i] = null;
                 itemCount -= 1;
+                filled[i] = false;
                 return true;
             }
         }
@@ -43,6 +47,7 @@ public class Inventory : MonoBehaviour
             return false;
         }
         items[i] = null;
+        filled[i] = false;
         return true;
     }
 

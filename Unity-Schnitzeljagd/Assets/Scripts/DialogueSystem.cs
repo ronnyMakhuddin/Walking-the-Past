@@ -26,7 +26,11 @@ public class DialogueSystem : MonoBehaviour
         dialogueRunning = false;
         textfield.text = String.Empty;
         texts = MenuSystem.GetTexts();
-        StartDialogue(10, 20);
+        if (!QuestSystem.mainSet)
+        {
+            StartDialogue(10,20);
+        }
+        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame

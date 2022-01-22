@@ -8,15 +8,19 @@ public class QuestSystem : MonoBehaviour
 {
     [SerializeField] private Quest startQuest;
     [SerializeField] private DialogueSystem dialogueSystem;
-    private Quest mainQuest;
-    private Quest sideQuest;
-    private bool mainSet = false;
+    private static Quest mainQuest;
+    private static Quest sideQuest;
+    public static bool mainSet;
 
     private QuestFulfilled check;
     
     private void Start()
     {
-        mainQuest = startQuest;
+        if (!mainSet)
+        {
+            mainQuest = startQuest;
+        }
+            
         mainSet = true;
         Debug.Log("Quest System starting");
         check = gameObject.GetComponent<QuestFulfilled>();
@@ -28,7 +32,7 @@ public class QuestSystem : MonoBehaviour
 
     private void Update()
     {
-        if (mainSet && fulfilled(mainQuest.GetID()))
+        if (mainSet && Fulfilled(mainQuest.GetID()))
         {
             NextMain();
         }
@@ -86,7 +90,7 @@ public class QuestSystem : MonoBehaviour
         dialogueSystem.StartDialogue(mainQuest.getDialogueStart(), mainQuest.getDialogueStop());
     }
 
-    private bool fulfilled(int id)
+    private bool Fulfilled(int id)
     {
         switch (id)
         {

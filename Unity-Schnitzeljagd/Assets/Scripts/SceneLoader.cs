@@ -17,4 +17,9 @@ public class SceneLoader : MonoBehaviour
         //SceneManager.LoadScene(Schnitzelconstants.WORLD_SCENE);
         Debug.Log("Loading Mapbox Scene...");
     }
+
+    public void LoadOldTownHall()
+    {
+        SceneManager.LoadScene("OldTownHall");
+    }
 }

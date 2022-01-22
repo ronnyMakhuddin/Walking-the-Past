@@ -29,7 +29,7 @@ public class MenuSystem : MonoBehaviour
     
     private void Awake()
     {
-        filled = new bool[itemSlots.Length];
+        //filled = new bool[itemSlots.Length];
         texts = new Dictionary<int, QuestText>();
 
         // only works if json file is already there
@@ -46,7 +46,7 @@ public class MenuSystem : MonoBehaviour
     [Header("Item Menu")]
     [SerializeField] private GameObject itemMenuUI;
     [SerializeField] private GameObject[] itemSlots;
-    private bool[] filled;
+    //private bool[] filled;
     public static bool ItemMenuOpen = false;
     
     public void ItemMenu()
@@ -79,14 +79,14 @@ public class MenuSystem : MonoBehaviour
         for (int i = 0; i < itemSlots.Length && i < Inventory.getCount(); ++i)
         {
             QuestItem item = Inventory.items[i];
-            if (item != null)
+            if (Inventory.filled[i])
             {
                 itemSlots[i].GetComponent<Image>().sprite = item.GetSprite();
-                filled[i] = true;
+                Inventory.filled[i] = true;
             }
             else
             {
-                filled[i] = false;
+                Inventory.filled[i] = false;
             }
         }
     }
@@ -151,7 +151,7 @@ public class MenuSystem : MonoBehaviour
     // respawning item into the scene
     public void Respawn(int i)
     {
-        if (!filled[i])
+        if (!Inventory.filled[i])
         {
             Debug.Log("Empty!");
             return;
@@ -159,8 +159,9 @@ public class MenuSystem : MonoBehaviour
         Debug.Log("Spawning nr. " + i);
         Debug.Log(Inventory.items[i]);
         Debug.Log(Inventory.items[i].gameObject);
-        Inventory.items[i].gameObject.transform.position = Camera.main.transform.forward * 1f;
-        Inventory.items[i].transform.position = Vector3.zero+ Inventory.items[i].gameObject.transform.position;// 
+        //Inventory.items[i].gameObject.transform.position = Camera.main.transform.forward * 1f;
+        Inventory.items[i].gameObject.transform.position = Vector3.zero + Camera.main.transform.forward * 1f
+                                                            + Camera.main.transform.up * 1f;// 
         Inventory.items[i].transform.localScale = Vector3.one * 0.1f;
         Inventory.items[i].gameObject.SetActive(true);
         itemSlots[i].GetComponent<Image>().sprite = null;
