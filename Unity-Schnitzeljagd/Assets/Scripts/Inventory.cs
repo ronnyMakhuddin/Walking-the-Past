@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
-    public static QuestItem[] items = new QuestItem[3];
+    public static QuestItem[] items = new QuestItem[8];
     private static int itemCount = 0;
 
     public static bool AddItem(QuestItem item)

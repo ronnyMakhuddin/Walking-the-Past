@@ -3,16 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Item Slot.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Item Slot.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/AR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AR.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/HiddenARCore.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Quest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Quest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -38,16 +37,17 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Collectible2D1.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Collectible2D.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Collectible.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FileTest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/VibrateHelper.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/FileManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Quest.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Quest.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22NJncHpYac7XvoDnmzVaqdAYyZ" />
@@ -113,6 +113,8 @@
       <workItem from="1642606462056" duration="374000" />
       <workItem from="1642770795361" duration="2006000" />
       <workItem from="1642780604329" duration="8302000" />
+      <workItem from="1642802195937" duration="182000" />
+      <workItem from="1642867943081" duration="6924000" />
     </task>
     <servers />
   </component>

@@ -36,20 +36,7 @@ public class MenuSystem : MonoBehaviour
         texts = FileManager.LoadQuests(filename);
         Debug.Log("Number texts loaded: " + texts.Keys.Count);
     }
-    
-    // create list of json texts for debug
-    /*
-    private void Start()
-    {
-
-        // List for debugging
-        List<int> keys = new List<int>(texts.Keys);
-        foreach (var key in keys)
-        {
-            quests.Add(texts[key]);
-        }
-    }*/
-
+ 
     public static Dictionary<int, QuestText> GetTexts()
     {
         return texts;

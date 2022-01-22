@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuestSystem : MonoBehaviour
 {
@@ -9,11 +10,28 @@ public class QuestSystem : MonoBehaviour
     [SerializeField] private DialogueSystem dialogueSystem;
     private Quest mainQuest;
     private Quest sideQuest;
+    private bool mainSet = false;
+
+    private QuestFulfilled check;
     
     private void Start()
     {
         mainQuest = startQuest;
+        mainSet = true;
         Debug.Log("Quest System starting");
+        check = gameObject.GetComponent<QuestFulfilled>();
+        if (check == null)
+        {
+            check = gameObject.AddComponent<QuestFulfilled>();
+        }
+    }
+
+    private void Update()
+    {
+        if (mainSet && fulfilled(mainQuest.GetID()))
+        {
+            NextMain();
+        }
     }
 
     public void SetMain(Quest main)
@@ -45,6 +63,8 @@ public class QuestSystem : MonoBehaviour
             dialogueSystem.StartDialogue(mainQuest.getDialogueStart(), mainQuest.getDialogueStop());
             return;
         }
+
+        mainSet = false;
         mainQuest = null;
     }
     
@@ -59,5 +79,31 @@ public class QuestSystem : MonoBehaviour
         }
         sideQuest = null;
     }
+
+    public void ResetQuests()
+    {
+        mainQuest = startQuest;
+        dialogueSystem.StartDialogue(mainQuest.getDialogueStart(), mainQuest.getDialogueStop());
+    }
+
+    private bool fulfilled(int id)
+    {
+        switch (id)
+        {
+            case 1:
+                return check.CheckQuest1();
+            case 2:
+                return check.CheckQuest2();
+            case 3:
+                return check.CheckQuest3();
+            case 4:
+                return check.CheckQuest4();
+            case 5:
+                return check.CheckQuest5();
+        }
+
+        return false;
+    }
+
     
 }

@@ -703,12 +703,14 @@
           <e p="Minigames" t="Include">
             <e p="Minigame.cs" t="Include" />
             <e p="Rubble" t="Include">
+              <e p="HealthBar.cs" t="Include" />
               <e p="RubbleHealth.cs" t="Include" />
               <e p="RubbleMinigame.cs" t="Include" />
             </e>
           </e>
           <e p="Player.cs" t="Include" />
           <e p="Quest.cs" t="Include" />
+          <e p="QuestFulfilled.cs" t="Include" />
           <e p="QuestItem.cs" t="Include" />
           <e p="QuestSystem.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
@@ -717,9 +719,17 @@
             <e p="ARLighting.cs" t="Include" />
             <e p="ARZone.cs" t="Include" />
             <e p="CamPos.cs" t="Include" />
+            <e p="CustomVibrate.cs" t="Include" />
+            <e p="GPS" t="Include">
+              <e p="GPSARCoord.cs" t="Include" />
+              <e p="GPSPositioningCam.cs" t="Include" />
+              <e p="GPSPositioningObject.cs" t="Include" />
+            </e>
+            <e p="MoveForARSetup.cs" t="Include" />
             <e p="Schnitzelconstants.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
-            <e p="SnapToGround.cs" t="Include" />
+            <e p="VibrationTypes.cs" t="Include" />
+            <e p="Wayfinding.cs" t="Include" />
             <e p="WaypointHandler.cs" t="Include" />
           </e>
         </e>
