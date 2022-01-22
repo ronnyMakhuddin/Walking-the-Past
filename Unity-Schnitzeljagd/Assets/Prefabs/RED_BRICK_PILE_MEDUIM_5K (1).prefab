@@ -5263,7 +5263,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   special: 0
-  toSpawn: {fileID: 0}
+  toSpawn:
+  - {fileID: 7562623049608378836, guid: a86430f5fe4d3e047b36e355698e93e3, type: 3}
+  - {fileID: 1984959678799773072, guid: 5864fbc4b9146324eb1ff4913c9efc6d, type: 3}
   healthBar: {fileID: 4217106296381994847}
   colorBlinkDuration: 0.2
   destructionMat: {fileID: 0}

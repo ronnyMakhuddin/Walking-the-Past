@@ -7,7 +7,7 @@ public class RubbleHealth : MonoBehaviour
 {
     private int hp = 0;
     public bool special = false;
-    public GameObject toSpawn;
+    public List<GameObject> toSpawn;
     private Color feedbackCol = Color.grey;
     RubbleMinigame minigame;
     [SerializeField]
@@ -68,7 +68,9 @@ public class RubbleHealth : MonoBehaviour
     void HandleDestruction()
     {
         minigame.RemoveRubble(this);
-        Instantiate(toSpawn, gameObject.transform.parent);
+        int id = Random.Range(0, toSpawn.Count);
+        Quaternion rot = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 90);
+        Instantiate(toSpawn[id], transform.position, rot);
         Destroy(gameObject);
     }
 }

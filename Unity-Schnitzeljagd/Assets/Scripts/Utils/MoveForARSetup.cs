@@ -19,7 +19,7 @@ public class MoveForARSetup : MonoBehaviour
             }
         }else
         {
-            transform.position = !GameManager.Instance.useAbsolutePos ? new Vector3(relativePos.x, 0, relativePos.z) : new Vector3(absPos.x, 0, absPos.z);
+            transform.position = !GameManager.Instance.useAbsolutePos ? new Vector3(relativePos.x, -1.3f, relativePos.z) : new Vector3(absPos.x, 0, absPos.z);
         }
     }
 

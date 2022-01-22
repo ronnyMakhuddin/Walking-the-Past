@@ -5081,7 +5081,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   special: 0
-  toSpawn: {fileID: 0}
+  toSpawn: []
   healthBar: {fileID: 0}
   colorBlinkDuration: 0.2
   destructionMat: {fileID: 0}
@@ -5111,7 +5111,7 @@ PrefabInstance:
     - target: {fileID: 4826064511288938822, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
       propertyPath: toSpawn
       value: 
-      objectReference: {fileID: 919132149155446097, guid: 2897d9d0b8592584ba6aabce18ef664e, type: 3}
+      objectReference: {fileID: 114300, guid: cc07629db39c46d4ba8bd93ec2b09604, type: 3}
     - target: {fileID: 4877552119481218708, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -5130,7 +5130,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4877552119481218708, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.913
       objectReference: {fileID: 0}
     - target: {fileID: 4877552119481218708, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10122,63 +10122,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4877552119481218708, guid: a212cfdfd97972a4a9f6e305d634c874, type: 3}
   m_PrefabInstance: {fileID: 568320696}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &933020909
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 100000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_Name
-      value: Concrete pipe main prefab
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.787
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 75c6747acc5e1804eaad9a30a1887d64, type: 3}
 --- !u!1 &991329824
 GameObject:
   m_ObjectHideFlags: 0
@@ -15237,7 +15180,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   special: 0
-  toSpawn: {fileID: 0}
+  toSpawn: []
   healthBar: {fileID: 0}
   colorBlinkDuration: 0.2
   destructionMat: {fileID: 0}
@@ -20505,7 +20448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneOrigin: {fileID: 1629619086}
-  rubbleMaxHealth: 5
+  rubbleMaxHealth: 1
 --- !u!4 &1987382494
 Transform:
   m_ObjectHideFlags: 0
