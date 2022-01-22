@@ -10,11 +10,6 @@ public class ARZone : MonoBehaviour
     float timeSpentInZone = 0f;
     bool listening = true;
     private Vector3 playerPos;
-    // Start is called before the first frame update
-    void Start()
-    {
-        scene = GameManager.AR_SITE.MAXBURG;
-    }
 
     private void Awake()
     {
