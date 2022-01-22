@@ -160,6 +160,7 @@ public class GameManager : MonoBehaviour
     {
         arPossible = false;
         state = GAMESTATE.WORLD;
+        ToggleEnterARButton(false);
         sceneTransitionManager.GoToScene(Schnitzelconstants.WORLD_SCENE, null);
     }
 
