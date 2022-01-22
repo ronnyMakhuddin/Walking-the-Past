@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/AR.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/AR.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/OldTownHall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OldTownHall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Minigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Minigame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,10 +39,11 @@
       <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Minigames/Minigame.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22NJncHpYac7XvoDnmzVaqdAYyZ" />
@@ -113,7 +109,7 @@
       <workItem from="1642606462056" duration="374000" />
       <workItem from="1642770795361" duration="2006000" />
       <workItem from="1642780604329" duration="8302000" />
-      <workItem from="1642880730936" duration="2947000" />
+      <workItem from="1642880730936" duration="4788000" />
     </task>
     <servers />
   </component>

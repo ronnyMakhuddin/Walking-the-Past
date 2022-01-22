@@ -1,9 +1,12 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public abstract class Minigame : MonoBehaviour
 {
+    public Button buttonAR; 
     protected PHASE currentPhase;
     protected int numTasks = 1;
     protected int completedTasks = 0;
@@ -12,6 +15,11 @@ public abstract class Minigame : MonoBehaviour
         START,
         TASK,
         END
+    }
+
+    private void Start()
+    {
+        buttonAR.enabled = false;
     }
 
     // Update is called once per frame
@@ -46,7 +54,8 @@ public abstract class Minigame : MonoBehaviour
 
     protected void OnMinigameFinished()
     {
-        GameManager.Instance.ARCompleted();
+        buttonAR.enabled = true;
+        //GameManager.Instance.ARCompleted();
     }
 
 }
