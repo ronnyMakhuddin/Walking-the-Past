@@ -11,6 +11,7 @@ public static class VibrationTypes
 
     public static void OnSwipeVibrate(bool success)
     {
+        Success();
 
     }
 

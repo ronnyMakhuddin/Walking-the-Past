@@ -52,6 +52,7 @@ public class RubbleHealth : MonoBehaviour
     IEnumerator HitFeedback()
     {
         ParticleSystem ps = GetComponent<ParticleSystem>();
+        VibrationTypes.OnSwipeVibrate(true);
         ps.Play();
         foreach(Renderer childRenderer in GetComponentsInChildren<Renderer>())
         {
