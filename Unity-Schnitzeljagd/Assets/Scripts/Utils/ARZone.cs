@@ -31,7 +31,7 @@ public class ARZone : MonoBehaviour
 
             Vector3 relativeToPlayer = transform.position - playerPos;
 
-            Debug.Log(relativeToPlayer);
+            //Debug.Log(relativeToPlayer);
             GameManager.Instance.ConfigureAR(scene, relativeToPlayer);
             if (GameManager.Instance.useAbsolutePos)
             {

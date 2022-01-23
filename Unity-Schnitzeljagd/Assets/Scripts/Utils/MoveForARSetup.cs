@@ -25,6 +25,6 @@ public class MoveForARSetup : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(gameObject.name + ": " + transform.position);
+        //Debug.Log(gameObject.name + ": " + transform.position);
     }
 }

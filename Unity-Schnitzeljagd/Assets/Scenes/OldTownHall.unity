@@ -2441,6 +2441,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1960968001988463889, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
+      propertyPath: m_fontSize
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960968001988463889, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f5692be6e335544afc7e820a6557e0, type: 2}
+    - target: {fileID: 1960968001988463889, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 1960968001988463889, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2739927323918809692, guid: b9f5692be6e335544afc7e820a6557e0, type: 2}
     - target: {fileID: 1960968002348963004, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -2950,6 +2966,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3d0bc02bb1d4943ac6a7b6a1360f4f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonAR: {fileID: 0}
   sceneOrigin: {fileID: 223686393}
   rubbleMaxHealth: 3
 --- !u!4 &1261192699

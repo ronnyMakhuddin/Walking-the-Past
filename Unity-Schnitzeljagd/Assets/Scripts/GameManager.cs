@@ -167,6 +167,7 @@ public class GameManager : MonoBehaviour
     public void EnterAR()
     {
         sceneTransitionManager.GoToScene(arSceneName, null);
+        ToggleEnterARButton(false);
         state = GAMESTATE.AR;
     }
 

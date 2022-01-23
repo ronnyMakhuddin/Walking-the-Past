@@ -13,7 +13,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMapbox()
     {
-        GameManager.Instance.EnterMapbox();
+        GameManager.Instance.ARCompleted();//EnterMapbox();
         //SceneManager.LoadScene(Schnitzelconstants.WORLD_SCENE);
         Debug.Log("Loading Mapbox Scene...");
     }
