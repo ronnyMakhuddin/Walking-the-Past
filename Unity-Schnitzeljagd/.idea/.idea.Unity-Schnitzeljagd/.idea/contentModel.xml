@@ -692,6 +692,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="DialogueSystem.cs" t="Include" />
+          <e p="DontDestroy.cs" t="Include" />
           <e p="FileManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interactions" t="Include">

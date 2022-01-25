@@ -832,7 +832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &473935342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1192,7 +1192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &523554205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1210,7 +1210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 192}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &523554206
@@ -1256,7 +1256,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 40073619}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1946529694}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: LoadOldTownHall
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &523554207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2695,6 +2707,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
+--- !u!1 &1160574359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1960968003396480083, guid: 03279576d8da4cd4790657cf7363dce2, type: 3}
+  m_PrefabInstance: {fileID: 1160574358}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1163076553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3424,6 +3441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Scene Loader
       objectReference: {fileID: 0}
+    - target: {fileID: 5366083340085131470, guid: 2b49c3a4fd743f442bc7f25187ce8714, type: 3}
+      propertyPath: myUI
+      value: 
+      objectReference: {fileID: 1160574359}
     - target: {fileID: 6495767047011316265, guid: 2b49c3a4fd743f442bc7f25187ce8714, type: 3}
       propertyPath: m_RootOrder
       value: 13

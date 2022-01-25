@@ -28,91 +28,76 @@
         {
             "id": 10,
             "character": 0,
-            "text": "Welcome to 1950s Munich! I’m Karl Meitinger. It is a pleasure to see you here."
+            "text": "Hi! I’m Karl Meitinger! Welcome to Munich in 1955!"
         },
         {
             "id": 11,
             "character": 0,
-            "text": "As you might know, during the second world war, I already imagined how we could rebuild this city after the Nazis regime has ended. Ten years ago in 1945, I presented my vision to the city council and they were delighted! But as you can imagine, rebuilding a city the size and beauty of Munich is a lot of work."
+            "text": "As you might know, during the second world war I already imagined how we could rebuild this city after the Nazis regime has ended. Then, almost ten years ago, I presented my vision to the city council and they were delighted. They agreed to my plans right away!"
         },
         {
             "id": 12,
             "character": 0,
-            "text": "But luckily for us, my son Otto is an architect, too. You see, in 1953, he was asked to become a member of the governmental building council. Since then, he’s also been deeply involved in the plans for the city. Currently, he is very busy with the Old Town Hall that you are standing in front of right now. It is an old building, however, and due to the war much information and many pieces were scattered all over the city. Will you help him find some missing links?"
+            "text": "But as you can imagine, rebuilding a whole city is a lot of work. Right now we are, piece by piece, rebuilding the Old Town Hall. We already started working on it a little bit, to keep it from falling on peoples’ heads. It was truly a mess after the war, just look at those pictures:"
         },
         {
             "id": 13,
-            "character": 0,
-            "text": "Secretly I think, he’s already making plans for rebuilding the whole complex, but I consider that goal a bit too ambitious!"
+            "character": 1,
+            "text": "$picture"
         },
         {
             "id": 14,
-            "character": 1,
-            "text": "Hi! I'm Otto!"
+            "character": 2,
+            "text": "$picture"
         },
         {
             "id": 15,
-            "character": 1,
-            "text": "In 1951, the city council decided to rebuild the Old Town Hall part by part, thankfully. There were always discussions about breaking it down since we built the new one around 1874. But it dates back to 1315, you can’t just throw it away!"
-        },
-        {
-            "id": 16,
-            "character": 1,
-            "text": "However, it truly was quite a mess after the war, just look at those pictures!"
-        },
-        {
-            "id": 17,
-            "character": 1,
-            "text": "$Picture"
-        },
-        {
-            "id": 18,
-            "character": 1,
+            "character": 0,
             "text": "Just this year, we had the money to rebuild the gable facades, almost like they were in 1936."
         },
         {
-            "id": 19,
-            "character": 1,
-            "text": "$Picture"
+            "id": 16,
+            "character": 3,
+            "text": "$picture"
         },
         {
-            "id": 20,
-            "character": 1,
-            "text": "Magnificent. Unfortunately, we still did not find those spires that you can see on the top of the roof. But yesterday, I heard someone saw them on the Maxburghalde! That’s in front of the Old Maxburg, where we collected the rubble from destroyed buildings from the center. Will you come and help me find the spires?"
+            "id": 17,
+            "character": 0,
+            "text": "It was magnificent back then! Unfortunately, we did not find those spires that you can see on top of the roof yet. But just yesterday I heard that someone spotted them on the Maxburghalde! That’s in front of the Old Maxburg where we collect the rubble from destroyed buildings from the center. Will you come and help me find the spires?"
         },
         {
             "id": 21,
-            "character": 1,
+            "character": 0,
             "text": "Oh no, looks like we need to dig a bit! No use wasting time…"
         },
         {
             "id": 22,
-            "character": 1,
+            "character": 0,
             "text": "Hm. Looks like this building also paid a tribute to the war. But I think Sep Ruf and Theo Pabst already have plans on integrating the tower in a new building here."
         },
         {
             "id": 23,
-            "character": 1,
+            "character": 0,
             "text": "Let’s collect the spire and move on to our next task…"
         },
         {
             "id": 30,
-            "character": 1,
+            "character": 0,
             "text": "So, place the spire on the façade to see how it fits!"
         },
         {
             "id": 31,
-            "character": 1,
+            "character": 0,
             "text": "Looks quite good! We can repair this and make some more to replace the ones you didn’t find!"
         },
         {
             "id": 32,
-            "character": 1,
+            "character": 0,
             "text": "Our next task is to redecorate the big hall on the first level! If you walk underneath the Town Hall and look up, you can see right into it!"
         },
         {
             "id": 33,
-            "character": 1,
+            "character": 0,
             "text": "So, let's place the spire on the façade and see how it fits!"
         }
     ]
