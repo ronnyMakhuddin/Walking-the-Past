@@ -10,7 +10,7 @@ public class QuestSystem : MonoBehaviour
     [SerializeField] private DialogueSystem dialogueSystem;
     private static Quest mainQuest;
     private static Quest sideQuest;
-    public static bool mainSet;
+    public static bool mainSet = false;
 
     private QuestFulfilled check;
     
@@ -20,7 +20,6 @@ public class QuestSystem : MonoBehaviour
         {
             mainQuest = startQuest;
         }
-            
         mainSet = true;
         Debug.Log("Quest System starting");
         check = gameObject.GetComponent<QuestFulfilled>();

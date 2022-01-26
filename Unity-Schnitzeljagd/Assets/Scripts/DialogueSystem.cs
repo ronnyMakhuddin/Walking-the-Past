@@ -30,10 +30,7 @@ public class DialogueSystem : MonoBehaviour
         dialogueRunning = false;
         textfield.text = String.Empty;
         texts = MenuSystem.GetTexts();
-        if (!QuestSystem.mainSet)
-        {
-            StartDialogue(10,17);
-        }
+        StartDialogue(10,17);
         this.gameObject.SetActive(false);
     }
 
