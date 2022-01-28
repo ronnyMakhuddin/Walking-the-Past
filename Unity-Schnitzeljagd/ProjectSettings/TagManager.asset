@@ -12,6 +12,7 @@ TagManager:
   - ARSessionOrigin
   - Triggerzone
   - Path
+  - Spire
   layers:
   - Default
   - TransparentFX
