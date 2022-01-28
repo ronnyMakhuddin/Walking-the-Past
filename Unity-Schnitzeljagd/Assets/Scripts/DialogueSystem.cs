@@ -10,14 +10,18 @@ using Image = UnityEngine.UI.Image;
 public class DialogueSystem : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI textfield;
-    [SerializeField] private Image spritefield;
-    [SerializeField] private Sprite spriteKarl;
-    [SerializeField] private Sprite spriteOtto;
+
+    [SerializeField] private List<GameObject> pictures;
+    
+    [SerializeField] private GameObject pictureField;
+
     private Dictionary<int, QuestText> texts;
     
-    private int end = 20;
+    private int end = 17;
     private int index = 10;
     private bool dialogueRunning;
+    private bool pictureShown = false;
+    private GameObject currentPic;
     [SerializeField] private float writingSpeed = 0.05f;
 
     // Start is called before the first frame update
@@ -26,18 +30,24 @@ public class DialogueSystem : MonoBehaviour
         dialogueRunning = false;
         textfield.text = String.Empty;
         texts = MenuSystem.GetTexts();
-        if (!QuestSystem.mainSet)
-        {
-            StartDialogue(10,20);
-        }
+        StartDialogue(10,17);
         this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (dialogueRunning && (Input.touchCount > 0 || Input.GetMouseButtonDown(0)))
+        if (dialogueRunning && ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began ) || Input.GetMouseButtonDown(0)))
         {
+            if (pictureShown)
+            {
+                pictureShown = false;
+                pictureField.SetActive(false);
+                currentPic.SetActive(false);
+                NextParagraph();
+                return;
+            }
+            
             QuestText text = texts[index];
             if (text == null)
             {
@@ -75,26 +85,25 @@ public class DialogueSystem : MonoBehaviour
         
         string current = "";
         string text = texts[index].text;
-        int character = texts[index].character;
-
-        switch (character)
+        int picture = texts[index].character;
+        if (picture <= 0)
         {
-            case 0: spritefield.sprite = spriteKarl; break;
-            case 1: spritefield.sprite = spriteOtto; break;
-            default: Debug.Log("Could not find sprite."); break;
+            for (int i = 0; i < text.Length; ++i)
+            {
+                current = text.Substring(0, i+1);
+                textfield.text = current;
+                yield return new WaitForSeconds(writingSpeed);
+            }
         }
-        
-        for (int i = 0; i < text.Length; ++i)
+        else if (picture <= pictures.Count)
         {
-            current = text.Substring(0, i+1);
-            textfield.text = current;
-            yield return new WaitForSeconds(writingSpeed);
+            ShowPicture(picture);
         }
     }
 
     private void NextParagraph()
     {
-        if (index < end - 1)
+        if (index < end)
         {
             ++index;
             textfield.text = string.Empty;
@@ -104,6 +113,14 @@ public class DialogueSystem : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+    }
+
+    private void ShowPicture(int index)
+    {
+        pictureShown = true;
+        pictureField.SetActive(true);
+        currentPic = pictures[index - 1];
+        currentPic.SetActive(true);
     }
     
 }
