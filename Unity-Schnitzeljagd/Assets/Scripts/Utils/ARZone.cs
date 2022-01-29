@@ -29,14 +29,14 @@ public class ARZone : MonoBehaviour
         if (listening && timeSpentInZone >= secondsUntilTrigger)
         {
 
-            Vector3 relativeToPlayer = transform.position - playerPos;
+            Vector3 relativeToPlayer = transform.parent.position - playerPos;
 
             //Debug.Log(relativeToPlayer);
             GameManager.Instance.ConfigureAR(scene, relativeToPlayer);
             if (GameManager.Instance.useAbsolutePos)
             {
                 GameManager.Instance.playerPos = playerPos;
-                GameManager.Instance.arOriginPos = transform.position;
+                GameManager.Instance.arOriginPos = transform.parent.position;
             }
         }
     }
