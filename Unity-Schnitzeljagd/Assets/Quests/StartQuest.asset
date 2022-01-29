@@ -16,4 +16,5 @@ MonoBehaviour:
   character: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
   dialogueStart: 10
   dialogueEnd: 17
+  ar_site: 1
   nextQuest: {fileID: 11400000, guid: 2396bc51794baa3479b11eef0d3e5171, type: 2}

@@ -12,6 +12,8 @@ public class Quest : ScriptableObject
     [SerializeField] private int dialogueStart = 1;
     [SerializeField] private int dialogueEnd = 1;
 
+    public GameManager.AR_SITE ar_site;
+
     public Sprite GetCharacter()
     {
         return character;

@@ -30,7 +30,8 @@ public class GameManager : MonoBehaviour
     public enum AR_SITE
     {
         OLD_TOWNHALL,
-        MAXBURG
+        MAXBURG,
+        MUSEUM
     }
 
     GAMESTATE state;
