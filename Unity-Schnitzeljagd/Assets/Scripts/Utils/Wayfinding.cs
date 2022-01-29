@@ -8,7 +8,8 @@ public class Wayfinding : MonoBehaviour
     LineRenderer lineRenderer;
     List<Transform> activeCheckpoints;
     Transform player;
-    // Start is called before the first frame update
+
+    public float yOffset = 2f;
     void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
@@ -19,6 +20,7 @@ public class Wayfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        transform.position = new Vector3(transform.position.x, yOffset, transform.position.z); //To avoid z-fighting on the map
         ConfigureLines();
     }
 
