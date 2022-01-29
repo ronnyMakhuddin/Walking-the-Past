@@ -25,7 +25,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
     
-    public bool RemoveItem(QuestItem item)
+    public static bool RemoveItem(QuestItem item)
     {
         for (int i = 0; i < items.Length; ++i)
         {

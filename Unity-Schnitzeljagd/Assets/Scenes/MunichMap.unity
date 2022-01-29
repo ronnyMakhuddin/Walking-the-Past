@@ -3561,6 +3561,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadMapbox
       objectReference: {fileID: 0}
+    - target: {fileID: 7184874192853924222, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
 --- !u!21 &2141211352

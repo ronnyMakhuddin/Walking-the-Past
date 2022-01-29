@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class QuestItem : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
+    [SerializeField] private GameObject trigger;
     private MenuSystem menuSystem;
     private float maxDistanceOnSelection = 100f;
     private Vector2 touchposition;
@@ -119,7 +120,7 @@ public class QuestItem : MonoBehaviour
                     LayerMask mask = LayerMask.GetMask("TriggerZone");
                     if (Physics.Raycast(ray, out hitObject, maxDistanceOnSelection, mask)) // 
                     {
-                        if (hitObject.collider.isTrigger)
+                        if (hitObject.collider.isTrigger && hitObject.Equals(trigger))
                         {
                             Debug.Log("trigger");
                             TriggerZoneEntered();
@@ -137,6 +138,7 @@ public class QuestItem : MonoBehaviour
         //Handheld.Vibrate();
         VibrationTypes.OnTapVibrate(true);
         StartCoroutine(Freeze());
+        Inventory.RemoveItem(this);
         this.gameObject.SetActive(false);
     }
 
