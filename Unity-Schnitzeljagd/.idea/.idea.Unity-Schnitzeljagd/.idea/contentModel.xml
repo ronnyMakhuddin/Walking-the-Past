@@ -710,7 +710,6 @@
               <e p="RubbleMinigame.cs" t="Include" />
             </e>
           </e>
-          <e p="Place.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Quest.cs" t="Include" />
           <e p="QuestFulfilled.cs" t="Include" />
@@ -718,6 +717,7 @@
           <e p="QuestSystem.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SceneTransitionManager.cs" t="Include" />
+          <e p="Spire.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="ARLighting.cs" t="Include" />
             <e p="ARZone.cs" t="Include" />

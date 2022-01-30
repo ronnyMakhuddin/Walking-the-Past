@@ -55,14 +55,12 @@ public class QuestItem : MonoBehaviour
                 
                 if (hit.collider != null)
                 {
-                    Debug.Log("Hit something!");
-                    //hit.collider.gameObject.CompareTag("Item")
-                    if (hit.collider.gameObject == this.gameObject && !collected)
+                    if (hit.collider.gameObject == gameObject && !collected)
                     {
                         Debug.Log("Hit uncollected item!");
-                         bool added = Inventory.AddItem(this);
+                         Inventory.AddItem(this);
                          collected = true;
-                         this.gameObject.SetActive(false);
+                         gameObject.SetActive(false);
                     }
                 }
             }
@@ -82,7 +80,6 @@ public class QuestItem : MonoBehaviour
                         {
                             if (hitObject.collider.gameObject == this.gameObject)
                             {
-                                Debug.Log("Object detected!");
                                 moving = true;
                             }
                         }
@@ -96,7 +93,6 @@ public class QuestItem : MonoBehaviour
                     case TouchPhase.Ended:
                         if (moving)
                         {
-                            Debug.Log("Item back into inventory");
                             moving = false;
                             // back into inventory
                             selected = false;
@@ -126,6 +122,7 @@ public class QuestItem : MonoBehaviour
                             
                             foreach (Transform child in hitObject.transform)
                                 child.gameObject.SetActive(true);
+                            CheckSpire();
                         }
                     }
                 }
@@ -167,6 +164,14 @@ public class QuestItem : MonoBehaviour
     public void Select(bool select)
     {
         selected = select;
+    }
+
+    private void CheckSpire()
+    {
+        if (gameObject.CompareTag("Spire"))
+        {
+            QuestFulfilled.spirePlaced = true;
+        }
     }
 
 }

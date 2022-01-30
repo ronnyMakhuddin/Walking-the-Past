@@ -11,17 +11,15 @@ public class QuestSystem : MonoBehaviour
     private static Quest mainQuest;
     private static Quest sideQuest;
     public static bool mainSet = false;
+    
 
     private QuestFulfilled check;
     
     private void Start()
     {
-        if (!mainSet)
-        {
-            mainQuest = startQuest;
-        }
+
+        mainQuest = startQuest;
         mainSet = true;
-        Debug.Log("Quest System starting");
         check = gameObject.GetComponent<QuestFulfilled>();
         if (check == null)
         {
