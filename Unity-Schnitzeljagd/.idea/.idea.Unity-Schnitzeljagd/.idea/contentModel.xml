@@ -710,6 +710,7 @@
               <e p="RubbleMinigame.cs" t="Include" />
             </e>
           </e>
+          <e p="Place.cs" t="Include" />
           <e p="Player.cs" t="Include" />
           <e p="Quest.cs" t="Include" />
           <e p="QuestFulfilled.cs" t="Include" />
@@ -737,11 +738,6 @@
         </e>
         <e p="ShaderGraph" t="Include">
           <e p="URP AR Shadow Receiver.shader" t="Include" />
-        </e>
-        <e p="StreamingAssets" t="Include">
-          <e p="HiddenARCore" t="Include">
-            <e p="aecd1f55-910e-4504-8d2a-de62cbf4b318.imgdb-imglist.txt" t="Include" />
-          </e>
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 474686299406935524}
   m_Layer: 8
   m_Name: TriggerZone
-  m_TagString: Triggerzone
+  m_TagString: Spire
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

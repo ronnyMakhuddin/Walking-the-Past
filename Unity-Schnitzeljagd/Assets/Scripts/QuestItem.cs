@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class QuestItem : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
-    [SerializeField] private GameObject trigger;
+    [SerializeField] private string triggerTag;
     private MenuSystem menuSystem;
     private float maxDistanceOnSelection = 100f;
     private Vector2 touchposition;
@@ -120,10 +120,12 @@ public class QuestItem : MonoBehaviour
                     LayerMask mask = LayerMask.GetMask("TriggerZone");
                     if (Physics.Raycast(ray, out hitObject, maxDistanceOnSelection, mask)) // 
                     {
-                        if (hitObject.collider.isTrigger && hitObject.Equals(trigger))
+                        if (hitObject.collider.isTrigger && hitObject.collider.gameObject.CompareTag(triggerTag))
                         {
-                            Debug.Log("trigger");
                             TriggerZoneEntered();
+                            
+                            foreach (Transform child in hitObject.transform)
+                                child.gameObject.SetActive(true);
                         }
                     }
                 }
