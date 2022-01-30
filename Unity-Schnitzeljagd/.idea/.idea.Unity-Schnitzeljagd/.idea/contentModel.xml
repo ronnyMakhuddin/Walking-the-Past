@@ -705,6 +705,7 @@
             <e p="Minigame.cs" t="Include" />
             <e p="Rubble" t="Include">
               <e p="HealthBar.cs" t="Include" />
+              <e p="MaxburgDestruction.cs" t="Include" />
               <e p="RubbleHealth.cs" t="Include" />
               <e p="RubbleMinigame.cs" t="Include" />
             </e>
@@ -716,6 +717,7 @@
           <e p="QuestSystem.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SceneTransitionManager.cs" t="Include" />
+          <e p="Spire.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="ARLighting.cs" t="Include" />
             <e p="ARZone.cs" t="Include" />

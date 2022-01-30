@@ -160,9 +160,9 @@ public class MenuSystem : MonoBehaviour
         Debug.Log(Inventory.items[i]);
         Debug.Log(Inventory.items[i].gameObject);
         //Inventory.items[i].gameObject.transform.position = Camera.main.transform.forward * 1f;
-        Inventory.items[i].gameObject.transform.position = Vector3.zero + Camera.main.transform.forward * 1f
-                                                            + Camera.main.transform.up * 1f;// 
-        Inventory.items[i].transform.localScale = Vector3.one * 0.1f;
+        Inventory.items[i].gameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.3f
+                                                                       ;// 
+        Inventory.items[i].transform.localScale = Vector3.one * 0.01f;
         Inventory.items[i].gameObject.SetActive(true);
         itemSlots[i].GetComponent<Image>().sprite = null;
         Inventory.items[i].Select(true);

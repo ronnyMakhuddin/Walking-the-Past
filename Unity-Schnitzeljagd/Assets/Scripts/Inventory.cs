@@ -11,7 +11,11 @@ public class Inventory : MonoBehaviour
 
     public static bool AddItem(QuestItem item)
     {
-        Debug.Log("Adding Item: " + item);
+        if (item.gameObject.CompareTag("Spire"))
+        {
+            QuestFulfilled.spireCollected = true;
+        }
+        
         for (int i = 0; i < items.Length; ++i)
         {
             if (!filled[i])
@@ -25,7 +29,7 @@ public class Inventory : MonoBehaviour
         return false;
     }
     
-    public bool RemoveItem(QuestItem item)
+    public static bool RemoveItem(QuestItem item)
     {
         for (int i = 0; i < items.Length; ++i)
         {

@@ -24,14 +24,17 @@ public class DialogueSystem : MonoBehaviour
     private GameObject currentPic;
     [SerializeField] private float writingSpeed = 0.05f;
 
+    private void OnEnable()
+    {
+        texts = MenuSystem.GetTexts();
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         dialogueRunning = false;
         textfield.text = String.Empty;
-        texts = MenuSystem.GetTexts();
         StartDialogue(10,17);
-        this.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -68,7 +71,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(int start, int stop)
     {
-        this.gameObject.SetActive(true);
+        gameObject.SetActive(true);
         dialogueRunning = true;
         index = start;
         end = stop;

@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class QuestItem : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
+    [SerializeField] private string triggerTag;
     private MenuSystem menuSystem;
     private float maxDistanceOnSelection = 100f;
     private Vector2 touchposition;
@@ -54,14 +55,12 @@ public class QuestItem : MonoBehaviour
                 
                 if (hit.collider != null)
                 {
-                    Debug.Log("Hit something!");
-                    //hit.collider.gameObject.CompareTag("Item")
-                    if (hit.collider.gameObject == this.gameObject && !collected)
+                    if (hit.collider.gameObject == gameObject && !collected)
                     {
                         Debug.Log("Hit uncollected item!");
-                         bool added = Inventory.AddItem(this);
+                         Inventory.AddItem(this);
                          collected = true;
-                         this.gameObject.SetActive(false);
+                         gameObject.SetActive(false);
                     }
                 }
             }
@@ -81,7 +80,6 @@ public class QuestItem : MonoBehaviour
                         {
                             if (hitObject.collider.gameObject == this.gameObject)
                             {
-                                Debug.Log("Object detected!");
                                 moving = true;
                             }
                         }
@@ -95,7 +93,6 @@ public class QuestItem : MonoBehaviour
                     case TouchPhase.Ended:
                         if (moving)
                         {
-                            Debug.Log("Item back into inventory");
                             moving = false;
                             // back into inventory
                             selected = false;
@@ -119,10 +116,13 @@ public class QuestItem : MonoBehaviour
                     LayerMask mask = LayerMask.GetMask("TriggerZone");
                     if (Physics.Raycast(ray, out hitObject, maxDistanceOnSelection, mask)) // 
                     {
-                        if (hitObject.collider.isTrigger)
+                        if (hitObject.collider.isTrigger && hitObject.collider.gameObject.CompareTag(triggerTag))
                         {
-                            Debug.Log("trigger");
                             TriggerZoneEntered();
+                            
+                            foreach (Transform child in hitObject.transform)
+                                child.gameObject.SetActive(true);
+                            CheckSpire();
                         }
                     }
                 }
@@ -137,6 +137,7 @@ public class QuestItem : MonoBehaviour
         //Handheld.Vibrate();
         VibrationTypes.OnTapVibrate(true);
         StartCoroutine(Freeze());
+        Inventory.RemoveItem(this);
         this.gameObject.SetActive(false);
     }
 
@@ -163,6 +164,14 @@ public class QuestItem : MonoBehaviour
     public void Select(bool select)
     {
         selected = select;
+    }
+
+    private void CheckSpire()
+    {
+        if (gameObject.CompareTag("Spire"))
+        {
+            QuestFulfilled.spirePlaced = true;
+        }
     }
 
 }
