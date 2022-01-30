@@ -6,7 +6,7 @@ using UnityEngine.XR.ARSubsystems;
 
 public class MoveForARSetup : MonoBehaviour
 {
-    /*
+    
     void Awake()
     {
         bool isCam = gameObject.tag.Equals("ARSessionOrigin");
@@ -17,6 +17,7 @@ public class MoveForARSetup : MonoBehaviour
             if (GameManager.Instance.useAbsolutePos)
             {
                 transform.position = new Vector3(absPos.x, 1.3f, absPos.z);
+                transform.rotation = GameManager.Instance.playerOrientation;
             }
         }else
         {
@@ -28,5 +29,5 @@ public class MoveForARSetup : MonoBehaviour
     {
         //Debug.Log(gameObject.name + ": " + transform.position);
     }
-    */
+    
 }

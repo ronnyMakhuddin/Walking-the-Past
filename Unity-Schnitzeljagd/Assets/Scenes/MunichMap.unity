@@ -2284,6 +2284,7 @@ MonoBehaviour:
   map: {fileID: 0}
   arPossible: 0
   arOriginRelativeToPlayer: {x: 0, y: 0, z: 0}
+  playerOrientation: {x: 0, y: 0, z: 0, w: 0}
   playerPos: {x: 0, y: 0, z: 0}
   arOriginPos: {x: 0, y: 0, z: 0}
 --- !u!4 &950570227
@@ -3465,6 +3466,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 7184874191736862297, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -43.999756
+      objectReference: {fileID: 0}
     - target: {fileID: 7184874191787491731, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_Name
       value: UI
@@ -4761,7 +4766,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 4676184484911782183, guid: ba4f1164fb5d4644fb55174d698a2cc1, type: 3}
+          prefab: {fileID: 4785024434236231361, guid: b40568d0e0add4b45907cd7348f5c41a, type: 3}
           scaleDownWithWorld: 1
         findByType: 2
         categories: -1

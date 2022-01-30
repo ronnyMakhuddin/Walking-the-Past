@@ -10,6 +10,7 @@ public class ARZone : MonoBehaviour
     float timeSpentInZone = 0f;
     bool listening = true;
     private Vector3 playerPos;
+    private Quaternion playerOrientation;
 
     private void Awake()
     {
@@ -36,6 +37,7 @@ public class ARZone : MonoBehaviour
             if (GameManager.Instance.useAbsolutePos)
             {
                 GameManager.Instance.playerPos = playerPos;
+                GameManager.Instance.playerOrientation = playerOrientation;
                 GameManager.Instance.arOriginPos = transform.parent.position;
             }
         }
@@ -46,6 +48,7 @@ public class ARZone : MonoBehaviour
         if (other.tag == "Player")
         {
             playerPos = other.transform.position;
+            playerOrientation = other.transform.rotation;
             timeSpentInZone += Time.deltaTime;
         }
     }

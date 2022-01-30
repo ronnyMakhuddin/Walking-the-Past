@@ -44,6 +44,7 @@ public class GameManager : MonoBehaviour
     public bool arPossible = false;
 
     public Vector3 arOriginRelativeToPlayer;
+    public Quaternion playerOrientation;
     public Vector3 playerPos = Vector3.zero;
     public Vector3 arOriginPos = Vector3.zero;
     SceneTransitionManager sceneTransitionManager;
