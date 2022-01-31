@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public AR_SITE currCheckpoint;
 
     //TODO set this flag by Quests!
-    private Wayfinding.ROUTES currRoute = Wayfinding.ROUTES.MAXBURG_MUSEUM;
+    private Wayfinding.ROUTES currRoute = Wayfinding.ROUTES.NONE;
 
     Button EnterARButton;
     string arSceneName = "";
@@ -136,7 +136,15 @@ public class GameManager : MonoBehaviour
     public void ARCompleted()
     {
         completedCheckpoints.Add(currCheckpoint);
-        EnterMapbox();
+        switch (currCheckpoint)
+        {
+            case AR_SITE.OLD_TOWNHALL: currRoute = Wayfinding.ROUTES.TOWNHALL_MAXBURG; break;
+            case AR_SITE.MAXBURG: currRoute = Wayfinding.ROUTES.MAXBURG_MUSEUM; break;
+            case AR_SITE.MUSEUM: currRoute = Wayfinding.ROUTES.MUSEUM_TOWNHALL; break;
+            default: currRoute = Wayfinding.ROUTES.NONE; break; 
+        }
+        ToggleEnterARButton(false);
+        //EnterMapbox();
     }
 
     public void ConfigureAR(AR_SITE site, Vector3 POI2PlayerPos)
@@ -156,6 +164,7 @@ public class GameManager : MonoBehaviour
         {
             case AR_SITE.MAXBURG: arSceneName = Schnitzelconstants.MAXBURG_SCENE; break;
             case AR_SITE.OLD_TOWNHALL: arSceneName = Schnitzelconstants.OLD_TOWNHALL_SCENE; break;
+            case AR_SITE.MUSEUM: arSceneName = Schnitzelconstants.MUSEUM; break;
             default: break;
         }
     }

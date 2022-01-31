@@ -13,6 +13,7 @@ public class RubbleMinigame : Minigame
 
     void Awake()
     {
+        numTasks = 2;
         destruction = FindObjectOfType<MaxburgDestruction>();
         GetAllRubbleInScene();
 
@@ -27,6 +28,8 @@ public class RubbleMinigame : Minigame
             {
                 //All rubble destroyed, trigger second phase
                 phase = 2;
+
+
             }
             if (rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
             {
@@ -68,4 +71,6 @@ public class RubbleMinigame : Minigame
             rubblePiles.Remove(toRemove);
         }
     }
+
+    
 }

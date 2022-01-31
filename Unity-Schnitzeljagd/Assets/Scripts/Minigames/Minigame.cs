@@ -17,10 +17,6 @@ public abstract class Minigame : MonoBehaviour
         END
     }
 
-    private void Start()
-    {
-        buttonAR.enabled = false;
-    }
 
     // Update is called once per frame
     void Update()
@@ -54,8 +50,8 @@ public abstract class Minigame : MonoBehaviour
 
     protected void OnMinigameFinished()
     {
-        buttonAR.enabled = true;
-        //GameManager.Instance.ARCompleted();
+        //buttonAR.enabled = true;
+        GameManager.Instance.ARCompleted();
     }
 
 }
