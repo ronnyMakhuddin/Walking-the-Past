@@ -91,6 +91,8 @@ public class GameManager : MonoBehaviour
             Destroy(gameObject);
         }
         DontDestroyOnLoad(gameObject);
+        
+        DontDestroyOnLoad(GameObject.Find("UI").gameObject);
     }
 
     public bool IsRunning()
