@@ -28,7 +28,7 @@
         {
             "id": 10,
             "character": 0,
-            "text": "Hi! I’m Karl Meitinger! Welcome to Munich in 1955!"
+            "text": "Greetings, I’m Karl Meitinger! Welcome to Munich in 1955!"
         },
         {
             "id": 11,
@@ -38,7 +38,7 @@
         {
             "id": 12,
             "character": 0,
-            "text": "But as you can imagine, rebuilding a whole city is a lot of work. Right now we are, piece by piece, rebuilding the Old Town Hall. We already started working on it a little bit, to keep it from falling on peoples’ heads. It was truly a mess after the war, just look at those pictures:"
+            "text": "But as you can imagine, rebuilding an entire city is a lot of work. Right now we are rebuilding the Old Town Hall piece by piece. We already started working on it a little bit, to keep it from falling on peoples’ heads. It was truly a mess after the war, just look at those pictures:"
         },
         {
             "id": 13,
@@ -53,7 +53,7 @@
         {
             "id": 15,
             "character": 0,
-            "text": "Just this year, we had the money to rebuild the gable facades, almost like they were in 1936."
+            "text": "Just this year, we had the money to rebuild the gable facades almost like they were in 1936."
         },
         {
             "id": 16,
@@ -98,7 +98,7 @@
         {
             "id": 33,
             "character": 0,
-            "text": "So, let's place the spire on the façade and see how it fits!"
+            "text": "Right, let's place the spire on the façade and see how it fits!"
         }
     ]
 }
