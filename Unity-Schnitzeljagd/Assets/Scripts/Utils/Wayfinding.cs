@@ -9,12 +9,25 @@ public class Wayfinding : MonoBehaviour
     List<Transform> activeCheckpoints;
     Transform player;
 
+    public Wayfinding.ROUTES ROUTE;
+
     public float yOffset = 2f;
     void Awake()
     {
-        lineRenderer = GetComponent<LineRenderer>();
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        ConfigureLines();
+        Wayfinding.ROUTES currRoute = GameManager.Instance.GetCurrentRoute();
+        Debug.Log(currRoute);
+        if (currRoute != ROUTE || currRoute == ROUTES.NONE)
+        {
+            Debug.Log("Disable: " + gameObject.name);
+            gameObject.SetActive(false);
+        }
+        else
+        {
+
+            lineRenderer = GetComponent<LineRenderer>();
+            player = GameObject.FindGameObjectWithTag("Player").transform;
+            ConfigureLines();
+        }
     }
 
     // Update is called once per frame
@@ -43,6 +56,14 @@ public class Wayfinding : MonoBehaviour
         {
             lineRenderer.SetPosition(c, activeCheckpoints[c].position);
         }
+    }
+
+    public enum ROUTES
+    {
+        TOWNHALL_MAXBURG,
+        MAXBURG_MUSEUM,
+        MUSEUM_TOWNHALL,
+        NONE
     }
 
 

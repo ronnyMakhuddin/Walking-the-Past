@@ -6,11 +6,14 @@ public class RubbleMinigame : Minigame
 {
     public Transform sceneOrigin;
     List<RubbleHealth> rubblePiles;
+    MaxburgDestruction destruction;
     public int rubbleMaxHealth = 3;
     int phase = 1;
+    float initialNumPiles = 0;
 
     void Awake()
     {
+        destruction = FindObjectOfType<MaxburgDestruction>();
         GetAllRubbleInScene();
 
     }
@@ -18,11 +21,31 @@ public class RubbleMinigame : Minigame
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (rubblePiles.Count == 0)
+        if (phase == 1)
         {
-            //All rubble destroyed, trigger second phase
-            base.OnMinigameFinished();
+            if (rubblePiles.Count == 0)
+            {
+                //All rubble destroyed, trigger second phase
+                phase = 2;
+            }
+            if (rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
+            {
+                destruction.ProgressState();
+                VibrationTypes.OnMaxburgCracksVibrate();
+            }
         }
+        else
+        {
+            //Final State, swaps building models + triggers particle systems
+            destruction.ProgressState();
+            //Start pole placement task
+
+        }
+    }
+
+    void WrapupSwipePiles()
+    {
+
     }
 
     void GetAllRubbleInScene()
@@ -34,6 +57,7 @@ public class RubbleMinigame : Minigame
             RubbleHealth rh = child.GetComponent<RubbleHealth>();
             if (rh != null) rubblePiles.Add(rh);
         }
+        initialNumPiles = rubblePiles.Count;
     }
 
 

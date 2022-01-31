@@ -18,7 +18,12 @@ public class GameManager : MonoBehaviour
     }
 
     List<AR_SITE> completedCheckpoints;
+    
     public AR_SITE currCheckpoint;
+
+    //TODO set this flag by Quests!
+    private Wayfinding.ROUTES currRoute = Wayfinding.ROUTES.MAXBURG_MUSEUM;
+
     Button EnterARButton;
     string arSceneName = "";
     public bool useAbsolutePos = true;
@@ -101,6 +106,11 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         completedCheckpoints = new List<AR_SITE>();
+    }
+
+    public Wayfinding.ROUTES GetCurrentRoute()
+    {
+        return currRoute;
     }
 
 

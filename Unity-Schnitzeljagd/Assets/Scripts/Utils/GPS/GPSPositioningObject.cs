@@ -29,12 +29,17 @@ public class GPSPositioningObject : MonoBehaviour
     private void Awake()
     {
         timeFromSpawn = 0;
+        positions = new List<Vector3>();
         transform.position = AdjustPosition();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        AdjustPosition();
+        debug.text = "" + (transform.position - GPSPositioningCam.Instance.gameObject.transform.position);
+
+        /*
         if (positionUpdates)
         {
             if (timeFromSpawn < adjustTime)
@@ -56,7 +61,7 @@ public class GPSPositioningObject : MonoBehaviour
 
             }
         }
-
+        */
     }
 
     public Vector3 AdjustPosition()

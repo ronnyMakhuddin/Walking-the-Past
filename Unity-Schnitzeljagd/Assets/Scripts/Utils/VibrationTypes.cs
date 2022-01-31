@@ -15,6 +15,11 @@ public static class VibrationTypes
 
     }
 
+    public static void OnMaxburgCracksVibrate()
+    {
+        RepeatingTicks();
+    }
+
     public static void OnDestructionVibrate()
     {
 
@@ -28,6 +33,12 @@ public static class VibrationTypes
     private static void Failure()
     {
         long[] pattern = { 100, 100 };
+        CustomVibrate.VibratePattern(pattern);
+    }
+
+    private static void RepeatingTicks()
+    {
+        long[] pattern = { 1000, 500, 250, 100, 50 };
         CustomVibrate.VibratePattern(pattern);
     }
 }

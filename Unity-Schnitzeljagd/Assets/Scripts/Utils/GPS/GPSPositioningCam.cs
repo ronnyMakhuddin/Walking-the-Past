@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Android;
 using UnityEngine.XR.ARFoundation;
+using Mapbox.Unity.Location;
 
 public class GPSPositioningCam : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class GPSPositioningCam : MonoBehaviour
 
     public static GPSPositioningCam Instance { set; get; }
     private GameObject cameraContainer;
+
+    ILocationProvider _defaultLocationProvider;
+    DeviceLocationProviderAndroidNative nativeLocationProvider;
 
     Gyroscope gyroscope;
     Quaternion rotation;
@@ -33,6 +37,8 @@ public class GPSPositioningCam : MonoBehaviour
             transform.position = new Vector3(0, bodyHeight, 0);
 
             StartCoroutine(StartLocationService());
+
+            DefaultLocationProvider = nativeLocationProvider; 
 
 
             // enable gyro
@@ -60,6 +66,7 @@ public class GPSPositioningCam : MonoBehaviour
         {
             if (GPS)
             {
+                //Location currentLocation = DefaultLocationProvider.CurrentLocation;
                 latitude_cam = Input.location.lastData.latitude;
                 longitude_cam = Input.location.lastData.longitude;
 
@@ -87,6 +94,21 @@ public class GPSPositioningCam : MonoBehaviour
     {
         return altitude;
     }
+
+    public ILocationProvider DefaultLocationProvider
+    {
+        get
+        {
+            return _defaultLocationProvider;
+        }
+        set
+        {
+            _defaultLocationProvider = value;
+        }
+    }
+
+
+
 
     private IEnumerator StartLocationService()
     {
