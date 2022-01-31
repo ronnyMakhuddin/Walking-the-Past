@@ -692,7 +692,6 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="DialogueSystem.cs" t="Include" />
-          <e p="DontDestroy.cs" t="Include" />
           <e p="FileManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
           <e p="Interactions" t="Include">
@@ -717,7 +716,7 @@
           <e p="QuestSystem.cs" t="Include" />
           <e p="SceneLoader.cs" t="Include" />
           <e p="SceneTransitionManager.cs" t="Include" />
-          <e p="Spire.cs" t="Include" />
+          <e p="UIInstance.cs" t="Include" />
           <e p="Utils" t="Include">
             <e p="ARLighting.cs" t="Include" />
             <e p="ARZone.cs" t="Include" />

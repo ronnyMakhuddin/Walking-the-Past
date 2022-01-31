@@ -14,6 +14,7 @@ public class SceneLoader : MonoBehaviour
         {
             myUI = GameObject.Find("UI").gameObject;
         }
+        DontDestroyOnLoad(this);
     }
 
     public void LoadAR()
@@ -24,7 +25,7 @@ public class SceneLoader : MonoBehaviour
 
     public void LoadMapbox()
     {
-        DontDestroyOnLoad(myUI);
+        //DontDestroyOnLoad(myUI);
         GameManager.Instance.ARCompleted();//EnterMapbox();
         //SceneManager.LoadScene(Schnitzelconstants.WORLD_SCENE);
         Debug.Log("Loading Mapbox Scene...");
