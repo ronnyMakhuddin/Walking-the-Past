@@ -12,6 +12,7 @@ TagManager:
   - ARSessionOrigin
   - Path
   - Spire
+  - Morisk
   layers:
   - Default
   - TransparentFX

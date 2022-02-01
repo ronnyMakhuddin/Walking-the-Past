@@ -4314,6 +4314,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 253425084163605189, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
+      propertyPath: m_TagString
+      value: Morisk
+      objectReference: {fileID: 0}
+    - target: {fileID: 2838568862396168145, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
+      propertyPath: m_TagString
+      value: Morisk
+      objectReference: {fileID: 0}
+    - target: {fileID: 3223182643729888376, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
+      propertyPath: m_TagString
+      value: Morisk
+      objectReference: {fileID: 0}
+    - target: {fileID: 4889953078844563993, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
+      propertyPath: m_TagString
+      value: Morisk
+      objectReference: {fileID: 0}
     - target: {fileID: 5017487666216863832, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -4365,6 +4381,14 @@ PrefabInstance:
     - target: {fileID: 5651166878461122111, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6314793083753704438, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
+      propertyPath: m_TagString
+      value: Morisk
+      objectReference: {fileID: 0}
+    - target: {fileID: 6513100526313455932, guid: d6d6dec0770e066488f4026678e461f6, type: 3}
+      propertyPath: m_TagString
+      value: Morisk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6d6dec0770e066488f4026678e461f6, type: 3}

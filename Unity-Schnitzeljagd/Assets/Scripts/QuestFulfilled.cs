@@ -14,7 +14,7 @@ public class QuestFulfilled : MonoBehaviour
     public static int polesCollected = 0;
     public static int polesPlaced = 0;
 
-    public int maxDancers = 10;
+    public int maxDancers = 6;
     public static int dancersCollected = 0;
 
     public bool CheckQuest0()
