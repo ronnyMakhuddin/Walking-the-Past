@@ -5,8 +5,19 @@ using UnityEngine;
 public class MaxburgDestruction : MonoBehaviour
 {
     [Header("Maxburg Versions")]
-    public GameObject maxburg_shattered;
-    public GameObject maxburg_remain;
+    [SerializeField]
+    GameObject maxburg_missing;
+    [SerializeField]
+    GameObject maxburg_remain;
+    [SerializeField]
+    [Header("Destruction Settings")]
+    GameObject rubbleReplacement;
+    [SerializeField]
+    ParticleSystem smoke;    
+    [SerializeField]
+    ParticleSystem dust;
+    [SerializeField]
+    float crackedLifetime = 1f;
 
     [Header("Cracked Versions")]
     public List<GameObject> maxburg_visual_states;
@@ -52,15 +63,17 @@ public class MaxburgDestruction : MonoBehaviour
             {
                 allStagesDone = true;
                 Destroy(currentVersion);
-                Instantiate(maxburg_shattered, Vector3.zero, Quaternion.identity);
+                Instantiate(maxburg_missing, Vector3.zero, Quaternion.identity);
                 Instantiate(maxburg_remain, Vector3.zero, Quaternion.identity);
+                StartCoroutine(DestroyBrokenMaxburg());
+
             }
         }
         
         /*
         if(currentStage > materials_stages.Count)
         {
-            Instantiate(maxburg_shattered, maxburg_whole.transform);
+            Instantiate(maxburg_missing, maxburg_whole.transform);
             Instantiate(maxburg_remain, maxburg_whole.transform);
             Destroy(maxburg_whole);
         }
@@ -71,7 +84,18 @@ public class MaxburgDestruction : MonoBehaviour
         }
         */
     }
+
+    IEnumerator DestroyBrokenMaxburg()
+    {
+        smoke.Play();
+        yield return new WaitForSeconds(crackedLifetime);
+        Destroy(maxburg_missing);
+        rubbleReplacement.SetActive(true);
+        dust.Play();
+
+    }
 }
+
 
 
 /*
