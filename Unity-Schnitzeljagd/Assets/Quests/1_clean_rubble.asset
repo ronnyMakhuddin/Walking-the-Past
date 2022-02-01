@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3a5449da20f4d4e4d82266762db55f4c, type: 3}
-  m_Name: 2_clean_rubble
+  m_Name: 1_clean_rubble
   m_EditorClassIdentifier: 
   questID: 1
   character: {fileID: 0}
-  dialogueStart: 1
-  dialogueEnd: 1
-  ar_site: 0
-  nextQuest: {fileID: 0}
+  dialogueStart: 40
+  dialogueEnd: 40
+  ar_site: 1
+  nextQuest: {fileID: 11400000, guid: 56e64b8c939a92e4d9ee05e35e9ab458, type: 2}

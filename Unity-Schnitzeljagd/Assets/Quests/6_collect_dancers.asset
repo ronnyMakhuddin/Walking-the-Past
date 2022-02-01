@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5449da20f4d4e4d82266762db55f4c, type: 3}
   m_Name: 6_collect_dancers
   m_EditorClassIdentifier: 
-  questID: 1
+  questID: 6
   character: {fileID: 0}
-  dialogueStart: 1
-  dialogueEnd: 1
-  ar_site: 0
-  nextQuest: {fileID: 0}
+  dialogueStart: 60
+  dialogueEnd: 60
+  ar_site: 2
+  nextQuest: {fileID: 11400000, guid: 37539c3cf234f9e4cbcd66dfc172a00b, type: 2}

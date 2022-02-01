@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5449da20f4d4e4d82266762db55f4c, type: 3}
   m_Name: 3_place_poles
   m_EditorClassIdentifier: 
-  questID: 1
+  questID: 3
   character: {fileID: 0}
-  dialogueStart: 1
-  dialogueEnd: 1
-  ar_site: 0
-  nextQuest: {fileID: 0}
+  dialogueStart: 50
+  dialogueEnd: 50
+  ar_site: 1
+  nextQuest: {fileID: 11400000, guid: 2396bc51794baa3479b11eef0d3e5171, type: 2}

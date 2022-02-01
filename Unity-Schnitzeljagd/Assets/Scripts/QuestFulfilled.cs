@@ -5,31 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class QuestFulfilled : MonoBehaviour
 {
+    public static bool rubbleGone = false;
     public static bool spireCollected = false;
     public static bool spirePlaced = false;
+    public static bool walkedSynagoge = true;
+
+    public int maxPoles = 2;
+    public static int polesCollected = 0;
+    public static int polesPlaced = 0;
+
+    public int maxDancers = 10;
+    public static int dancersCollected = 0;
 
     public bool CheckQuest0()
     {
-        if (SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("RubbleScene")))
-        {
-            return true;
-        }
-        return false;
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("RubbleScene"));
     }
     
     public bool CheckQuest1()
     {
-        return false;
+        return rubbleGone;
     }
     
     public bool CheckQuest2()
     {
-        return false;
+        return polesCollected >= maxPoles;
     }
     
     public bool CheckQuest3()
     {
-        return false;
+        return polesPlaced >= maxPoles;
     }
     
     public bool CheckQuest4()
@@ -39,26 +44,22 @@ public class QuestFulfilled : MonoBehaviour
     
     public bool CheckQuest5()
     {
-        return false;
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("Museum"));
     }
     
     public bool CheckQuest6()
     {
-        return false;
+        return dancersCollected >= maxDancers;
     }
     
     public bool CheckQuest7()
     {
-        return false;
+        return walkedSynagoge;
     }
     
     public bool CheckQuest8()
     {
-        if (SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("OldTownHall")))
-        {
-            return true;
-        }
-        return false;
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("OldTownHall"));
     }
     
     public bool CheckQuest9()

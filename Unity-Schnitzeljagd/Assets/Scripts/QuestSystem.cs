@@ -11,7 +11,6 @@ public class QuestSystem : MonoBehaviour
     private static Quest mainQuest;
     private static Quest sideQuest;
     public static bool mainSet = false;
-    
 
     private QuestFulfilled check;
     
