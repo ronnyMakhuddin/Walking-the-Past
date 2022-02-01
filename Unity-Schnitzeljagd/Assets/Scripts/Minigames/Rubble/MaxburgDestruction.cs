@@ -13,11 +13,11 @@ public class MaxburgDestruction : MonoBehaviour
     [Header("Destruction Settings")]
     GameObject rubbleReplacement;
     [SerializeField]
-    ParticleSystem smoke;    
+    GameObject smoke;    
     [SerializeField]
     ParticleSystem dust;
     [SerializeField]
-    float crackedLifetime = 1f;
+    float crackedLifetime = 1.5f;
 
     [Header("Cracked Versions")]
     public List<GameObject> maxburg_visual_states;
@@ -87,8 +87,12 @@ public class MaxburgDestruction : MonoBehaviour
 
     IEnumerator DestroyBrokenMaxburg()
     {
-        smoke.Play();
+
+        ParticleSystem[] smoke_effects = smoke.GetComponentsInChildren<ParticleSystem>();
+        foreach (ParticleSystem effect in smoke_effects) effect.Play();
+
         yield return new WaitForSeconds(crackedLifetime);
+
         Destroy(maxburg_missing);
         rubbleReplacement.SetActive(true);
         dust.Play();
