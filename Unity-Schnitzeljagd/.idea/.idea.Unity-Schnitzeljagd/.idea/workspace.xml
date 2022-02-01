@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIInstance.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UIInstance.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/Quest 4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/StartQuest.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/StartQuest.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +47,19 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/FileManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Minigames/Minigame.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DontDestroy.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Quest.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Place.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spire.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIInstance.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22NJncHpYac7XvoDnmzVaqdAYyZ" />
@@ -124,6 +133,8 @@
       <workItem from="1643535152093" duration="5173000" />
       <workItem from="1643614064102" duration="478000" />
       <workItem from="1643623460197" duration="1682000" />
+      <workItem from="1643645360703" duration="493000" />
+      <workItem from="1643731798311" duration="3691000" />
     </task>
     <servers />
   </component>

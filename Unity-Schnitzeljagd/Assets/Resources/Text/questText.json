@@ -1,67 +1,97 @@
 {
     "Items": [
         {
-            "id": 1,
+            "id": 0,
             "character": 0,
             "text": "Please help me to find the spire in front of the Old Maxburg."
         },
         {
+            "id": 1,
+            "character": 0,
+            "text": "Clean up the rubble."
+        },
+        {
             "id": 2,
             "character": 0,
-            "text": "Dig up the spire from under the rubble."
+            "text": "Collect the poles to stabilize the building."
         },
         {
             "id": 3,
             "character": 0,
-            "text": "Return to the Old Townhall."
+            "text": "Place the poles against the building."
         },
         {
             "id": 4,
             "character": 0,
-            "text": "Place the spire on the facade."
+            "text": "Collect the spire."
         },
         {
             "id": 5,
             "character": 0,
-            "text": "$Next Task."
+            "text": "Go to the Museum."
+        },
+        {
+            "id": 6,
+            "character": 0,
+            "text": "Collect the dancers."
+        },
+        {
+            "id": 7,
+            "character": 0,
+            "text": "Walk around the synagoge."
+        },
+        {
+            "id": 8,
+            "character": 0,
+            "text": "Return to the Old Townhall."
+        },
+        {
+            "id": 9,
+            "character": 0,
+            "text": "Place the spire on the facade."
         },
         {
             "id": 10,
             "character": 0,
-            "text": "Greetings, I’m Karl Meitinger! Welcome to Munich in 1955!"
-        },
-        {
-            "id": 11,
-            "character": 0,
-            "text": "As you might know, during the second world war I already imagined how we could rebuild this city after the Nazis regime has ended. Then, almost ten years ago, I presented my vision to the city council and they were delighted. They agreed to my plans right away!"
+            "text": "$Next Task."
         },
         {
             "id": 12,
             "character": 0,
-            "text": "But as you can imagine, rebuilding an entire city is a lot of work. Right now we are rebuilding the Old Town Hall piece by piece. We already started working on it a little bit, to keep it from falling on peoples’ heads. It was truly a mess after the war, just look at those pictures:"
+            "text": "Greetings, I’m Karl Meitinger! Welcome to Munich in 1955!"
         },
         {
             "id": 13,
+            "character": 0,
+            "text": "As you might know, during the second world war I already imagined how we could rebuild this city after the Nazis regime has ended. Then, almost ten years ago, I presented my vision to the city council and they were delighted. They agreed to my plans right away!"
+        },
+        {
+            "id": 14,
+            "character": 0,
+            "text": "But as you can imagine, rebuilding an entire city is a lot of work. Right now we are rebuilding the Old Town Hall piece by piece. We already started working on it a little bit, to keep it from falling on peoples’ heads. It was truly a mess after the war, just look at those pictures:"
+        },
+        {
+            "id": 15,
             "character": 1,
             "text": "$picture"
         },
         {
-            "id": 14,
+            "id": 16,
             "character": 2,
             "text": "$picture"
         },
         {
-            "id": 15,
+            "id": 17,
             "character": 0,
             "text": "Just this year, we had the money to rebuild the gable facades almost like they were in 1936."
         },
         {
-            "id": 16,
+            "id": 18,
             "character": 3,
             "text": "$picture"
         },
         {
-            "id": 17,
+            "id": 19,
             "character": 0,
             "text": "It was magnificent back then! Unfortunately, we did not find those spires that you can see on top of the roof yet. But just yesterday I heard that someone spotted them on the Maxburghalde! That’s in front of the Old Maxburg where we collect the rubble from destroyed buildings from the center. Will you come and help me find the spires?"
         },
@@ -99,6 +129,36 @@
             "id": 33,
             "character": 0,
             "text": "Right, let's place the spire on the façade and see how it fits!"
+        },
+        {
+            "id": 40,
+            "character": 0,
+            "text": "Clean up the rubble."
+        },
+        {
+            "id": 45,
+            "character": 0,
+            "text": "Collect the poles to stabilize the building."
+        },
+        {
+            "id": 50,
+            "character": 0,
+            "text": "Place the poles against the building."
+        },
+        {
+            "id": 55,
+            "character": 0,
+            "text": "Go to the Museum."
+        },
+        {
+            "id": 60,
+            "character": 0,
+            "text": "Collect the dancers."
+        },
+        {
+            "id": 65,
+            "character": 0,
+            "text": "Walk around the synagoge."
         }
     ]
 }

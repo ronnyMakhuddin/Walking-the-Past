@@ -91,6 +91,8 @@ public class QuestSystem : MonoBehaviour
     {
         switch (id)
         {
+            case 0:
+                return check.CheckQuest0();
             case 1:
                 return check.CheckQuest1();
             case 2:
@@ -101,6 +103,16 @@ public class QuestSystem : MonoBehaviour
                 return check.CheckQuest4();
             case 5:
                 return check.CheckQuest5();
+            case 6:
+                return check.CheckQuest6();
+            case 7:
+                return check.CheckQuest7();
+            case 8:
+                return check.CheckQuest8();
+            case 9:
+                return check.CheckQuest9();
+            case 10:
+                return check.CheckQuest10();
         }
 
         return false;
