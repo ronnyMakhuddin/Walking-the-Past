@@ -5,6 +5,56 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block 1
+    second: {fileID: 2100000, guid: af05b35b644efda4bae068945e64d15e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block 1 (1)
+    second: {fileID: 2100000, guid: eb3889266187d354c93f825063c9b1c5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue Plaster
+    second: {fileID: 2100000, guid: 4fd6dd0dc68e87b46bb3e90188395e14, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fassade 1
+    second: {fileID: 2100000, guid: 6b6e88bea95c6c1468c7142548afe6db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fassade 2 (1)
+    second: {fileID: 2100000, guid: 5d43ee7e316ddc845ba9874f45fd255c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint - Light Gray
+    second: {fileID: 2100000, guid: d77206b5f4afef8458302d1bab8c0a05, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Textur Putz Maxburg
+    second: {fileID: 2100000, guid: b5bb71f4865a2eb44a0d01e6f537c1a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof tiles
+    second: {fileID: 2100000, guid: 88ed78073d83cc2458ffed0389a6c461, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8D28_2"
+    second: {fileID: 2100000, guid: cc6f23332f5734048ac67b57bbc46448, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u77F3\u818F"
+    second: {fileID: 2100000, guid: 899687c83c327d94b9aae332e42fb622, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Block 1-viele Risse

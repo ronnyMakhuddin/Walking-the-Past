@@ -63,8 +63,8 @@ public class MaxburgDestruction : MonoBehaviour
             {
                 allStagesDone = true;
                 Destroy(currentVersion);
-                Instantiate(maxburg_missing, Vector3.zero, Quaternion.identity);
-                Instantiate(maxburg_remain, Vector3.zero, Quaternion.identity);
+                maxburg_missing = Instantiate(maxburg_missing, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f));
+                Instantiate(maxburg_remain, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f));
                 StartCoroutine(DestroyBrokenMaxburg());
 
             }
@@ -86,19 +86,49 @@ public class MaxburgDestruction : MonoBehaviour
     }
 
     IEnumerator DestroyBrokenMaxburg()
-    {
-
+    {        
         ParticleSystem[] smoke_effects = smoke.GetComponentsInChildren<ParticleSystem>();
-        foreach (ParticleSystem effect in smoke_effects) effect.Play();
+        List<float> lifetime = new List<float>();
 
-        yield return new WaitForSeconds(crackedLifetime);
+        foreach (ParticleSystem effect in smoke_effects) {
+            effect.Play();
+            lifetime.Add(effect.main.duration);
+        }
+
+        float smoke_duration = Mathf.Max(lifetime.ToArray());
+        //Make rubble appear
+        rubbleReplacement.SetActive(true);
+        //Hide maxburg
+        StartCoroutine(Fade(smoke_duration, true));
+
+        yield return new WaitForSeconds(smoke_duration);
 
         Destroy(maxburg_missing);
-        rubbleReplacement.SetActive(true);
         dust.Play();
 
     }
+
+    IEnumerator Fade(float duration, bool fadeOut)
+    {
+        float time = 0f;
+        GameObject obj = fadeOut ? maxburg_missing : rubbleReplacement;
+        while(time < duration)
+        {
+            float interpolation = Mathf.InverseLerp(0f, duration, time);
+            float alpha = fadeOut ? 1 - interpolation : interpolation;
+            foreach (Renderer renderer in obj.GetComponentsInChildren<Renderer>())
+            {
+                Color col = renderer.material.color;
+                col.a = alpha;
+                renderer.material.color = col;
+                //Debug.Log(renderer.material.color);
+            }
+            yield return new WaitForEndOfFrame();
+            time += Time.deltaTime;
+        }
+    }
 }
+
 
 
 
