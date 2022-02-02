@@ -27,11 +27,9 @@ public class RubbleHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debugging cheatcode
        if (Input.GetKeyDown(KeyCode.P))
         {
             DecreaseHP();
-
         }
     }
 
@@ -43,7 +41,6 @@ public class RubbleHealth : MonoBehaviour
 
         if(hp <= 0)
         {
-            //Maybe a nice animation?
             HandleDestruction();
         }
     }

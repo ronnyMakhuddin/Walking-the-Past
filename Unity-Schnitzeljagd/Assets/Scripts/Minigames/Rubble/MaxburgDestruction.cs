@@ -50,7 +50,7 @@ public class MaxburgDestruction : MonoBehaviour
             Debug.Log("Set State");
             GameObject toSpawn = maxburg_visual_states[currentStage];
 
-            GameObject spawned = Instantiate(toSpawn, Vector3.zero, Quaternion.identity);
+            GameObject spawned = Instantiate(toSpawn, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f));
             if (currentStage != 0)
             {
                 Destroy(currentVersion);
@@ -98,13 +98,21 @@ public class MaxburgDestruction : MonoBehaviour
         float smoke_duration = Mathf.Max(lifetime.ToArray());
         //Make rubble appear
         rubbleReplacement.SetActive(true);
+        foreach (Collider c in rubbleReplacement.GetComponentsInChildren<Collider>())
+        {
+            c.enabled = false;
+        }
+
+
         //Hide maxburg
         StartCoroutine(Fade(smoke_duration, true));
+        //Has rendering order issues
+        //StartCoroutine(Fade(smoke_duration, false));
 
         yield return new WaitForSeconds(smoke_duration);
 
         Destroy(maxburg_missing);
-        dust.Play();
+        dust.gameObject.SetActive(true);
 
     }
 

@@ -26,6 +26,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 65105b381905b264f85fd44fc9bf3ea0, type: 3}
+  triggerTag: 
   collected: 0
   selected: 0
   moving: 0
@@ -78,6 +79,18 @@ PrefabInstance:
     - target: {fileID: 403698, guid: f5b62e31088c8084889a36864362b47a, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 403698, guid: f5b62e31088c8084889a36864362b47a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 403698, guid: f5b62e31088c8084889a36864362b47a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.01
+      objectReference: {fileID: 0}
+    - target: {fileID: 403698, guid: f5b62e31088c8084889a36864362b47a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 403698, guid: f5b62e31088c8084889a36864362b47a, type: 3}
       propertyPath: m_LocalPosition.x
