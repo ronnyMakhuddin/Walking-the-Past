@@ -9,6 +9,7 @@ public class QuestItem : MonoBehaviour
 {
     [SerializeField] private Sprite sprite;
     [SerializeField] private string triggerTag;
+    public float scaleFactor = 1f;
     private MenuSystem menuSystem;
     private float maxDistanceOnSelection = 100f;
     private Vector2 touchposition;
