@@ -44,12 +44,12 @@ public class QuestSystem : MonoBehaviour
         sideQuest = side;
     }
 
-    public Quest GetMain()
+    public static Quest GetMain()
     {
         return mainQuest;
     }
 
-    public Quest GetSide()
+    public static Quest GetSide()
     {
         return sideQuest;
     }

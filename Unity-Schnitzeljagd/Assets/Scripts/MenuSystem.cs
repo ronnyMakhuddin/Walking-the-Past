@@ -124,13 +124,13 @@ public class MenuSystem : MonoBehaviour
     {
         questMenuUI.SetActive(true);
         questMenuOpen = true;
-        if (questSys.GetMain() != null)
+        if (QuestSystem.GetMain() != null)
         {
-            currentQuest = questSys.GetMain();
+            currentQuest = QuestSystem.GetMain();
         }
-        if (questSys.GetSide() != null)
+        if (QuestSystem.GetSide() != null)
         {
-            currentQuest = questSys.GetSide();
+            currentQuest = QuestSystem.GetSide();
         }
         questImage.sprite = currentQuest.GetCharacter();
         StartCoroutine(DisplayQuest());

@@ -34,7 +34,7 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueRunning = false;
         textfield.text = String.Empty;
-        StartDialogue(10,17);
+        StartDialogue(QuestSystem.GetMain().getDialogueStart(),QuestSystem.GetMain().getDialogueStop());
     }
 
     // Update is called once per frame
