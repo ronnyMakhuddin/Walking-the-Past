@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 6_collect_dancers
   m_EditorClassIdentifier: 
   questID: 6
-  character: {fileID: 0}
+  character: {fileID: 21300000, guid: 4f335b3b1e9f9c14fabc4dabe81cbd8e, type: 3}
   dialogueStart: 60
   dialogueEnd: 60
   ar_site: 2

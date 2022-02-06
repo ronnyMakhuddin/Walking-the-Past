@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4_collect_spire
   m_EditorClassIdentifier: 
   questID: 4
-  character: {fileID: 21300000, guid: 7d35ace612c28824fa5c440e93513ed7, type: 3}
+  character: {fileID: 21300000, guid: 4f335b3b1e9f9c14fabc4dabe81cbd8e, type: 3}
   dialogueStart: 21
   dialogueEnd: 21
   ar_site: 1
