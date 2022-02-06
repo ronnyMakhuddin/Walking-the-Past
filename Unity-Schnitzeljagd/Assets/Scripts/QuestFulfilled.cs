@@ -19,7 +19,7 @@ public class QuestFulfilled : MonoBehaviour
 
     public bool CheckQuest0()
     {
-        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("RubbleScene"));
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("test"));
     }
     
     public bool CheckQuest1()
