@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c84b36eaf5889641aa9127f1a0d5a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currCheckpoint: 0
+  currCheckpoint: 2
   useAbsolutePos: 1
   map: {fileID: 0}
   arPossible: 0
@@ -3029,6 +3029,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 40073617, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 220
+      objectReference: {fileID: 0}
+    - target: {fileID: 40073617, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 166854719, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -6.100006
+      objectReference: {fileID: 0}
+    - target: {fileID: 166854720, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_overflowMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 166854720, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
     - target: {fileID: 2934931275222163519, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 232
@@ -4748,6 +4768,70 @@ MonoBehaviour:
         selectedTypes: 
         spawnPrefabOptions:
           prefab: {fileID: 3855272203244408367, guid: caca5c59541e5d340b4876c2502133e8, type: 3}
+          scaleDownWithWorld: 0
+        findByType: 2
+        categories: -1
+        nameString: 
+        coordinates:
+        - 48.13525936576446, 11.572339497631257
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Museum
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 4785024434236231361, guid: d231d393cbf949e4fa7fc753ba74f38a, type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1

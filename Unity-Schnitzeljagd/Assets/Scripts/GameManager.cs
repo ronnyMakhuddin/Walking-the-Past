@@ -175,6 +175,7 @@ public class GameManager : MonoBehaviour
         {
             case AR_SITE.MAXBURG: return "Maxburg";
             case AR_SITE.OLD_TOWNHALL: return "Old Town Hall";
+            case AR_SITE.MUSEUM: return "Stadtmuseum";
             default: return "$undefined$";
         }
     }
