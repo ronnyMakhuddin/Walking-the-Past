@@ -26,7 +26,12 @@ public class ARZone : MonoBehaviour
     void Update()
     {
         //Debug.Log("Zone Pos: " + transform.position);
-
+        /*
+        if (playerPos != null) {
+            Debug.Log((playerPos - transform.parent.position));
+            Debug.Log(transform.parent.name + ": " + transform.parent.position);
+        }
+        */
         if (listening && timeSpentInZone >= secondsUntilTrigger)
         {
 
@@ -37,6 +42,7 @@ public class ARZone : MonoBehaviour
             if (GameManager.Instance.useAbsolutePos)
             {
                 GameManager.Instance.playerPos = playerPos;
+                GameManager.Instance.arAnchorOrientation = transform.parent.rotation;
                 GameManager.Instance.playerOrientation = playerOrientation;
                 GameManager.Instance.arOriginPos = transform.parent.position;
             }

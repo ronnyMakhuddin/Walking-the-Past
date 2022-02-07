@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
 
     public Vector3 arOriginRelativeToPlayer;
     public Quaternion playerOrientation;
+    public Quaternion arAnchorOrientation;
     public Vector3 playerPos = Vector3.zero;
     public Vector3 arOriginPos = Vector3.zero;
     SceneTransitionManager sceneTransitionManager;
@@ -135,7 +136,7 @@ public class GameManager : MonoBehaviour
 
     public void ARCompleted()
     {
-        completedCheckpoints.Add(currCheckpoint);
+        //completedCheckpoints.Add(currCheckpoint);
         switch (currCheckpoint)
         {
             case AR_SITE.OLD_TOWNHALL: currRoute = Wayfinding.ROUTES.TOWNHALL_MAXBURG; break;
@@ -144,7 +145,7 @@ public class GameManager : MonoBehaviour
             default: currRoute = Wayfinding.ROUTES.NONE; break; 
         }
         ToggleEnterARButton(false);
-        //EnterMapbox();
+        EnterMapbox();
     }
 
     public void ConfigureAR(AR_SITE site, Vector3 POI2PlayerPos)

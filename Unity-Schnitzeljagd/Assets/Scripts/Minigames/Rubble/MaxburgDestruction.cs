@@ -44,13 +44,12 @@ public class MaxburgDestruction : MonoBehaviour
     public void ProgressState()
     {
         currentStage++;
-        Debug.Log(currentStage);
         if (!allStagesDone && currentStage < maxburg_visual_states.Count)
         {
             Debug.Log("Set State");
             GameObject toSpawn = maxburg_visual_states[currentStage];
 
-            GameObject spawned = Instantiate(toSpawn, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f));
+            GameObject spawned = Instantiate(toSpawn, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f), transform.parent);
             if (currentStage != 0)
             {
                 Destroy(currentVersion);
@@ -63,8 +62,8 @@ public class MaxburgDestruction : MonoBehaviour
             {
                 allStagesDone = true;
                 Destroy(currentVersion);
-                maxburg_missing = Instantiate(maxburg_missing, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f));
-                Instantiate(maxburg_remain, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f));
+                maxburg_missing = Instantiate(maxburg_missing, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f), transform.parent);
+                Instantiate(maxburg_remain, Vector3.zero, Quaternion.Euler(-90f, 0f, 0f), transform.parent);
                 StartCoroutine(DestroyBrokenMaxburg());
 
             }

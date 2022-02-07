@@ -2024,7 +2024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c84b36eaf5889641aa9127f1a0d5a10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currCheckpoint: 2
+  currCheckpoint: 0
   useAbsolutePos: 1
   map: {fileID: 0}
   arPossible: 0
@@ -2530,19 +2530,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterAnimator: {fileID: 1688932100}
   walkingSpeed: 0.005
---- !u!65 &1688932097
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1688932094}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 8.700785, y: 17.86, z: 6.978054}
-  m_Center: {x: -0.22756125, y: 8.497142, z: -0.04421949}
 --- !u!114 &1688932098
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2938,6 +2925,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1438539700862716, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
       propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686897850784496, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
+      propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4056355216674710, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
@@ -3259,6 +3250,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+--- !u!1 &2079445092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1686897850784496, guid: b4281c0219e45624e855839527bdc6f1, type: 3}
+  m_PrefabInstance: {fileID: 2011585865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &2079445094
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2079445092}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.05185758, y: 0.1, z: 0.051629424}
+  m_Center: {x: -0.002698784, y: 0.060000002, z: -0.006145561}
 --- !u!21 &2139854529
 Material:
   serializedVersion: 6
@@ -4401,7 +4410,7 @@ MonoBehaviour:
         categories: -1
         nameString: 
         coordinates:
-        - 48.140738284671045, 11.569609648299924
+        - 48.14074195033221, 11.569633251323676
         density: 15
       - coreOptions:
           sourceId: 
