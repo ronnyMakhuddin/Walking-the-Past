@@ -7,18 +7,24 @@ public class InfoBox : MonoBehaviour
 {
     public int id;
 
-    private GameObject dialogeBox;
-    private DialogueSystem diaSys;
+    private GameObject infoBox;
+    private InfoBoxSystem infoSys;
 
     // Start is called before the first frame update
     void Start()
     {
-        dialogeBox = GameObject.Find("Dialogue Box");
-        diaSys = dialogeBox.GetComponent<DialogueSystem>();
+        infoBox = GameObject.Find("Quest System");
+        infoSys = infoBox.GetComponent<InfoBoxSystem>();
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        diaSys.StartDialogue(id);
+        InfoBoxSystem.SetInfo(id);
+        infoSys.ActivateButton();
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        infoSys.DeactivateButton();
     }
 }
