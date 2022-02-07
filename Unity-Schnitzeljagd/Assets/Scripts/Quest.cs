@@ -10,7 +10,6 @@ public class Quest : ScriptableObject
 
     [SerializeField] private Sprite character;
     [SerializeField] private int dialogueStart = 1;
-    [SerializeField] private int dialogueEnd = 1;
 
     public GameManager.AR_SITE ar_site;
 
@@ -27,11 +26,6 @@ public class Quest : ScriptableObject
     public int getDialogueStart()
     {
         return dialogueStart;
-    }
-
-    public int getDialogueStop()
-    {
-        return dialogueEnd;
     }
 
     public void SetSprite(Sprite sprite)

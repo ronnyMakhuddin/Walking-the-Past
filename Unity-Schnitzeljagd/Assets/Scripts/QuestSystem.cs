@@ -60,7 +60,7 @@ public class QuestSystem : MonoBehaviour
         if (next != null)
         {
             mainQuest = next;
-            dialogueSystem.StartDialogue(mainQuest.getDialogueStart(), mainQuest.getDialogueStop());
+            dialogueSystem.StartDialogue(mainQuest.getDialogueStart());
             return;
         }
 
@@ -74,7 +74,7 @@ public class QuestSystem : MonoBehaviour
         if (next != null)
         {
             sideQuest = next;
-            dialogueSystem.StartDialogue(sideQuest.getDialogueStart(), sideQuest.getDialogueStop());
+            dialogueSystem.StartDialogue(sideQuest.getDialogueStart());
             return;
         }
         sideQuest = null;
@@ -83,7 +83,7 @@ public class QuestSystem : MonoBehaviour
     public void ResetQuests()
     {
         mainQuest = startQuest;
-        dialogueSystem.StartDialogue(mainQuest.getDialogueStart(), mainQuest.getDialogueStop());
+        dialogueSystem.StartDialogue(mainQuest.getDialogueStart());
     }
 
     private bool Fulfilled(int id)

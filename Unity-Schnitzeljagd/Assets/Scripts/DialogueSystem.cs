@@ -17,7 +17,6 @@ public class DialogueSystem : MonoBehaviour
 
     private Dictionary<int, QuestText> texts;
     
-    private int end = 17;
     private int index = 10;
     private bool dialogueRunning;
     private bool pictureShown = false;
@@ -34,7 +33,7 @@ public class DialogueSystem : MonoBehaviour
     {
         dialogueRunning = false;
         textfield.text = String.Empty;
-        StartDialogue(QuestSystem.GetMain().getDialogueStart(),QuestSystem.GetMain().getDialogueStop());
+        StartDialogue(QuestSystem.GetMain().getDialogueStart());
     }
 
     // Update is called once per frame
@@ -69,12 +68,11 @@ public class DialogueSystem : MonoBehaviour
         }
     }
 
-    public void StartDialogue(int start, int stop)
+    public void StartDialogue(int start)
     {
         gameObject.SetActive(true);
         dialogueRunning = true;
         index = start;
-        end = stop;
         StartCoroutine(TypeParagraph());
     }
 
@@ -106,9 +104,10 @@ public class DialogueSystem : MonoBehaviour
 
     private void NextParagraph()
     {
-        if (index < end)
+        texts.TryGetValue(++index, out var test);
+        if (test != null)
         {
-            ++index;
+            //++index;
             textfield.text = string.Empty;
             StartCoroutine(TypeParagraph());
         }
