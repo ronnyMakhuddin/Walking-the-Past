@@ -136,7 +136,7 @@ public class GameManager : MonoBehaviour
 
     public void ARCompleted()
     {
-        //completedCheckpoints.Add(currCheckpoint);
+        completedCheckpoints.Add(currCheckpoint);
         switch (currCheckpoint)
         {
             case AR_SITE.OLD_TOWNHALL: currRoute = Wayfinding.ROUTES.TOWNHALL_MAXBURG; break;

@@ -368,7 +368,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &177504358
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2180,6 +2180,7 @@ MonoBehaviour:
   arPossible: 0
   arOriginRelativeToPlayer: {x: 0, y: 0, z: 0}
   playerOrientation: {x: 0, y: 0, z: 0, w: 0}
+  arAnchorOrientation: {x: 0, y: 0, z: 0, w: 0}
   playerPos: {x: 0, y: 0, z: 0}
   arOriginPos: {x: 0, y: 0, z: 0}
 --- !u!4 &950570227
