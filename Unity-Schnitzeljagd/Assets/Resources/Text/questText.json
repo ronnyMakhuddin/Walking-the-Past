@@ -133,32 +133,47 @@
         {
             "id": 40,
             "character": 0,
-            "text": "Clean up the rubble."
+            "text": "Oh no, looks like we need to clear away some rubble! No use wasting time..."
         },
         {
             "id": 45,
             "character": 0,
-            "text": "Collect the poles to stabilize the building."
+            "text": "Collect the iron rods."
         },
         {
             "id": 50,
             "character": 0,
-            "text": "Place the poles against the building."
+            "text": "Oh oh! Looks like these buildings also paid a tribute to the war. Didn't we find some iron rods before? We can use those and stabilize the parts that have not broken down yet.I think Sep Ruf and Theo Pabst already have plans on building something new here, anyways."
         },
         {
             "id": 55,
             "character": 0,
-            "text": "Go to the Museum."
+            "text": "Ok, let’s collect the spire and then we’re good to go. But, since we’re already on the move, let’s make a quick stop at the Stadtmuseum."
+        },
+        {
+            "id": 56,
+            "character": 0,
+            "text": "You know, we’re simultaneously rebuilding the famous Grand Hall on the inside of the Old Town Hall. Much of its interior decoration was lost. But luckily the most famous wooden figures in there, from 1480, were put into the museum long before. Only replicas of the morris dancers were destroyed. Currently, we’re thinking about putting back the originals, however."
         },
         {
             "id": 60,
             "character": 0,
-            "text": "Collect the dancers."
+            "text": "Here we are. Look, the curator already placed the dancers out for us. So nice of him!"
+        },
+        {
+            "id": 61,
+            "character": 0,
+            "text": "You know, it’s a pity. The carpenter who made these, made 16 different figures, once. Unfortunately, six of them were lost during the centuries so only these ten remain. Let’s collect them."
         },
         {
             "id": 65,
             "character": 0,
-            "text": "Walk around the synagoge."
+            "text": "Before heading back, you might want to take a look around this square. Before the war, the main synagogue of Munich was actually placed right next to the Maxburg. But after its destruction, it was decided to build one here instead, right next to a Jewish Museum."
+        },
+        {
+            "id": 66,
+            "character": 0,
+            "text": "Let’s walk around the Synagogue once!"
         }
     ]
 }

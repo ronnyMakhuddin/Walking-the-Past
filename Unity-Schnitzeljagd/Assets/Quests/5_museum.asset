@@ -15,6 +15,6 @@ MonoBehaviour:
   questID: 5
   character: {fileID: 21300000, guid: 4f335b3b1e9f9c14fabc4dabe81cbd8e, type: 3}
   dialogueStart: 55
-  dialogueEnd: 55
+  dialogueEnd: 56
   ar_site: 2
   nextQuest: {fileID: 11400000, guid: 517735d0872cd684e8b1184f381ed9b6, type: 2}
