@@ -1064,6 +1064,7 @@ MonoBehaviour:
   textfield: {fileID: 0}
   pictures: []
   pictureField: {fileID: 0}
+  spriteField: {fileID: 0}
   writingSpeed: 0.05
 --- !u!224 &397511786
 RectTransform:
@@ -14198,6 +14199,7 @@ MonoBehaviour:
   - {fileID: 6490947948816296682}
   - {fileID: 6490947949019052664}
   pictureField: {fileID: 6490947948112975824}
+  spriteField: {fileID: 0}
   writingSpeed: 0.05
 --- !u!224 &4693516926128606435
 RectTransform:

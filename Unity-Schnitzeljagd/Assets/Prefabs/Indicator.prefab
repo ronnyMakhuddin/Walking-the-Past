@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8741091297047614144}
   - component: {fileID: 8689533080729521716}
   - component: {fileID: 3594258191175779366}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73,7 +73,7 @@ GameObject:
   - component: {fileID: 6692139851967432699}
   - component: {fileID: 6692139851967432700}
   - component: {fileID: 6692139851967432701}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +166,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6692139852497382953}
   - component: {fileID: 6692139852497382954}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Indicator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 6692139852621835202}
   - component: {fileID: 6692139852621835203}
   - component: {fileID: 6692139852621835204}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

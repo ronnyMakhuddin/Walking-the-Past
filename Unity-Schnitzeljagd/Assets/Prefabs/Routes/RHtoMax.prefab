@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2808807018026459134}
   - component: {fileID: 8627987098487478378}
   - component: {fileID: 7128075777070221355}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (5)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -72,7 +72,7 @@ GameObject:
   - component: {fileID: 6208709548061111711}
   - component: {fileID: 2603397277701085169}
   - component: {fileID: 4793451334461258133}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (1)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 786767374638790198}
   - component: {fileID: 3985740229385822288}
   - component: {fileID: 6374903387064909413}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (11)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 5690594259869897648}
   - component: {fileID: 1637603030647678923}
   - component: {fileID: 3048528657511611331}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (6)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -255,7 +255,7 @@ GameObject:
   - component: {fileID: 3892379781411042244}
   - component: {fileID: 1153150846562579754}
   - component: {fileID: 5173923008505956478}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: RHtoMax
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,6 +409,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4eb6b70e52c2a194aaa317d8f299fe81, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ROUTE: 0
+  yOffset: 2
 --- !u!1 &3144445337241744069
 GameObject:
   m_ObjectHideFlags: 0
@@ -420,7 +422,7 @@ GameObject:
   - component: {fileID: 2418574381028357859}
   - component: {fileID: 7898931759721711801}
   - component: {fileID: 7958473436675094383}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (2)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -481,7 +483,7 @@ GameObject:
   - component: {fileID: 5268145241917171643}
   - component: {fileID: 4944875781094101918}
   - component: {fileID: 5624481562289525931}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (9)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -542,7 +544,7 @@ GameObject:
   - component: {fileID: 8682261564992357312}
   - component: {fileID: 6927705659974644170}
   - component: {fileID: 5737048197231408960}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (8)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -603,7 +605,7 @@ GameObject:
   - component: {fileID: 1208330504978497939}
   - component: {fileID: 8051287031012312094}
   - component: {fileID: 1914477322367304611}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (4)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -664,7 +666,7 @@ GameObject:
   - component: {fileID: 8319012420892233078}
   - component: {fileID: 9127490838387522140}
   - component: {fileID: 3723718376835237532}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (3)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -725,7 +727,7 @@ GameObject:
   - component: {fileID: 5414502156816840740}
   - component: {fileID: 5375365633740810506}
   - component: {fileID: 743362286146673465}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -786,7 +788,7 @@ GameObject:
   - component: {fileID: 8135758133835117783}
   - component: {fileID: 8780096872727942439}
   - component: {fileID: 578723098478382669}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (7)
   m_TagString: Path
   m_Icon: {fileID: 0}
@@ -847,7 +849,7 @@ GameObject:
   - component: {fileID: 6956698896319028607}
   - component: {fileID: 8791059743547214018}
   - component: {fileID: 4911996457925152351}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Route (10)
   m_TagString: Path
   m_Icon: {fileID: 0}
