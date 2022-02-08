@@ -74,7 +74,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 414c31a9759368c4c83fb1cf82786d2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 165
+  id: 140
 --- !u!1 &6692139852497382955
 GameObject:
   m_ObjectHideFlags: 0
@@ -85,7 +85,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6692139852497382953}
   m_Layer: 5
-  m_Name: Sendlinger Tor
+  m_Name: Morisken
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,11 +103,11 @@ Transform:
   m_LocalScale: {x: 3, y: 3, z: 3}
   m_Children:
   - {fileID: 8741091297047614144}
-  - {fileID: 8214029607262675035}
+  - {fileID: 8593140893012939939}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &7313033595541789652
+--- !u!1001 &7188867857093078828
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -164,8 +164,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cd26840037629f9428c8a3642e44d62e, type: 3}
---- !u!4 &8214029607262675035 stripped
+--- !u!4 &8593140893012939939 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1478030769642994575, guid: cd26840037629f9428c8a3642e44d62e, type: 3}
-  m_PrefabInstance: {fileID: 7313033595541789652}
+  m_PrefabInstance: {fileID: 7188867857093078828}
   m_PrefabAsset: {fileID: 0}
