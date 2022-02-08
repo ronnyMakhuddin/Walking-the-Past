@@ -3049,6 +3049,7 @@ MonoBehaviour:
   arPossible: 0
   arOriginRelativeToPlayer: {x: 0, y: 0, z: 0}
   playerOrientation: {x: 0, y: 0, z: 0, w: 0}
+  arAnchorOrientation: {x: 0, y: 0, z: 0, w: 0}
   playerPos: {x: 0, y: 0, z: 0}
   arOriginPos: {x: 0, y: 0, z: 0}
 --- !u!4 &1655508402
@@ -3144,6 +3145,7 @@ MonoBehaviour:
   textfield: {fileID: 1833039352}
   pictures: []
   pictureField: {fileID: 0}
+  spriteField: {fileID: 0}
   writingSpeed: 0.05
 --- !u!114 &1740237610
 MonoBehaviour:
