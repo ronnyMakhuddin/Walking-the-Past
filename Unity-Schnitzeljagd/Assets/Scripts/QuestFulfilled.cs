@@ -41,19 +41,11 @@ public class QuestFulfilled : MonoBehaviour
     
     public bool CheckQuest2()
     {
-        if (polesCollected >= maxPoles)
-        {
-            Debug.Log("all poles collected.");
-        }
         return polesCollected >= maxPoles;
     }
     
     public bool CheckQuest3()
     {
-        if (polesPlaced >= maxPoles)
-        {
-            Debug.Log("all poles placed.");
-        }
         return polesPlaced >= maxPoles;
     }
     

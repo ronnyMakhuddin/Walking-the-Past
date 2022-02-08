@@ -34,7 +34,6 @@ public class RubbleMinigame : Minigame
                 phase = 2;
                 // rubble quest complete
                 QuestFulfilled.rubbleGone = true;
-                Debug.Log("all piles cleared up!: " + QuestFulfilled.polesCollected);
                 EnableTargetPositions();
             }
             if (rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
@@ -50,7 +49,6 @@ public class RubbleMinigame : Minigame
             //Start pole placement task
             if (QuestFulfilled.polesPlaced >= 4)
             {
-                Debug.Log("all pipes collected!");
                 EndMinigame();
             }
         }
@@ -94,8 +92,7 @@ public class RubbleMinigame : Minigame
     void EndMinigame()
     {
         spire.SetActive(true);
-        Debug.Log("minigame finished");
-        OnMinigameFinished();
+        //OnMinigameFinished();
         phase = 3;
     }
     
