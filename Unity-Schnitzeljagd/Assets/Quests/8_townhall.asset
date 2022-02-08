@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questID: 3
   character: {fileID: 21300000, guid: 4f335b3b1e9f9c14fabc4dabe81cbd8e, type: 3}
-  dialogueStart: 22
-  dialogueEnd: 23
+  dialogueStart: 70
   ar_site: 2
   nextQuest: {fileID: 11400000, guid: e5eaa70807434ba4b83801c1240a215a, type: 2}
