@@ -13,12 +13,12 @@
         {
             "id": 2,
             "character": 0,
-            "text": "Collect the iron rods to stabilize the building."
+            "text": "Collect the poles to stabilize the building."
         },
         {
             "id": 3,
             "character": 0,
-            "text": "Place the iron rods against the building."
+            "text": "Place the poles against the building."
         },
         {
             "id": 4,
@@ -53,7 +53,7 @@
         {
             "id": 10,
             "character": 0,
-            "text": "Thank you for playing!."
+            "text": "$Next Task."
         },
         {
             "id": 12,
@@ -108,17 +108,27 @@
         {
             "id": 23,
             "character": 0,
-            "text": "Let’s collect the spire and move on."
+            "text": "Let’s collect the spire and move on to our next task…"
         },
         {
             "id": 30,
             "character": 0,
-            "text": "So, place the spire on the façade to see how it fits!"
+            "text": "So, place the spire on the facade to see how it fits!"
+        },
+        {
+            "id": 31,
+            "character": 0,
+            "text": "Looks quite good! We can repair this and make some more to replace the ones you didn’t find!"
         },
         {
             "id": 32,
             "character": 0,
-            "text": "It looks so much better already! Thank you for your help. I hope you enjoy the rest of your stay here."
+            "text": "Our next task is to redecorate the big hall on the first level! If you walk underneath the Town Hall and look up, you can see right into it!"
+        },
+        {
+            "id": 33,
+            "character": 0,
+            "text": "Right, let's place the spire on the facade and see how it fits!"
         },
         {
             "id": 40,
@@ -126,29 +136,24 @@
             "text": "Oh no, looks like we need to clear away some rubble! No use wasting time..."
         },
         {
-            "id": 41,
-            "character": 0,
-            "text": "The people need to make some space for the wrecking of the Maxburg. Maybe we can give them hand while we are already here."
-        },
-        {
             "id": 45,
             "character": 0,
-            "text": "Hmm i wonder where the spire could be... Maybe you can look around some more and also pick up the iron rods lying around."
+            "text": "Collect the iron rods."
         },
         {
             "id": 50,
             "character": 0,
-            "text": "Oh look, there is the spire! Looks like these buildings also paid a tribute to the war. Didn't we find some iron rods before? We can use those and stabilize the parts that have not broken down yet.I think Sep Ruf and Theo Pabst already have plans on building something new here, anyways."
+            "text": "Oh oh! Looks like these buildings also paid a tribute to the war. Didn't we find some iron rods before? We can use those and stabilize the parts that have not broken down yet.I think Sep Ruf and Theo Pabst already have plans on building something new here, anyways."
         },
         {
             "id": 55,
             "character": 0,
-            "text": "Ok, now that we collected the spire and then we’re good to go. But, since we’re already on the move, let’s make a quick stop at the Stadtmuseum."
+            "text": "Ok, let’s collect the spire and then we’re good to go. But, since we’re already on the move, let’s make a quick stop at the Stadtmuseum."
         },
         {
             "id": 56,
             "character": 0,
-            "text": "You know, we’re simultaneously rebuilding the famous Grand Hall on the inside of the Old Town Hall. Much of its interior decoration was lost. But luckily the most famous wooden figures in there, from 1480, were put into the museum long before. Only replicas of the morris dancers were destroyed. Currently, we’re thinking about putting back the originals, however."
+            "text": "You know, we’re simultaneously rebuilding the famous Grand Hall on the inside of the Old Town Hall. Much of its interior decoration was lost. But luckily the most famous wooden figures in there, from 1480, were put into the museum long before. Only replicas of the Morris dancers (Moriskentänzer) were destroyed. Currently, we’re thinking about putting back the originals, however."
         },
         {
             "id": 60,
@@ -172,16 +177,6 @@
         },
         {
             "id": 70,
-            "character": 0,
-            "text": "So, now we’re good to go back."
-        },
-        {
-            "id": 80,
-            "character": 0,
-            "text": "Thank you for playing!"
-        },
-        {
-            "id": 75,
             "character": 0,
             "text": "So, now we’re good to go back."
         },
@@ -313,7 +308,7 @@
         {
             "id": 140,
             "character": -1,
-            "text": "Maruskentänzer:"
+            "text": "Moriskentänzer:"
         },
         {
             "id": 141,
@@ -404,7 +399,7 @@
         {
             "id": 167,
             "character": -1,
-            "text": "Below it, you can find the subway station “Sendlinger Tor”, an important junction for public transportation in Munich."
+            "text": "You can find the subway station “Sendlinger Tor” underground, an important junction for public transportation in Munich."
         },
         {
             "id": 168,
