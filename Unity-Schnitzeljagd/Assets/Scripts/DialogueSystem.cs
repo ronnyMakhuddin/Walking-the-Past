@@ -15,6 +15,8 @@ public class DialogueSystem : MonoBehaviour
     
     [SerializeField] private GameObject pictureField;
 
+    [SerializeField] private GameObject spriteField;
+
     private Dictionary<int, QuestText> texts;
     
     private int index = 10;
@@ -73,6 +75,10 @@ public class DialogueSystem : MonoBehaviour
         gameObject.SetActive(true);
         dialogueRunning = true;
         index = start;
+        if (texts[index].character < 0)
+        {
+            spriteField.SetActive(false);
+        }
         StartCoroutine(TypeParagraph());
     }
 
@@ -107,12 +113,12 @@ public class DialogueSystem : MonoBehaviour
         texts.TryGetValue(++index, out var test);
         if (test != null)
         {
-            //++index;
             textfield.text = string.Empty;
             StartCoroutine(TypeParagraph());
         }
         else
         {
+            spriteField.SetActive(true);
             gameObject.SetActive(false);
         }
     }
