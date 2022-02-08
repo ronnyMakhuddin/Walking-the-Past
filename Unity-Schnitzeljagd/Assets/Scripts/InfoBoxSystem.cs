@@ -35,6 +35,7 @@ public class InfoBoxSystem : MonoBehaviour
 
     public void DisplayInfo()
     {
+        infoButton.SetActive(false);
         diaSys.StartDialogue(currentInfo);
     }
 }

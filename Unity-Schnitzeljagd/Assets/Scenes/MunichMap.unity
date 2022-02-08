@@ -3549,6 +3549,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1740456549607338157, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740456549607338157, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740456549607338157, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1740456549607338157, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_Color.r
+      value: 0.9286742
+      objectReference: {fileID: 0}
     - target: {fileID: 7184874191787491731, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_Name
       value: UI
@@ -3637,10 +3653,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7184874192660668625, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: b9f5692be6e335544afc7e820a6557e0, type: 2}
+    - target: {fileID: 7184874192660668625, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2739927323918809692, guid: b9f5692be6e335544afc7e820a6557e0, type: 2}
     - target: {fileID: 7184874192853924220, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1946529694}
+    - target: {fileID: 9163129992076690780, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
 --- !u!21 &2141211352
@@ -5091,7 +5119,7 @@ MonoBehaviour:
         selectedTypes: 
         spawnPrefabOptions:
           prefab: {fileID: 4785024434236231361, guid: d231d393cbf949e4fa7fc753ba74f38a, type: 3}
-          scaleDownWithWorld: 0
+          scaleDownWithWorld: 1
         findByType: 2
         categories: -1
         nameString: 
@@ -5154,7 +5182,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 6692139852497382955, guid: e92d26952a805974e92fbc100bd1b524, type: 3}
+          prefab: {fileID: 6692139852497382955, guid: 7f313e96f32171e4cae05a71d2d74698, type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1
@@ -5218,7 +5246,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 6692139852497382955, guid: e92d26952a805974e92fbc100bd1b524, type: 3}
+          prefab: {fileID: 6692139852497382955, guid: 4150ab86cf317ca48bd45de62e4186ec, type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1
@@ -5282,7 +5310,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 6692139852497382955, guid: e92d26952a805974e92fbc100bd1b524, type: 3}
+          prefab: {fileID: 6692139852497382955, guid: ca838562c72063e45b1192b082f0d648, type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1
@@ -5346,13 +5374,141 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 6692139852497382955, guid: e92d26952a805974e92fbc100bd1b524, type: 3}
+          prefab: {fileID: 6692139852497382955, guid: eca4993c762ba4b45a611e55c9be9c58, type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1
         nameString: 
         coordinates:
         - 48.1341985460521, 11.568004769293367
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Synagogue
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 6692139852497382955, guid: 8591d39542e16024ea794ae03c0830fa, type: 3}
+          scaleDownWithWorld: 0
+        findByType: 2
+        categories: -1
+        nameString: 
+        coordinates:
+        - 48.134626688140315, 11.572647647469472
+        density: 15
+      - coreOptions:
+          sourceId: 
+          isActive: 1
+          sublayerName: Meitinger
+          geometryType: 0
+          layerName: 
+          snapToTerrain: 1
+          combineMeshes: 0
+        lineGeometryOptions:
+          Width: 0
+          MiterLimit: 0
+          RoundLimit: 0
+          JoinType: 0
+          CapType: 0
+        filterOptions:
+          _selectedLayerName: 
+          filters: []
+          combinerType: 1
+        extrusionOptions:
+          _selectedLayerName: 
+          extrusionType: 0
+          extrusionGeometryType: 0
+          propertyName: height
+          propertyDescription: 
+          minimumHeight: 0
+          maximumHeight: 0
+          extrusionScaleFactor: 1
+        colliderOptions:
+          colliderType: 0
+        materialOptions:
+          style: 0
+          texturingType: 0
+          materials: []
+          atlasInfo: {fileID: 0}
+          lightStyleOpacity: 0
+          darkStyleOpacity: 0
+          colorStyleColor: {r: 0, g: 0, b: 0, a: 0}
+          samplePalettes: 0
+          colorPalette: {fileID: 0}
+          customStyleOptions:
+            texturingType: 0
+            materials: []
+            atlasInfo: {fileID: 0}
+            colorPalette: {fileID: 0}
+        performanceOptions:
+          isEnabled: 1
+          entityPerCoroutine: 20
+        honorBuildingIdSetting: 0
+        buildingsWithUniqueIds: 0
+        moveFeaturePositionTo: 1
+        MeshModifiers: []
+        GoModifiers: []
+        presetFeatureType: 3
+        _maskValue: 0
+        selectedTypes: 
+        spawnPrefabOptions:
+          prefab: {fileID: 6692139852497382955, guid: 17fef804213004b47ac1b1f4c0a2450f, type: 3}
+          scaleDownWithWorld: 0
+        findByType: 2
+        categories: -1
+        nameString: 
+        coordinates:
+        - 48.13722529900181, 11.575503242965855
         density: 15
   _tileProvider: {fileID: 0}
   _previewOptions:

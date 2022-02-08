@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class Indicator : MonoBehaviour
 {
-    [SerializeField]
-    float speed = 20f;
+    float speed = 100f;
 
     
 

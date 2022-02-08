@@ -182,17 +182,17 @@
         },
         {
             "id": 100,
-            "character": -1,
+            "character": 0,
             "text": "Karl Meitinger:"
         },
         {
             "id": 101,
-            "character": -1,
+            "character": 0,
             "text": "Karl Meitinger (1882 - 1970) was an architect and city planner. His most famous work is the so-called Meitinger-Plan, a concept on how to rebuild Munich after World War 2, in a non-nazi-regime. He was already working on this plan before the war was finished."
         },
         {
             "id": 102,
-            "character": -1,
+            "character": 0,
             "text": "After the war, he quickly convinced the city council of his vision. His concept helped structuring the rebuilding of the city and due to his plans Munich today still looks like a city that grew naturally, although 90% of the historical centre and 45% of the city overall had been destroyed by 1945."
         },
         {
@@ -278,7 +278,7 @@
         {
             "id": 132,
             "character": -1,
-            "text": "Duke Wilhelm 5th built it and lived there until his death in 1626. The name today is most likely based on his grandson, Maximilian Philipp, who lived there later and extended the complex over the  years."
+            "text": "Duke Wilhelm V. built it and lived there until his death in 1626. The name today is most likely based on his grandson, Maximilian Philipp, who lived there later and extended the complex over the  years."
         },
         {
             "id": 133,
@@ -293,12 +293,12 @@
         {
             "id": 135,
             "character": -1,
-            "text": "The part of the Mini-game when the player breaks down the Maxburg himself, is reminiscent of the state of the Munich City Center after the war: many buildings that had at least partly survived originally could not be secured or rebuilt quickly enough, but were damaged further by weather and by weight from rubble from other buildings."
+            "text": "The part of the Mini-game when you break down the Maxburg, is reminiscent of the state of the Munich City Center after the war: many buildings that had at least partly survived originally could not be secured or rebuilt quickly enough, but were damaged further by weather and by weight from rubble from other buildings."
         },
         {
             "id": 136,
             "character": -1,
-            "text": "That meant, in order to keep them from collapsing uncontrollably and possibly block roads, damage infrastructure or kill more people, these buildings had to be broken down by the citizens themselves. By this process, a big part of the buildings that had originally at least partly survived the air strikes, was lost, too."
+            "text": "So in order to keep them from collapsing uncontrollably and possibly block roads, damage infrastructure or kill more people, these buildings had to be broken down by the citizens themselves. By this process, a big part of the buildings that had originally at least partly survived the air strikes, was lost, too."
         },
         {
             "id": 137,
@@ -323,7 +323,7 @@
         {
             "id": 143,
             "character": -1,
-            "text": "In 1927 gypsum copies of the statues were produced and placed in the Grand Hall, while the originals were put into the city museum. The copies did not survive the Second World War. Afterwards, a debate broke out whether the Originals or new copies should replace the missing dancers in the Grand Hall."
+            "text": "In 1927 gypsum copies of the statues were produced and placed in the Grand Hall, while the originals were put into the city museum. The copies did not survive the Second World War. Afterwards, a debate broke out whether the originals or new copies should replace the missing dancers in the Grand Hall."
         },
         {
             "id": 144,
@@ -333,7 +333,7 @@
         {
             "id": 145,
             "character": -1,
-            "text": "One of the dancers is left unpainted nowadays, to show Grasser's mastery of carving better."
+            "text": "One of the dancers is left unpainted nowadays, to emphasize Grasser's mastery in carving."
         },
         {
             "id": 150,
@@ -359,7 +359,7 @@
         {
             "id": 154,
             "character": -1,
-            "text": "In 1887 a new Synagogue was inaugurated, located next to the Herzog-Maxburg. It was broken down by the Nazis in 1938. In the 3rd Reich, the jewish population suffered a lot again. Apart from people who fled, new harassment and persecution followed for the people who stayed. A total of 2.991 Jews were deported from Munich alone."
+            "text": "In 1887 a new synagogue was inaugurated, located next to the Herzog-Maxburg. It was broken down by the Nazis in 1938. In the 3rd Reich, the jewish population suffered a lot again. Apart from people who fled, new harassment and persecution followed for the people who stayed. A total of 2.991 Jews were deported from Munich alone."
         },
         {
             "id": 155,
@@ -379,7 +379,7 @@
         {
             "id": 162,
             "character": -1,
-            "text": "In 2006 it was necessary to renovate the tower which led to the discovery of murals on the inside, betraying its original purpose: it was a noble tower (Geschlechterturm), as common in Tuscany in medieval times. While they served the reason for defending the cities in Italy, however, in Germany those towers were simply a status symbol for rich, influential families."
+            "text": "In 2006 it was necessary to renovate the tower which led to the discovery of murals on the inside, exposing its original purpose: it was a noble tower (Geschlechterturm), as common in Tuscany in medieval times. While they served the reason for defending the cities in Italy, however, in Germany those towers were simply a status symbol for rich, influential families."
         },
         {
             "id": 163,
@@ -394,12 +394,12 @@
         {
             "id": 166,
             "character": -1,
-            "text": "The Sendlinger Tor (Sendling Gate) is one of three remaining historical city gates and dates back to the 14th century: Between 1285 and 1337 a second town fortification was built, which included the Sendlinger Tor. in 1420, both side towers were added. Until 1808, it still had a tower in the middle and three smaller passages that were changed to one big arc in 1906, due to increased traffic. The gate was hardly damaged in the Second World War and last renovated in 1980."
+            "text": "The Sendlinger Tor (Sendling Gate) is one of three remaining historical city gates and dates back to the 14th century: Between 1285 and 1337 a second town fortification was built, which included the Sendlinger Tor. In 1420, both side towers were added. Until 1808, it still had a tower in the middle and three smaller passages that were changed to one big arc in 1906, due to increased traffic. The gate was hardly damaged in the Second World War and last renovated in 1980."
         },
         {
             "id": 167,
             "character": -1,
-            "text": "Below it, you can find the Underground Station “Sendlinger Tor”, an important junction for public transportation in Munich."
+            "text": "Below it, you can find the subway station “Sendlinger Tor”, an important junction for public transportation in Munich."
         },
         {
             "id": 168,
@@ -414,7 +414,7 @@
         {
             "id": 171,
             "character": -1,
-            "text": "The Karlsplatz, widely called “Stachus” is one of Munich's most famous squares."
+            "text": "The Karlsplatz (Karl's Square), widely called “Stachus” is one of Munich's most famous squares."
         },
         {
             "id": 172,
