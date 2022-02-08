@@ -41,6 +41,8 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(dialogueRunning) if (GameManager.Instance.GetGameState() == GameManager.GAMESTATE.WORLD) GameManager.Instance.SetGameState(GameManager.GAMESTATE.STORY);
+
         if (dialogueRunning && ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began ) || Input.GetMouseButtonDown(0)))
         {
             if (pictureShown)
@@ -72,6 +74,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void StartDialogue(int start)
     {
+        Debug.Log("start dialogue");
         gameObject.SetActive(true);
         dialogueRunning = true;
         index = start;
@@ -119,6 +122,7 @@ public class DialogueSystem : MonoBehaviour
         else
         {
             spriteField.SetActive(true);
+            if (GameManager.Instance.GetGameState() != GameManager.GAMESTATE.AR) GameManager.Instance.SetGameState(GameManager.GAMESTATE.WORLD);
             gameObject.SetActive(false);
         }
     }

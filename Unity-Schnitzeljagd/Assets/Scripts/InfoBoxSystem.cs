@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class InfoBoxSystem : MonoBehaviour
 {
@@ -16,6 +18,18 @@ public class InfoBoxSystem : MonoBehaviour
     {
         dialogeBox = GameObject.Find("Dialogue Box");
         diaSys = dialogeBox.GetComponent<DialogueSystem>();
+    }
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        Debug.Log(GameManager.Instance.GetGameState());
+        if(GameManager.Instance.GetGameState() == GameManager.GAMESTATE.AR)
+            DeactivateButton();
     }
 
     public static void SetInfo(int id)
@@ -37,5 +51,6 @@ public class InfoBoxSystem : MonoBehaviour
     {
         infoButton.SetActive(false);
         diaSys.StartDialogue(currentInfo);
+        DeactivateButton();
     }
 }

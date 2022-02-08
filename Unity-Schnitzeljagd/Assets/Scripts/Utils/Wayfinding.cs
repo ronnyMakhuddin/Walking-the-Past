@@ -18,7 +18,7 @@ public class Wayfinding : MonoBehaviour
         Debug.Log(currRoute);
         if (currRoute != ROUTE || currRoute == ROUTES.NONE)
         {
-            Debug.Log("Disable: " + gameObject.name);
+            //Debug.Log("Disable: " + gameObject.name);
             gameObject.SetActive(false);
         }
         else

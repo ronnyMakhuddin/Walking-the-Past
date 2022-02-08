@@ -17,10 +17,13 @@ public class InfoBox : MonoBehaviour
         infoSys = infoBox.GetComponent<InfoBoxSystem>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
-        InfoBoxSystem.SetInfo(id);
-        infoSys.ActivateButton();
+        if (other.tag == "Player" && GameManager.Instance.GetGameState() == GameManager.GAMESTATE.WORLD)
+        {
+            InfoBoxSystem.SetInfo(id);
+            infoSys.ActivateButton();
+        }
     }
 
     private void OnTriggerExit(Collider other)

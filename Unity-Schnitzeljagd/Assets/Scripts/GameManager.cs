@@ -123,20 +123,31 @@ public class GameManager : MonoBehaviour
         return state;
     }
 
+    public void SetGameState(GAMESTATE state)
+    {
+        this.state = state;
+    }
+
 
     private void Update()
     {
-        if (state == GAMESTATE.WORLD)
+        Debug.Log("enabled: " + EnterARButton.enabled + " state: " + state + " arpossible: " + arPossible);
+        if (!EnterARButton.enabled && state == GAMESTATE.WORLD && arPossible)
         {
 
             //show enter AR button
-            ToggleEnterARButton(arPossible);
+            ToggleEnterARButton(true);
         }
+
+        if (!arPossible || state == GAMESTATE.STORY)
+        {
+            ToggleEnterARButton(false);
+        }
+        
     }
 
     public void ARCompleted()
     {
-        completedCheckpoints.Add(currCheckpoint);
         switch (currCheckpoint)
         {
             case AR_SITE.OLD_TOWNHALL: currRoute = Wayfinding.ROUTES.TOWNHALL_MAXBURG; break;
@@ -183,9 +194,18 @@ public class GameManager : MonoBehaviour
 
     public void EnterMapbox()
     {
-        arPossible = false;
+        if (currCheckpoint != AR_SITE.OLD_TOWNHALL)
+        {
+            completedCheckpoints.Add(currCheckpoint); //we need to return to the townhall!
+            arPossible = true;
+        }
+        else
+        {
+            arPossible = false;
+        }
+
         state = GAMESTATE.WORLD;
-        ToggleEnterARButton(false);
+        ToggleEnterARButton(arPossible);
         sceneTransitionManager.GoToScene(Schnitzelconstants.WORLD_SCENE, null);
     }
 
