@@ -7603,7 +7603,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7184874191787491731, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7184874191787491743, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_Pivot.x
@@ -7693,17 +7693,13 @@ PrefabInstance:
       propertyPath: m_Type
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7184874192611704017, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 49ba5b4064c28fa4f99ec7189ea608c9, type: 3}
     - target: {fileID: 7184874193052538707, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: maxPoles
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7184874193058215948, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e7fe61d245ba5c64985f4690a7566c91, type: 3}

@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 047c5025663d9f541955b08cee67db8a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 49ba5b4064c28fa4f99ec7189ea608c9, type: 3}
+  sprite: {fileID: 21300000, guid: b82e645934ea8ff4c8f8ac5d804effd4, type: 3}
   triggerTag: Pipe
   scaleFactor: 0.001
   collected: 0
