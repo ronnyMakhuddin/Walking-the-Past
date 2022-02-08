@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +37,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Place.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spire.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIInstance.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" />
     </changedPaths>
   </component>
@@ -123,6 +123,9 @@
       <workItem from="1643645360703" duration="493000" />
       <workItem from="1643731798311" duration="4887000" />
       <workItem from="1643745707673" duration="1785000" />
+      <workItem from="1644320197760" duration="4234000" />
+      <workItem from="1644329842201" duration="8669000" />
+      <workItem from="1644345041315" duration="1065000" />
     </task>
     <servers />
   </component>

@@ -11,6 +11,10 @@ public class RubbleMinigame : Minigame
     int phase = 1;
     float initialNumPiles = 0;
 
+    public GameObject[] targetPositions;
+    public GameObject spire;
+    private int maxPoles = 4; 
+
     void Awake()
     {
         numTasks = 2;
@@ -28,8 +32,9 @@ public class RubbleMinigame : Minigame
             {
                 //All rubble destroyed, trigger second phase
                 phase = 2;
-
-
+                // rubble quest complete
+                QuestFulfilled.rubbleGone = true;
+                EnableTargetPositions();
             }
             if (rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
             {
@@ -37,13 +42,17 @@ public class RubbleMinigame : Minigame
                 VibrationTypes.OnMaxburgCracksVibrate();
             }
         }
-        else
+        if (phase == 2)
         {
             //Final State, swaps building models + triggers particle systems
             destruction.ProgressState();
             //Start pole placement task
-
+            if (QuestFulfilled.polesPlaced >= 4)
+            {
+                EndMinigame();
+            }
         }
+
     }
 
     void WrapupSwipePiles()
@@ -72,5 +81,19 @@ public class RubbleMinigame : Minigame
         }
     }
 
+    void EnableTargetPositions()
+    {
+        foreach (var pos in targetPositions)
+        {
+            pos.SetActive(true);
+        }
+    }
+
+    void EndMinigame()
+    {
+        spire.SetActive(true);
+        //OnMinigameFinished();
+        phase = 3;
+    }
     
 }

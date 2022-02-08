@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,12 +11,23 @@ public class QuestFulfilled : MonoBehaviour
     public static bool spirePlaced = false;
     public static bool walkedSynagoge = true;
 
-    public int maxPoles = 2;
+    public int maxPoles = 4;
     public static int polesCollected = 0;
     public static int polesPlaced = 0;
 
     public int maxDancers = 6;
     public static int dancersCollected = 0;
+
+    private void Start()
+    {
+        rubbleGone = false;
+        spireCollected = false;
+        spirePlaced = false;
+        walkedSynagoge = true;
+        polesCollected = 0;
+        polesPlaced = 0;
+        dancersCollected = 0;
+    }
 
     public bool CheckQuest0()
     {

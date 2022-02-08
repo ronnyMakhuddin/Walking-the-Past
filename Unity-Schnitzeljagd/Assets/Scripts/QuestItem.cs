@@ -123,7 +123,7 @@ public class QuestItem : MonoBehaviour
                             
                             foreach (Transform child in hitObject.transform)
                                 child.gameObject.SetActive(true);
-                            CheckSpire();
+                            CheckPlaced();
                         }
                     }
                 }
@@ -167,11 +167,16 @@ public class QuestItem : MonoBehaviour
         selected = select;
     }
 
-    private void CheckSpire()
+    private void CheckPlaced()
     {
         if (gameObject.CompareTag("Spire"))
         {
             QuestFulfilled.spirePlaced = true;
+        }
+        if (gameObject.CompareTag("Pipe"))
+        {
+            QuestFulfilled.polesPlaced++;
+            Debug.Log("placed pipes: " + QuestFulfilled.polesPlaced);
         }
     }
 

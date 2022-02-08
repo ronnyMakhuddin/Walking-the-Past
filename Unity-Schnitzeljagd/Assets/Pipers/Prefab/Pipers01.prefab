@@ -11,10 +11,11 @@ GameObject:
   - component: {fileID: 403698}
   - component: {fileID: 3343106}
   - component: {fileID: 2328714}
-  - component: {fileID: 6448248}
+  - component: {fileID: 7397971109772572076}
+  - component: {fileID: 2424224350457386908}
   m_Layer: 0
   m_Name: Pipers01
-  m_TagString: Untagged
+  m_TagString: Pipe
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 126862}
-  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5000001, w: 0.49999994}
+  m_LocalRotation: {x: -0.5, y: -0.5, z: -0.5, w: 0.5}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.002, y: 0.005, z: 0.002}
+  m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -90}
 --- !u!33 &3343106
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -82,8 +83,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6448248
-MeshCollider:
+--- !u!65 &7397971109772572076
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -92,7 +93,24 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 78eefc55de725b24794e23fa05da0976, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 22.438799, y: 173.64418, z: 22.39455}
+  m_Center: {x: -0.0000009536743, y: 0, z: 11.082212}
+--- !u!114 &2424224350457386908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126862}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 047c5025663d9f541955b08cee67db8a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: b82e645934ea8ff4c8f8ac5d804effd4, type: 3}
+  triggerTag: Pipe
+  scaleFactor: 0.001
+  collected: 0
+  selected: 0
+  moving: 0
