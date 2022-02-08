@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pipers/Prefab/Pipers01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pipers/Prefab/Pipers01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pipers/Prefab/Pipers02.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pipers/Prefab/Pipers02.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Frauenkirche.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Frauenkirche.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Indicator.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Indicator.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipe1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pipe1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Pipe2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Pipe2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,14 +53,15 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Place.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spire.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIInstance.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" />
     </changedPaths>
   </component>
@@ -123,6 +139,8 @@
       <workItem from="1643645360703" duration="493000" />
       <workItem from="1643731798311" duration="4887000" />
       <workItem from="1643745707673" duration="1785000" />
+      <workItem from="1644320197760" duration="4234000" />
+      <workItem from="1644329842201" duration="8669000" />
     </task>
     <servers />
   </component>

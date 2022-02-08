@@ -11,15 +11,7 @@ public class Inventory : MonoBehaviour
 
     public static bool AddItem(QuestItem item)
     {
-        if (item.gameObject.CompareTag("Spire"))
-        {
-            QuestFulfilled.spireCollected = true;
-        }
-        
-        if (item.gameObject.CompareTag("Morisk"))
-        {
-            QuestFulfilled.dancersCollected++;
-        }
+        CheckTag(item);
         
         for (int i = 0; i < items.Length; ++i)
         {
@@ -63,5 +55,23 @@ public class Inventory : MonoBehaviour
     public static int getCount()
     {
         return itemCount;
+    }
+
+    private static void CheckTag(QuestItem item)
+    {
+        if (item.gameObject.CompareTag("Spire"))
+        {
+            QuestFulfilled.spireCollected = true;
+        }
+        
+        if (item.gameObject.CompareTag("Morisk"))
+        {
+            QuestFulfilled.dancersCollected++;
+        }
+        
+        if (item.gameObject.CompareTag("Pipe"))
+        {
+            QuestFulfilled.polesCollected++;
+        }
     }
 }

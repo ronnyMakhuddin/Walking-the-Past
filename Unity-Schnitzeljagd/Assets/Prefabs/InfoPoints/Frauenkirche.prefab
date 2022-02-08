@@ -179,7 +179,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6692139852497382953}
-  - component: {fileID: 6692139852497382954}
   m_Layer: 5
   m_Name: Frauenkirche
   m_TagString: Untagged

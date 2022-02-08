@@ -13,6 +13,9 @@ TagManager:
   - Path
   - Spire
   - Morisk
+  - Triggerzone
+  - Undefined
+  - Pipe
   layers:
   - Default
   - TransparentFX

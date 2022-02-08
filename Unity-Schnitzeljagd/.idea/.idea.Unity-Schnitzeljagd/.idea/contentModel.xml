@@ -694,6 +694,8 @@
           <e p="DialogueSystem.cs" t="Include" />
           <e p="FileManager.cs" t="Include" />
           <e p="GameManager.cs" t="Include" />
+          <e p="InfoBox.cs" t="Include" />
+          <e p="InfoBoxSystem.cs" t="Include" />
           <e p="Interactions" t="Include">
             <e p="SwipeOnObject.cs" t="Include" />
             <e p="Tap2PlaceObject.cs" t="Include" />
@@ -722,11 +724,13 @@
             <e p="ARZone.cs" t="Include" />
             <e p="CamPos.cs" t="Include" />
             <e p="CustomVibrate.cs" t="Include" />
+            <e p="DesignToggle.cs" t="Include" />
             <e p="GPS" t="Include">
               <e p="GPSARCoord.cs" t="Include" />
               <e p="GPSPositioningCam.cs" t="Include" />
               <e p="GPSPositioningObject.cs" t="Include" />
             </e>
+            <e p="Indicator.cs" t="Include" />
             <e p="MoveForARSetup.cs" t="Include" />
             <e p="Schnitzelconstants.cs" t="Include" />
             <e p="Singleton.cs" t="Include" />
