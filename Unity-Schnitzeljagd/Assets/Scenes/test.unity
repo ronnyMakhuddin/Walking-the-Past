@@ -486,7 +486,7 @@ MonoBehaviour:
   crackedLifetime: 2
   maxburg_visual_states:
   - {fileID: 919132149155446097, guid: 87dd0ff19c7dd964abf8045313ffb2e7, type: 3}
-  - {fileID: 2385166795674892385, guid: 1084c01ed1e91d947ba9c4682fcbdd6d, type: 3}
+  - {fileID: 919132149155446097, guid: d4067a3879b037e48a71ca2fd1d09c92, type: 3}
 --- !u!4 &48436031
 Transform:
   m_ObjectHideFlags: 0
