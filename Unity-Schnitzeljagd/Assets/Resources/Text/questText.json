@@ -116,29 +116,29 @@
             "text": "So, place the spire on the facade to see how it fits!"
         },
         {
-            "id": 31,
-            "character": 0,
-            "text": "Looks quite good! We can repair this and make some more to replace the ones you didn’t find!"
-        },
-        {
             "id": 32,
             "character": 0,
-            "text": "Our next task is to redecorate the big hall on the first level! If you walk underneath the Town Hall and look up, you can see right into it!"
+            "text": "It looks so much better already! Thank you for your help. I hope you enjoy the rest of your stay here."
         },
         {
             "id": 33,
             "character": 0,
-            "text": "Right, let's place the spire on the facade and see how it fits!"
+            "text": "Goodbye!"
         },
         {
-            "id": 40,
+            "id": 39,
             "character": 0,
             "text": "Oh no, looks like we need to clear away some rubble! No use wasting time..."
         },
         {
+            "id": 40,
+            "character": 0,
+            "text": "Look the people here are clearing up the rubble to make space for the deconstruction of the Maxburg. Let's give them a hand since we are already here."
+        },
+        {
             "id": 45,
             "character": 0,
-            "text": "Collect the iron rods."
+            "text": "Let's also pick up the iron rods."
         },
         {
             "id": 50,
@@ -148,7 +148,7 @@
         {
             "id": 55,
             "character": 0,
-            "text": "Ok, let’s collect the spire and then we’re good to go. But, since we’re already on the move, let’s make a quick stop at the Stadtmuseum."
+            "text": "Ok, now that we collected the spire we’re good to go. But, since we’re already on the move, let’s make a quick stop at the Stadtmuseum."
         },
         {
             "id": 56,
