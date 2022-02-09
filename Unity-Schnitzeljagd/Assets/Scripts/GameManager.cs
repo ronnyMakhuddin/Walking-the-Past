@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
             ToggleEnterARButton(true);
         }
 
-        if (!arPossible || state == GAMESTATE.STORY)
+        if (EnterARButton.enabled && (!arPossible || state == GAMESTATE.STORY))
         {
             ToggleEnterARButton(false);
         }
@@ -197,10 +197,6 @@ public class GameManager : MonoBehaviour
         if (currCheckpoint != AR_SITE.OLD_TOWNHALL)
         {
             completedCheckpoints.Add(currCheckpoint); //we need to return to the townhall!
-            arPossible = true;
-        }
-        else
-        {
             arPossible = false;
         }
 
@@ -222,5 +218,6 @@ public class GameManager : MonoBehaviour
         EnterARButton.image.enabled = active;
         EnterARButton.transform.GetChild(0).GetComponent<TextMeshProUGUI>().text = ARSiteToTitle(currCheckpoint);
         EnterARButton.transform.GetChild(0).gameObject.SetActive(active);
+        if (active) state = GAMESTATE.WORLD;
     }
 }
