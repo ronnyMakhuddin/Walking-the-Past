@@ -49,6 +49,7 @@ public class InfoBoxSystem : MonoBehaviour
 
     public void DisplayInfo()
     {
+        GameManager.Instance.SetGameState(GameManager.GAMESTATE.STORY);
         infoButton.SetActive(false);
         diaSys.StartDialogue(currentInfo);
         DeactivateButton();

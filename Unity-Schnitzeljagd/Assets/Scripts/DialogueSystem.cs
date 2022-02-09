@@ -41,7 +41,11 @@ public class DialogueSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(dialogueRunning) if (GameManager.Instance.GetGameState() == GameManager.GAMESTATE.WORLD) GameManager.Instance.SetGameState(GameManager.GAMESTATE.STORY);
+        if (dialogueRunning && GameManager.Instance.GetGameState() == GameManager.GAMESTATE.WORLD)
+        {
+            Debug.Log("running");
+            GameManager.Instance.SetGameState(GameManager.GAMESTATE.STORY);
+        }
 
         if (dialogueRunning && ((Input.touchCount > 0 && Input.GetTouch(0).phase == TouchPhase.Began ) || Input.GetMouseButtonDown(0)))
         {
