@@ -5750,7 +5750,7 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 6692139852497382955, guid: 7f313e96f32171e4cae05a71d2d74698, type: 3}
+          prefab: {fileID: 6692139852497382955, guid: 669dcf2ba6d9be847a938f91bd073937, type: 3}
           scaleDownWithWorld: 0
         findByType: 2
         categories: -1

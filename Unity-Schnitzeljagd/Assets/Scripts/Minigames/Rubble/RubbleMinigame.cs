@@ -36,7 +36,7 @@ public class RubbleMinigame : Minigame
                 QuestFulfilled.rubbleGone = true;
                 EnableTargetPositions();
             }
-            if (rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
+            if (destruction.GetStage() == 0 && rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
             {
                 destruction.ProgressState();
                 VibrationTypes.OnMaxburgCracksVibrate();
@@ -45,7 +45,7 @@ public class RubbleMinigame : Minigame
         if (phase == 2)
         {
             //Final State, swaps building models + triggers particle systems
-            destruction.ProgressState();
+            if(destruction.GetStage() == 1) destruction.ProgressState();
             //Start pole placement task
             if (QuestFulfilled.polesPlaced >= 4)
             {

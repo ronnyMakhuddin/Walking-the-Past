@@ -21,7 +21,7 @@ MonoBehaviour:
     m_SerializedTextureGuid:
       m_GuidLow: 4410349888857557217
       m_GuidHigh: 13877238392892660683
-    m_Size: {x: 0.27, y: 0.16714287}
+    m_Size: {x: 2.7, y: 1.6714286}
     m_SpecifySize: 1
     m_Name: 1-fenster gross (002)
     m_Texture: {fileID: 0}

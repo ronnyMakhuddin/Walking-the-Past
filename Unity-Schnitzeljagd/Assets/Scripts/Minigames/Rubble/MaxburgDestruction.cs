@@ -28,6 +28,11 @@ public class MaxburgDestruction : MonoBehaviour
 
     bool allStagesDone;
 
+    public int GetStage()
+    {
+        return currentStage;
+    }
+
     public void Awake()
     {
         ProgressState();
