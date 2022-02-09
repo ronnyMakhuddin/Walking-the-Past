@@ -31,7 +31,7 @@ public class QuestFulfilled : MonoBehaviour
 
     public bool CheckQuest0()
     {
-        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("test"));
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName(Schnitzelconstants.MAXBURG_SCENE));
     }
     
     public bool CheckQuest1()
@@ -56,7 +56,7 @@ public class QuestFulfilled : MonoBehaviour
     
     public bool CheckQuest5()
     {
-        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("Museum"));
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName(Schnitzelconstants.MUSEUM));
     }
     
     public bool CheckQuest6()
@@ -71,7 +71,7 @@ public class QuestFulfilled : MonoBehaviour
     
     public bool CheckQuest8()
     {
-        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName("OldTownHall"));
+        return SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName(Schnitzelconstants.OLD_TOWNHALL_SCENE));
     }
     
     public bool CheckQuest9()
