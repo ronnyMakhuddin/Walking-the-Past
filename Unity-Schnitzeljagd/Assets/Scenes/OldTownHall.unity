@@ -544,6 +544,14 @@ PrefabInstance:
       propertyPath: trigger
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6534834559831547773, guid: 9458d05a76441d847937ddff9c84c2b6, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6534834559831547773, guid: 9458d05a76441d847937ddff9c84c2b6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b070936451ad73e40b1e61e8be459d6f, type: 2}
     - target: {fileID: 6534834559831547775, guid: 9458d05a76441d847937ddff9c84c2b6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -5916,7 +5924,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: da2aed461feb19a4e8220599522246a9, type: 2}
+  - {fileID: 2100000, guid: b070936451ad73e40b1e61e8be459d6f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

@@ -131,7 +131,7 @@ public class GameManager : MonoBehaviour
 
     private void LateUpdate()
     {
-        Debug.Log("enabled: " + EnterARButton.enabled + " state: " + state + " arpossible: " + arPossible);
+        //Debug.Log("enabled: " + EnterARButton.enabled + " state: " + state + " arpossible: " + arPossible);
         if (!EnterARButton.enabled && state == GAMESTATE.WORLD && arPossible)
         {
 
