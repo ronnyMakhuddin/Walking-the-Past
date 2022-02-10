@@ -3149,7 +3149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061d2afb48ace4fd19611279b6cf732f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _useDeviceOrientation: 0
+  _useDeviceOrientation: 1
   _subtractUserHeading: 0
   _rotationFollowFactor: 2
   _rotateZ: 0
@@ -3219,7 +3219,7 @@ MonoBehaviour:
   _autoFireEvent: 1
   _updateInterval: 0
   _sendEvent: 0
-  _latitudeLongitude: 48.13681781768322, 11.576732086193015
+  _latitudeLongitude: 48.137209917428926, 11.576172805630355
   _targetTransform: {fileID: 0}
 --- !u!21 &1785267027
 Material:
