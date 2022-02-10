@@ -3149,7 +3149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 061d2afb48ace4fd19611279b6cf732f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _useDeviceOrientation: 1
+  _useDeviceOrientation: 0
   _subtractUserHeading: 0
   _rotationFollowFactor: 2
   _rotateZ: 0
@@ -4901,13 +4901,13 @@ MonoBehaviour:
         _maskValue: 0
         selectedTypes: 
         spawnPrefabOptions:
-          prefab: {fileID: 4785024434236231361, guid: 31a192ec34392a548be592a97dc379df, type: 3}
+          prefab: {fileID: 4785024434236231361, guid: e3fc840c126511746a46633ab01b4531, type: 3}
           scaleDownWithWorld: 1
         findByType: 2
         categories: -1
         nameString: 
         coordinates:
-        - 48.184077018777096, 11.491873788599447
+        - 48.18399478717204, 11.492000280168575
         density: 15
       - coreOptions:
           sourceId: 
