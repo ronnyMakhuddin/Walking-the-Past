@@ -36,4 +36,9 @@ public class SceneLoader : MonoBehaviour
         DontDestroyOnLoad(myUI);
         SceneManager.LoadScene("OldTownHall");
     }
+
+    public void DebugLoad()
+    {
+        SceneManager.LoadScene("MunichMap");
+    }
 }

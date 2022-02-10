@@ -148,6 +148,8 @@ public class MenuSystem : MonoBehaviour
         }
     }
 
+
+    public GameObject spire;
     // respawning item into the scene
     public void Respawn(int i)
     {
@@ -158,8 +160,21 @@ public class MenuSystem : MonoBehaviour
         }
         Debug.Log("Spawning nr. " + i);
         Debug.Log(Inventory.items[i]);
-        Debug.Log(Inventory.items[i].gameObject);
-        //Inventory.items[i].gameObject.transform.position = Camera.main.transform.forward * 1f;
+
+        if (Inventory.items[i].GetTag().Equals("Spire"))
+        {
+            spire.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.3f
+                ;// 
+            spire.transform.localScale = Vector3.one * Inventory.items[i].scaleFactor;
+            spire.GetComponent<QuestItem>().Select(true);
+            spire.GetComponent<QuestItem>().Collect();
+            spire.SetActive(true);
+            itemSlots[i].GetComponent<Image>().sprite = null;
+            Inventory.items[i].Select(true);
+            return;
+        }
+        
+        
         Inventory.items[i].gameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.3f
                                                                        ;// 
         Inventory.items[i].transform.localScale = Vector3.one * Inventory.items[i].scaleFactor;
@@ -168,5 +183,16 @@ public class MenuSystem : MonoBehaviour
         Inventory.items[i].gameObject.SetActive(true);
         itemSlots[i].GetComponent<Image>().sprite = null;
         Inventory.items[i].Select(true);
+    }
+
+    public void AddSpire()
+    {
+        for (int i = 0; i < Inventory.items.Length; ++i)
+        {
+            if (Inventory.items[i] == null) continue;
+            if (Inventory.items[i].GetTag().Equals("Spire")) return;
+        }
+        
+        Inventory.AddItem(spire.GetComponent<QuestItem>());
     }
 }
