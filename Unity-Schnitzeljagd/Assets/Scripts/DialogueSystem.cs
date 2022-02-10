@@ -58,14 +58,16 @@ public class DialogueSystem : MonoBehaviour
                 return;
             }
             
-            QuestText text = texts[index];
+            texts.TryGetValue(index, out var text);
+            //QuestText text = texts[index];
             if (text == null)
             {
                 Debug.Log("Cannot get text at index " + index);
             }
 
-            if (!String.IsNullOrEmpty(textfield.text) && textfield.text == texts[index].text)
+            if (text != null && !String.IsNullOrEmpty(textfield.text) && textfield.text == texts[index].text)
             {
+                Debug.Log("Playing next paragraph-");
                 NextParagraph();
             }
             else
@@ -127,6 +129,7 @@ public class DialogueSystem : MonoBehaviour
         {
             spriteField.SetActive(true);
             if (GameManager.Instance.GetGameState() != GameManager.GAMESTATE.AR) GameManager.Instance.SetGameState(GameManager.GAMESTATE.WORLD);
+            CheckSynagogue();
             gameObject.SetActive(false);
         }
     }
@@ -138,5 +141,12 @@ public class DialogueSystem : MonoBehaviour
         currentPic = pictures[index - 1];
         currentPic.SetActive(true);
     }
-    
+
+    private void CheckSynagogue()
+    {
+        if (index >= 150)
+        {
+            QuestFulfilled.walkedSynagoge = true;
+        }
+    }
 }

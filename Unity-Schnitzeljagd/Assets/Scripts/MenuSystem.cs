@@ -163,6 +163,8 @@ public class MenuSystem : MonoBehaviour
         Inventory.items[i].gameObject.transform.position = Camera.main.transform.position + Camera.main.transform.forward * 0.3f
                                                                        ;// 
         Inventory.items[i].transform.localScale = Vector3.one * Inventory.items[i].scaleFactor;
+        Inventory.items[i].transform.rotation.Set(0, 0, 0, 0);
+        Inventory.items[i].transform.Rotate(Vector3.right, Camera.main.transform.rotation.eulerAngles.y);
         Inventory.items[i].gameObject.SetActive(true);
         itemSlots[i].GetComponent<Image>().sprite = null;
         Inventory.items[i].Select(true);
