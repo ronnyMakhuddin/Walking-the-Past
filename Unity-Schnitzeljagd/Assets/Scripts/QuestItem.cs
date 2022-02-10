@@ -167,6 +167,11 @@ public class QuestItem : MonoBehaviour
         selected = select;
     }
 
+    public string GetTag()
+    {
+        return triggerTag;
+    }
+
     private void CheckPlaced()
     {
         if (gameObject.CompareTag("Spire"))

@@ -3,14 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Sendlinger Tor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Sendlinger Tor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Townhall Info.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/InfoPoints/Townhall Info.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Quests/4_collect_spire.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Quests/4_collect_spire.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/UI.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/test.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,16 +44,16 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Place.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Spire.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/UIInstance.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22NJncHpYac7XvoDnmzVaqdAYyZ" />
@@ -135,7 +133,8 @@
       <workItem from="1644320197760" duration="4234000" />
       <workItem from="1644329842201" duration="8669000" />
       <workItem from="1644345041315" duration="1065000" />
-      <workItem from="1644479289458" duration="8836000" />
+      <workItem from="1644479289458" duration="9662000" />
+      <workItem from="1644516177442" duration="3295000" />
     </task>
     <servers />
   </component>
