@@ -187,12 +187,13 @@ public class MenuSystem : MonoBehaviour
 
     public void AddSpire()
     {
+        Debug.Log("checking for spire.");
         for (int i = 0; i < Inventory.items.Length; ++i)
         {
             if (Inventory.items[i] == null) continue;
             if (Inventory.items[i].GetTag().Equals("Spire")) return;
         }
-        
         Inventory.AddItem(spire.GetComponent<QuestItem>());
+        Debug.Log("spire added to inventory");
     }
 }

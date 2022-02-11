@@ -59,6 +59,10 @@ public class QuestSystem : MonoBehaviour
         Quest next = mainQuest.GetNextQuest();
         if (next != null)
         {
+            if (next.GetID() == 9)
+            {
+                GameObject.Find("Menu System").GetComponent<MenuSystem>().AddSpire();
+            }
             mainQuest = next;
             dialogueSystem.StartDialogue(mainQuest.getDialogueStart());
             return;
@@ -107,11 +111,6 @@ public class QuestSystem : MonoBehaviour
             case 7:
                 return check.CheckQuest7();
             case 8:
-                if (check.CheckQuest8())
-                {
-                    GameObject.Find("Menu System").GetComponent<MenuSystem>().AddSpire();
-                    return true;
-                }
                 return check.CheckQuest8();
             case 9:
                 return check.CheckQuest9();
