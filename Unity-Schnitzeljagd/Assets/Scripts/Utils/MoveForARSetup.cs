@@ -13,7 +13,7 @@ public class MoveForARSetup : MonoBehaviour
     private Vector3 scale_real_to_map = new Vector3(-2f, 1f, -2f);
     void Awake()
     {
-        bool trialMode = true;
+        bool trialMode = false;
 
         isTownhall = SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName(Schnitzelconstants.OLD_TOWNHALL_SCENE));
         Debug.Log(isTownhall);
