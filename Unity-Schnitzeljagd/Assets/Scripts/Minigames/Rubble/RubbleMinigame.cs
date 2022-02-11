@@ -34,7 +34,7 @@ public class RubbleMinigame : Minigame
                 phase = 2;
                 // rubble quest complete
                 QuestFulfilled.rubbleGone = true;
-                EnableTargetPositions();
+                //EnableTargetPositions();
             }
             if (destruction.GetStage() == 0 && rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
             {
