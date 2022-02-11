@@ -47,7 +47,7 @@ public class RubbleMinigame : Minigame
             //Final State, swaps building models + triggers particle systems
             if(destruction.GetStage() == 1) destruction.ProgressState();
             //Start pole placement task
-            if (QuestFulfilled.polesPlaced >= 4)
+            if (QuestFulfilled.polesPlaced >= maxPoles)
             {
                 EndMinigame();
             }
