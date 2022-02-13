@@ -105,16 +105,7 @@
             "character": 0,
             "text": "So, place the spire on the facade to see how it fits!"
         },
-        {
-            "id": 32,
-            "character": 0,
-            "text": "It looks so much better already! Thank you for your help. I hope you enjoy the rest of your stay here."
-        },
-        {
-            "id": 33,
-            "character": 0,
-            "text": "Goodbye!"
-        },
+        
         {
             "id": 39,
             "character": 0,
@@ -455,7 +446,61 @@
             "id": 184,
             "character": 0,
             "text": "That happened between 1952 and 1957. The statues on the gable were only replaced in 1960, however, and the tower that had always been an important part of the Old Town Hall, was rebuilt from 1970 onwards. It was modeled after the oldest existing elevation from the year 1493 in gothic style."
+        },
+        {
+            "id": 200,
+            "character": 0,
+            "text": "It looks so much better already! Thank you for your help. I hope you enjoy the rest of your stay here."
+        },
+        {
+            "id": 201,
+            "character": 0,
+            "text": "Goodbye!"
+        },
+        {
+            "id": 202,
+            "character": -1,
+            "text": "The following sources have been used:\n https://kultur-vollzug.de/article-60014/2016/04/28/rettung-der-ruinenstadt/\n https://www.br.de/radio/bayern2/sendungen/land-und-leute/muenchner-stadtplaner-dynastie-meitinger-strassberger100.html\n https://volkverlag.de/shop/karl-meitinger-das-neue-munchen/\n (all as consulted online on 25 January 2022)"
+        },
+        {
+            "id": 203,
+            "character": -1,
+            "text": "Schattenhofer, Michael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972.\n https://www.muenchner-dom.de/ (as consulted online on 06 February 2022)\n https://www.munich.travel/en/pois/urban-districts/frauenkirche\n https://www.muenchen.de/sehenswuerdigkeiten/orte/120372.html (both as consulted online on 05 February 2022)\n"
+        },
+        {
+            "id": 204,
+            "character": -1,
+            "text": "Andres, Helga Marie: rekonstruktion der Herzog-Max-Burg in München. München: tuduv Verlag 1987.\nhttps://geoportal.bayern.de/denkmalatlas/searchResult.html?koid=29407&objtyp=bau&top=1 (as consulted online on 05 February 2022)\nhttps://www.bavariathek.bayern/wiederaufbau/orte/detail/muenchen/2\n"
+        },
+        {
+            "id": 205,
+            "character": -1,
+            "text": "Ens, Carmen Maria: Altstadt im Umbau. Der Wiederaufbau des Münchner Kreuzviertels zwischen 1945 und 1958. Diss. Technische Universität München, 2013.\nSchattenhofer, Michael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972.\nhttps://www.muenchner-stadtmuseum.de/sammlungen/angewandte-kunst/die-moriskentaenzer (as consulted online on 05 February 2022)"
+        },
+        {
+            "id": 206,
+            "character": 0,
+            "text": "https://www.alemannia-judaica.de/muenchen_synagogen.htm\nhttps://www.munich.travel/en/pois/urban-districts/ohel-jakob-synagoge\nhttps://www.ikg-m.de/juedisches-zentrum/synagogenfuhrungen/anmeldung-zu-den-fuhrungen/\nhttps://www.muenchen.de/sehenswuerdigkeiten/orte/1213483.html\nhttps://en.wikipedia.org/wiki/Ohel_Jakob_synagogue_(Munich) (all as consulted online on 06 February 2022)"
+        },
+        {
+            "id": 207,
+            "character": 0,
+            "text": "https://www.tz.de/muenchen/stadt/das-geheimnis-des-loewenturms-62658.html\nhttps://www.outdooractive.com/en/poi/munich/loewenturm-at-the-rindermarkt/49637040/\nhttps://de.wikipedia.org/wiki/Geschlechterturm\nhttps://www.muenchen.de/sehenswuerdigkeiten/orte/120455.html\nhttps://www.muenchen.travel/pois/stadt-viertel/sendlinger-tor (all as consulted online on 06 February 2022)"
+        },
+        {
+            "id": 208,
+            "character": 0,
+            "text": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120328.html\nhttps://www.muenchen.de/sehenswuerdigkeiten/orte/120458.html\nhttps://www.munich.travel/en/pois/urban-districts/karlsplatz-stachus\nhttps://www.muenchenwiki.de/wiki/Eustachius_F%C3%B6derl (all as consulted online on 07 February 2022)\nhttps://munich.foravisit.com/muenchen/sehenswuerdigkeiten/architektur/plaetze-strassen/karlsplatz-(stachus)/  (as consulted online on 06 February 2022)"
+        },
+        {
+            "id": 209,
+            "character": 0,
+            "text": "Pictures:\nMichael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972., S. 154, 155\nMichael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972., S. 146\n"
+        },
+        {
+            "id": 210,
+            "character": 0,
+            "text": "https://www.muenchner-dom.de/die-kathedrale/geschichte/baugeschichte/\nhttps://www.muenchenwiki.de/w/images/thumb/1/19/Muesendlingertorlebschee1866.jpg/320px-Muesendlingertorlebschee1866.jpg"
         }
-        
     ]
 }

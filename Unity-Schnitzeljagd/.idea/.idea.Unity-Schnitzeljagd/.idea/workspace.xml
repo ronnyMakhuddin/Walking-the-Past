@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5720abed-fd67-4e72-aa86-2534c1e8d490" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Unity-Schnitzeljagd/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Quests/10_next_task.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Quests/10_next_task.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Text/questText.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MunichMap.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Museum.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Museum.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/OldTownHall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/OldTownHall.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/test.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/test.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +51,13 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/Inventory.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestFulfilled.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/DialogueSystem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
       <option value="$PROJECT_DIR$/Assets/Scripts/SceneLoader.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/QuestSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/MenuSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Minigames/Rubble/RubbleMinigame.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/Utils/MoveForARSetup.cs" />
+      <option value="$PROJECT_DIR$/Assets/Resources/Text/questText.json" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="22NJncHpYac7XvoDnmzVaqdAYyZ" />
@@ -129,6 +140,9 @@
       <workItem from="1644479289458" duration="9662000" />
       <workItem from="1644516177442" duration="3536000" />
       <workItem from="1644565373355" duration="3175000" />
+      <workItem from="1644572164602" duration="525000" />
+      <workItem from="1644580852417" duration="1049000" />
+      <workItem from="1644745257000" duration="3168000" />
     </task>
     <servers />
   </component>
