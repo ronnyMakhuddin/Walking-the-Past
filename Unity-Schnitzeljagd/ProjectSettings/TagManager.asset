@@ -3,19 +3,31 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Building
+  - POI
+  - Item
+  - Item Slot
+  - ARLoadButton
+  - ARSessionOrigin
+  - Path
+  - Spire
+  - Morisk
+  - Triggerzone
+  - Undefined
+  - Pipe
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Background
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Swipeable
+  - Inventory
+  - TriggerZone
+  - Remain
+  - Collapse
   - 
   - 
   - 
@@ -40,4 +52,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: UI
+    uniqueID: 1453741583
+    locked: 0
+  - name: Inventory
+    uniqueID: 192876083
     locked: 0

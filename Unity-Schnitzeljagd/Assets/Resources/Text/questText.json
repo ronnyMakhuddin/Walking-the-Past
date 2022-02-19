@@ -1,0 +1,506 @@
+{
+    "Items": [
+        {
+            "id": 0,
+            "character": 0,
+            "text": "Please help me find the spire in front of the Old Maxburg."
+        },
+        {
+            "id": 1,
+            "character": 0,
+            "text": "Clean up the rubble."
+        },
+        {
+            "id": 2,
+            "character": 0,
+            "text": "Collect the poles to stabilize the building."
+        },
+        {
+            "id": 3,
+            "character": 0,
+            "text": "Place the poles against the building."
+        },
+        {
+            "id": 4,
+            "character": 0,
+            "text": "Collect the spire."
+        },
+        {
+            "id": 5,
+            "character": 0,
+            "text": "Go to the Museum."
+        },
+        {
+            "id": 6,
+            "character": 0,
+            "text": "Collect the dancers."
+        },
+        {
+            "id": 7,
+            "character": 0,
+            "text": "Walk around the synagoge."
+        },
+        {
+            "id": 8,
+            "character": 0,
+            "text": "Return to the Old Townhall."
+        },
+        {
+            "id": 9,
+            "character": 0,
+            "text": "Place the spire on the facade."
+        },
+        {
+            "id": 10,
+            "character": 0,
+            "text": "$Next Task."
+        },
+        {
+            "id": 12,
+            "character": 0,
+            "text": "Greetings, I’m Karl Meitinger! Welcome to Munich in 1955!"
+        },
+        {
+            "id": 13,
+            "character": 0,
+            "text": "During World War 2 I already imagined how we could rebuild the city after its destruction. After the war, I presented my vision to the city council. The council was delighted and agreed to my plans. Currently, we are rebuilding the Old Town Hall. We already started working on it a little bit, to keep it from falling on peoples’ heads. It was a mess after the war, look:"
+        },
+        {
+            "id": 14,
+            "character": 1,
+            "text": "$picture"
+        },
+        {
+            "id": 15,
+            "character": 2,
+            "text": "$picture"
+        },
+        {
+            "id": 16,
+            "character": 0,
+            "text": "Just this year, we had the money to rebuild the gable facades almost like they were in 1936, see:"
+        },
+        {
+            "id": 17,
+            "character": 3,
+            "text": "$picture"
+        },
+        {
+            "id": 18,
+            "character": 0,
+            "text": "It was magnificent! But you see those spires on the roof? Unfortunately, the other one did not stay in its place during destruction. But yesterday I heard someone spotted it on the rubble dump for trash from the war in front of Maxburg."
+        },
+        {
+            "id": 19,
+            "character": 0,
+            "text": "Will you come and help me find it?"
+        },
+        {
+            "id": 21,
+            "character": 0,
+            "text": "Look, here’s our spire. Let’s pack it."
+        },
+        {
+            "id": 30,
+            "character": 0,
+            "text": "So, place the spire on the facade to see how it fits!"
+        },
+        
+        {
+            "id": 39,
+            "character": 0,
+            "text": "Oh no, looks like we need to clear away some rubble! No use wasting time..."
+        },
+        {
+            "id": 40,
+            "character": 0,
+            "text": "Oh no, it looks like the spire is buried under rubble. But by clearing that away, we can help the people cleaning up the center while looking for our spire."
+        },
+        {
+            "id": 45,
+            "character": 0,
+            "text": "Hmm i wonder where the spire could be... Maybe you can look around some more and also pick up the iron rods lying around."
+        },
+        {
+            "id": 50,
+            "character": 0,
+            "text": "Looks like these buildings also paid a tribute to the war."
+        },
+        {
+            "id": 51,
+            "character": 0,
+            "text": "Didn’t we find some iron rods before? We can use those to stabilize the building so it doesn’t harm anyone. I think there’s already a competition planned on what to build here, anyways."
+        },
+        {
+            "id": 55,
+            "character": 0,
+            "text": "We're already on the move - how about we have a quick stop at the Stadtmuseum on the way back?"
+        },
+        {
+            "id": 56,
+            "character": 0,
+            "text": "We are also rebuilding the Grand Hall on the Inside of the Old Town Hall. Much of its interior decoration was lost. But our most famous statues, the morris dancers, were displayed in the museum before. Now we want to put them back into the Town Hall."
+        },
+        {
+            "id": 60,
+            "character": 0,
+            "text": "Here we are. The curator already placed the dancers out for us. So nice of him! Let’s just pack them."
+        },
+        {
+            "id": 65,
+            "character": 0,
+            "text": "Before heading back, how about taking a look around this square? Before the war, the main synagogue of Munich was placed right next to the Maxburg. But the new one was built here now, right next to a Jewish Museum."
+        },
+        {
+            "id": 66,
+            "character": 0,
+            "text": "Let’s walk around the Synagogue once before heading back."
+        },
+        {
+            "id": 70,
+            "character": 0,
+            "text": "So, now we’re good to go back."
+        },
+        {
+            "id": 100,
+            "character": 0,
+            "text": "Karl Meitinger:"
+        },
+        {
+            "id": 101,
+            "character": 0,
+            "text": "Karl Meitinger (1882 - 1970) was an architect and city planner. His most famous work is the so-called Meitinger-Plan, a concept on how to rebuild Munich after World War 2, in a non-nazi-regime."
+        },
+        {
+            "id": 102,
+            "character": 0,
+            "text": "He was already working on this plan before the war was finished. After the war, he quickly convinced the city council of his vision."
+        },
+        {
+            "id": 103,
+            "character": 0,
+            "text": "His concept helped structuring the rebuilding of the city and due to his plans Munich today still looks like a city that grew naturally, although 90% of the historical centre and 45% of the city overall had been destroyed by 1945."
+        },
+        {
+            "id": 105,
+            "character": -1,
+            "text": "Old Town Hall:"
+        },
+        {
+            "id": 106,
+            "character": -1,
+            "text": "The History of the Old Town Hall in Munich dates back to the early 1300s, but the oldest parts of the building we see today were only built in the early 1470s. During the years, the Town Hall was remodeled many times due to changing fashion and demands for increasing space. Thus, the building sprawled to incorporate buildings on both sides, generating an extensive complex. The famous Grand-Hall on the first floor, however, mostly stayed the same throughout the years."
+        },
+        {
+            "id": 107,
+            "character": -1,
+            "text": "Around 1900, discussions to break down the complex arose, because of increased traffic and the building of the New Town Hall. During World War 2, the complex was severely damaged. Only the facades of the building housing the Grand-Hall and parts of the tower remained."
+        },
+        {
+            "id": 108,
+            "character": -1,
+            "text": "After new discussions, concerning traffic, use of the Old Town Hall and its symbolism to the city, in 1952 it was finally decided to rebuild only the part of the town hall, whose facades still existed, step by step. That happened between 1952 and 1957. The statues on the gable were only replaced in 1960, however, and the tower that had always been an important part of the Old Town Hall, was rebuilt from 1970 onwards. It was modeled after the oldest existing elevation from the year 1493 in gothic style."
+        },
+        {
+            "id": 110,
+            "character": -1,
+            "text": "Frauenkirche:"
+        },
+        {
+            "id": 111,
+            "character": -1,
+            "text": "The Frauenkirche was built between 1468 and 1488. It is modeled to resemble a crystal in its form to symbolize the heavenly Jerusalem. Construction material is brick, because it was cheaper than natural stone. Underneath are still foundations of an older church that had been located here before."
+        },
+        {
+            "id": 112,
+            "character": -1,
+            "text": "The two towers of the Frauenkirche with its onion domes (98,57m high) are a landmark of Munich today. It is not allowed to build buildings higher than those in order to keep its special outline in the skyline. Though planned from the start, the onion domes on the top were only added around 1525."
+        },
+        {
+            "id": 113,
+            "character": -1,
+            "text": "During the Second World War, it was heavily damaged. While historical vaults, arches and much of the interior were destroyed, the towers remained. Much of its artworks, as well as the windows, had been stored away safely beforehands."
+        },
+        {
+            "id": 114,
+            "character": 4,
+            "text": "The Frauenkirche in 1946."
+        },
+        {
+            "id": 115,
+            "character": -1,
+            "text": "In the entrance, a black footprint can be seen. Legend says, it was left by the devil itself."
+        },
+        {
+            "id": 116,
+            "character": -1,
+            "text": "It is possible to visit the Frauenkirche for free from Mondays to Saturdays from 8:00am to 8:00pm, and on Sundays from 9:30am to 20:00pm."
+        },
+        {
+            "id": 120,
+            "character": -1,
+            "text": "Sendlinger Tor:"
+        },
+        {
+            "id": 121,
+            "character": -1,
+            "text": "The Sendlinger Tor (Sendling Gate) is one of three remaining historical city gates and dates back to the 14th century: Between 1285 and 1337 a second town fortification was built, which included the Sendlinger Tor."
+        },
+        {
+            "id": 122,
+            "character": -1,
+            "text": "In 1420, both side towers were added and until 1808, it still had a tower in the middle. Its three smaller passages were changed to one big arc in 1906, due to increased traffic. The gate was hardly damaged in the Second World War and last renovated in 1980."
+        },
+        {
+            "id": 123,
+            "character": 5,
+            "text": "Below it, you can find the Underground Station “Sendlinger Tor”, an important junction for public transportation in Munich."
+        },
+        {
+            "id": 124,
+            "character": 5,
+            "text": "The Sendlinger Tor in 1805"
+        },
+        {
+            "id": 130,
+            "character": -1,
+            "text": "Maxburg:"
+        },
+        {
+            "id": 131,
+            "character": -1,
+            "text": "The Herzog-Maxburg was built by duke Wilhelm V at the end of the 16th century. It was located right behind the city wall at that time. During the years, it changed its form, function and name multiple times. The name today is most likely based on Wilhelms grandson, Maximilian Philipp."
+        },
+        {
+            "id": 132,
+            "character": -1,
+            "text": "In 1944 the Herzog-Maxburg was heavily damaged in an air strike, but the facade still mostly remained. Only in the following years, it broke down slowly. In the course of rubble clearance after the World War, the area of the Maxburg was used as a waste disposal site."
+        },
+        {
+            "id": 133,
+            "character": -1,
+            "text": "An architecture competition in 1952 was won by Theo Pabs and Sep Ruf, who both kept the old tower as part of their design. The New Maxburg was built between 1953 and 1957. By now, they are listed buildings."
+        },
+        {
+            "id": 134,
+            "character": -1,
+            "text": "The part of the Mini-game when the player breaks down the Maxburg himself, is reminiscent of the state of the Munich City Center after the war: many buildings that had at least partly survived originally could not be secured or rebuilt quickly enough, but broke down further due to climate and weather."
+        },
+        {
+            "id": 135,
+            "character": -1,
+            "text": "That meant, in order to keep them from collapsing uncontrollably and possibly block roads, damage infrastructure or kill more people, these buildings had to be broken down by the citizens themselves. By this process, a big part of the buildings that had originally  at least partly survived the air strikes, was lost, too."
+        },
+        {
+            "id": 136,
+            "character": -1,
+            "text": "The last of the rubble was actually cleared from the center in 1949, so a long time before our game takes place."
+        },
+        {
+            "id": 140,
+            "character": -1,
+            "text": "Moriskentänzer:"
+        },
+        {
+            "id": 141,
+            "character": -1,
+            "text": "In 1476 the furnishing of the Grand Hall in the Old Town Hall started. As a part of that, Erasmus Grasser, a sculptor and carver, carved 16 statues of morris dancers (Maruskentänzer/Moriskentänzer) until 1480. Ten of them were placed on pedestals right underneath the ceiling. The other six are lost without a trace."
+        },
+        {
+            "id": 142,
+            "character": -1,
+            "text": "All remaining dancers are between 61 and 81,5 cm high. They were repainted and restored several times throughout the centuries. In 1836, four were given away and could only be retrieved with great difficulty in 1887."
+        },
+        {
+            "id": 143,
+            "character": -1,
+            "text": "In 1927 gypsum copies of the statues were produced and placed in the Grand Hall, while the originals were displayed in the city museum. The copies did not survive the Second World War."
+        },
+        {
+            "id": 144,
+            "character": -1,
+            "text": "Afterwards, a debate broke out whether the originals or new copies should replace the missing dancers in the Grand Hall. In 1957, it was decided to have new copies sculpted. Those were placed further down than previously, so visitors can admire the statues better. The originals are still exhibited in the City Museum."
+        },
+        {
+            "id": 150,
+            "character": -1,
+            "text": "Synagogue:"
+        },
+        {
+            "id": 151,
+            "character": -1,
+            "text": "The walk around the Ohel Jakob Synagogue is actually a jump forward in time, as it was only finished in 2006. The base is reminiscent of the Wailing Wall in Jerusalem while the top with its tent structure reminds of Moses’ 40 years in the desert. Located right next to the Synagogue are the Jewish Museum and the Jewish Community Center."
+        },
+        
+        {
+            "id": 152,
+            "character": -1,
+            "text": "The relationship between Jews and Munich was difficult throughout the years. From 1229 Jews had been living in Munich, but they were harassed and pursued almost constantly."
+        },
+        {
+            "id": 153,
+            "character": -1,
+            "text": "The persecution of Jews came to a first peak during the pest in 1349 and all Jews were expelled from the city in 1440 and once again in 1715. The number of Jews rose again in the 18th century and slight improvements in law followed, though equal citizen rights were only implemented in 1872."
+        },
+        {
+            "id": 154,
+            "character": -1,
+            "text": "In 1887 a new Synagogue was inaugurated, located next to the Herzog-Maxburg. It was broken down by the Nazis in 1938. To the people who did not flee, new harassment and persecution followed. A total of 2.991 Jews were deported from Munich alone."
+        },
+        {
+            "id": 155,
+            "character": -1,
+            "text": "Public guided tours through the Ohel Jakob Synagogue are available for up to 10 people in different languages for a fee of 5€. Participants are asked to sign up 10 days in advance."
+        },
+        {
+            "id": 160,
+            "character": -1,
+            "text": "Löwenturm:"
+        },
+        {
+            "id": 161,
+            "character": -1,
+            "text": "For a long time, no one knew for sure what the tower was built for and how old it was exactly. One theory was that it was a remnant of the first city wall built by its founder, Heinrich the Lion, thus the name “Löwenturm” (Lion-tower) But the city wall never ran so close to the center. Another guess was that it could have been a  water tower."
+        },
+        {
+            "id": 162,
+            "character": -1,
+            "text": "In 2006 renovation was necessary. This led to the discovery of murals on the inside and thus exposed its original purpose: it is a noble tower (Geschlechterturm), common in Tuscany in medieval times. While they served the reason of defending the cities in Italy, in Germany those towers were simply a status symbol for rich, influential families."
+        },
+        {
+            "id": 163,
+            "character": -1,
+            "text": "The tower has no doors and can only be visited from the outside, where a plaque still states that it formerly functioned as part of the city wall."
+        },
+        {
+            "id": 165,
+            "character": -1,
+            "text": "Sendlinger Tor:"
+        },
+        {
+            "id": 166,
+            "character": -1,
+            "text": "The Sendlinger Tor (Sendling Gate) is one of three remaining historical city gates and dates back to the 14th century: Between 1285 and 1337 a second town fortification was built, which included the Sendlinger Tor."
+        },
+        {
+            "id": 167,
+            "character": -1,
+            "text": "In 1420, both side towers were added and until 1808, it still had a tower in the middle. Its three smaller passages were changed to one big arc in 1906, due to increased traffic. The gate was hardly damaged in the Second World War and last renovated in 1980."
+        },
+        {
+            "id": 168,
+            "character": 5,
+            "text": "The Sendlinger Tor in 1805"
+        },
+        {
+            "id": 170,
+            "character": -1,
+            "text": "Stachus:"
+        },
+        {
+            "id": 171,
+            "character": -1,
+            "text": "The Karlsplatz, widely called “Stachus” is one of Munich's most famous squares. The name “Stachus” goes back to a popular restaurant called “Stachusgarten” (founded 1755), located on the square in front of the city gate built in 1175."
+        },
+        {
+            "id": 172,
+            "character": -1,
+            "text": "In 1791, Duke Karl Theodor, ordered to break down the original city fortification and erected the Karlstor instead of the original Neuhauser gate. He was not very popular with Munich's population, so “Stachus” remained the unofficial, widely used name instead of the new, official “Karlsplatz”."
+        },
+        {
+            "id": 173,
+            "character": -1,
+            "text": "In the archway four heads are incorporated, belonging to four famous personalities in Munich:\n- Josef Sulzbeck, a famous singer and conductor\n- Georg Pranger, the last court jester in Bavaria\n- Joseph Huber, a famous messenger of love messages in Munich\n- Franz Xaver Krenkl well-known horse trader, owner of race horses and coachman, who dared upsetting King Ludwig |."
+        },
+        {
+            "id": 174,
+            "character": -1,
+            "text": "Over time, the square became extremely busy, resulting in the widespread saying “Hier geht’s zu wie am Stachus!” (It’s a s busy as on the Stachus!)."
+        },
+        {
+            "id": 175,
+            "character": -1,
+            "text": "The traffic was originally led through the gate into the city, but since 1960, cars are only led past the gate. Shortly thereafter, the Stachus Passage was built to handle public transport underground, as far as possible. When it opened in 1970, it was the biggest underground building in Europe."
+        },
+        {
+            "id": 180,
+            "character": 0,
+            "text": "Old Town Hall:"
+        },
+        {
+            "id": 181,
+            "character": 0,
+            "text": "The History of the Old Town Hall in Munich dates back to the early 1300s, but the oldest parts of the building today were only built in the early 1470s. During the years, the Town Hall was remodeled many times due to changing fashion and demands for increasing space."
+        },
+        {
+            "id": 182,
+            "character": 0,
+            "text": "The building sprawled to incorporate buildings on both sides, generating an extensive complex. The Grand-Hall on the first floor, however, mostly stayed the same throughout the years. Around 1900, discussions to break down the complex arose because of increased traffic and the building of the New Town Hall."
+        },
+        {
+            "id": 183,
+            "character": 0,
+            "text": "During World War 2, the complex was severely damaged.  After new discussions concerning traffic, use of the Old Town Hall and its symbolism to the city, in 1952 it was finally decided to rebuild only the part of the town hall, whose facades still existed (the part housing the Grand Hall + the Tower), step by step."
+        },
+        {
+            "id": 184,
+            "character": 0,
+            "text": "That happened between 1952 and 1957. The statues on the gable were only replaced in 1960, however, and the tower that had always been an important part of the Old Town Hall, was rebuilt from 1970 onwards. It was modeled after the oldest existing elevation from the year 1493 in gothic style."
+        },
+        {
+            "id": 200,
+            "character": 0,
+            "text": "It looks so much better already! Thank you for your help. I hope you enjoy the rest of your stay here."
+        },
+        {
+            "id": 201,
+            "character": 0,
+            "text": "Goodbye!"
+        },
+        {
+            "id": 202,
+            "character": -1,
+            "text": "The following sources have been used:\n https://kultur-vollzug.de/article-60014/2016/04/28/rettung-der-ruinenstadt/\n https://www.br.de/radio/bayern2/sendungen/land-und-leute/muenchner-stadtplaner-dynastie-meitinger-strassberger100.html\n https://volkverlag.de/shop/karl-meitinger-das-neue-munchen/\n (all as consulted online on 25 January 2022)"
+        },
+        {
+            "id": 203,
+            "character": -1,
+            "text": "Schattenhofer, Michael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972.\n https://www.muenchner-dom.de/ (as consulted online on 06 February 2022)\n https://www.munich.travel/en/pois/urban-districts/frauenkirche\n https://www.muenchen.de/sehenswuerdigkeiten/orte/120372.html (both as consulted online on 05 February 2022)\n"
+        },
+        {
+            "id": 204,
+            "character": -1,
+            "text": "Andres, Helga Marie: rekonstruktion der Herzog-Max-Burg in München. München: tuduv Verlag 1987.\nhttps://geoportal.bayern.de/denkmalatlas/searchResult.html?koid=29407&objtyp=bau&top=1 (as consulted online on 05 February 2022)\nhttps://www.bavariathek.bayern/wiederaufbau/orte/detail/muenchen/2\n"
+        },
+        {
+            "id": 205,
+            "character": -1,
+            "text": "Ens, Carmen Maria: Altstadt im Umbau. Der Wiederaufbau des Münchner Kreuzviertels zwischen 1945 und 1958. Diss. Technische Universität München, 2013.\nSchattenhofer, Michael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972.\nhttps://www.muenchner-stadtmuseum.de/sammlungen/angewandte-kunst/die-moriskentaenzer (as consulted online on 05 February 2022)"
+        },
+        {
+            "id": 206,
+            "character": 0,
+            "text": "https://www.alemannia-judaica.de/muenchen_synagogen.htm\nhttps://www.munich.travel/en/pois/urban-districts/ohel-jakob-synagoge\nhttps://www.ikg-m.de/juedisches-zentrum/synagogenfuhrungen/anmeldung-zu-den-fuhrungen/\nhttps://www.muenchen.de/sehenswuerdigkeiten/orte/1213483.html\nhttps://en.wikipedia.org/wiki/Ohel_Jakob_synagogue_(Munich) (all as consulted online on 06 February 2022)"
+        },
+        {
+            "id": 207,
+            "character": 0,
+            "text": "https://www.tz.de/muenchen/stadt/das-geheimnis-des-loewenturms-62658.html\nhttps://www.outdooractive.com/en/poi/munich/loewenturm-at-the-rindermarkt/49637040/\nhttps://de.wikipedia.org/wiki/Geschlechterturm\nhttps://www.muenchen.de/sehenswuerdigkeiten/orte/120455.html\nhttps://www.muenchen.travel/pois/stadt-viertel/sendlinger-tor (all as consulted online on 06 February 2022)"
+        },
+        {
+            "id": 208,
+            "character": 0,
+            "text": "https://www.muenchen.de/sehenswuerdigkeiten/orte/120328.html\nhttps://www.muenchen.de/sehenswuerdigkeiten/orte/120458.html\nhttps://www.munich.travel/en/pois/urban-districts/karlsplatz-stachus\nhttps://www.muenchenwiki.de/wiki/Eustachius_F%C3%B6derl (all as consulted online on 07 February 2022)\nhttps://munich.foravisit.com/muenchen/sehenswuerdigkeiten/architektur/plaetze-strassen/karlsplatz-(stachus)/  (as consulted online on 06 February 2022)"
+        },
+        {
+            "id": 209,
+            "character": 0,
+            "text": "Pictures:\nMichael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972., S. 154, 155\nMichael: Das alte Rathaus in München. Seine bauliche Entwicklung und seine stadtgeschichtliche Bedeutung. München: Süddeutscher Verlag 1972., S. 146\n"
+        },
+        {
+            "id": 210,
+            "character": 0,
+            "text": "https://www.muenchner-dom.de/die-kathedrale/geschichte/baugeschichte/\nhttps://www.muenchenwiki.de/w/images/thumb/1/19/Muesendlingertorlebschee1866.jpg/320px-Muesendlingertorlebschee1866.jpg"
+        }
+    ]
+}

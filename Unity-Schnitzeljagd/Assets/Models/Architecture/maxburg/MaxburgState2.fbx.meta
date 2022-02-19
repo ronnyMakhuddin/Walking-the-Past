@@ -1,0 +1,257 @@
+fileFormatVersion: 2
+guid: d4067a3879b037e48a71ca2fd1d09c92
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block 1 (1)
+    second: {fileID: 2100000, guid: 25d2ec8e3d5094544a635001660afe59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block 1-viele Risse
+    second: {fileID: 2100000, guid: c9ef46cee288b5b49bef6d9794f6f0dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Block 2 -viele Risse 2
+    second: {fileID: 2100000, guid: ee6b0e55218c2d549959ac0f27b631b1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue Plaster
+    second: {fileID: 2100000, guid: bb464afdfd157874da60710c482d52f9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fassade 1
+    second: {fileID: 2100000, guid: 793e9fd7cd0757645863eb0ced8623b2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fassade 1-viele Risse
+    second: {fileID: 2100000, guid: d22250cf6dc93a042932cc1e580983fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fassade 2-2-viele Risse
+    second: {fileID: 2100000, guid: c5eea2136774d064b95716c676c2d09f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Paint - Light Gray
+    second: {fileID: 2100000, guid: f66285c702e48e1469c631b9444f9e73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Textur Putz Maxburg
+    second: {fileID: 2100000, guid: bd7354be4ceb4d044b416e13dc698049, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Textur Putz Maxburg [\u532F\u5165]"
+    second: {fileID: 2100000, guid: b01220df3d13f0c4e94a667ebfb61686, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turm
+    second: {fileID: 2100000, guid: 2054c742d05980040999e2928c05d5ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Turm (1)
+    second: {fileID: 2100000, guid: a14f462a2bb65ab469c1f1a737b3ab4c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "_\u590D\u5408\u5730\u677F_C_\u7A84_250cm_\u8349\u56FE\u8054\u76DF"
+    second: {fileID: 2100000, guid: c467829cc8ec29149a5603816e601a41, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "_\u67CF\u6CB9_B01_100cm_\u8349\u56FE\u8054\u76DF"
+    second: {fileID: 2100000, guid: 6cce689ef3f0b8f45ab3e3b068c66532, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "_\u7816_\u6DF7\u51DD\u571F_F02_2m_\u8349\u56FE\u8054\u76DF"
+    second: {fileID: 2100000, guid: b8969346ca72bf64d805ddc436ad30c8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: roof tiles
+    second: {fileID: 2100000, guid: f88aa141d96630446ae7af545c53894c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u6750\u8CEA_124"
+    second: {fileID: 2100000, guid: b4177df6b3ddd41449263ba6c991041f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "\u77F3\u818F"
+    second: {fileID: 2100000, guid: 64a446bd913e8584c98ad94bbac17b68, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Block 1
+    second: {fileID: 2800000, guid: e3e1e349e99b50f4f9750947c2cc126a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Block 1-viele Risse
+    second: {fileID: 2800000, guid: f502b4030c1b2de46acfbc1c9a373678, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Block 2 -viele Risse 2
+    second: {fileID: 2800000, guid: 5eaf8d584eb8e8e449aae7cf730d9374, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Blue Plaster
+    second: {fileID: 2800000, guid: 63021426234c26d4c91fec0816d05ac3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BricksConcrete_F_Diff_02
+    second: {fileID: 2800000, guid: a47adb346c398984d87db94970db4231, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fassade 1
+    second: {fileID: 2800000, guid: e779ec73b3645b341949d6ecebed9347, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fassade 1-viele Risse
+    second: {fileID: 2800000, guid: da515692cf0894d44b0dcd0e1c8076ba, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fassade 2-2-viele Risse
+    second: {fileID: 2800000, guid: 792a15df5b2d4df45926fc22064c4833, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Textur Putz Maxburg
+    second: {fileID: 2800000, guid: 04815f615bdc04b438f3a9bebde54bef, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Turm
+    second: {fileID: 2800000, guid: 02ab8101da0c2c6438e10edfbdb7e172, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: roof tiles
+    second: {fileID: 2800000, guid: 14eec6f345e5c2c418b516e645803d8e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u590D\u5408\u5730\u677F_C_Narrow_Diff"
+    second: {fileID: 2800000, guid: f1a19f508f2cf9040b5f91517eb1df73, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: "\u67CF\u6CB9_B_Diff"
+    second: {fileID: 2800000, guid: 8f477fe50b1be914d8b541cdd0417d61, type: 3}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
