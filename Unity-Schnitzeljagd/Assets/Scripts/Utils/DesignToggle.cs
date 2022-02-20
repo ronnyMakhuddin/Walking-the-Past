@@ -10,6 +10,7 @@ public class DesignToggle : MonoBehaviour
 
     public void DesignChange()
     {
+        // by disabling the volume object, the postprocessing is deactivated as well
         volume.SetActive(!isRetro);
         isRetro = !isRetro;
     }

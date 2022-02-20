@@ -23,7 +23,6 @@ public class Wayfinding : MonoBehaviour
         }
         else
         {
-
             lineRenderer = GetComponent<LineRenderer>();
             player = GameObject.FindGameObjectWithTag("Player").transform;
             ConfigureLines();
@@ -33,10 +32,13 @@ public class Wayfinding : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = new Vector3(transform.position.x, yOffset, transform.position.z); //To avoid z-fighting on the map
+        //mapbox automatically snaps y position to zero -> we need to enforce it by code. This avoids rendering issues ("y-fighting"?)
+        transform.position = new Vector3(transform.position.x, yOffset, transform.position.z);
         ConfigureLines();
     }
-
+    /// <summary>
+    /// Configures LineRenderer positions array
+    /// </summary>
     void ConfigureLines()
     {
         activeCheckpoints = new List<Transform>();
@@ -57,7 +59,9 @@ public class Wayfinding : MonoBehaviour
             lineRenderer.SetPosition(c, activeCheckpoints[c].position);
         }
     }
-
+    /// <summary>
+    /// A container for all possible routes.
+    /// </summary>
     public enum ROUTES
     {
         TOWNHALL_MAXBURG,

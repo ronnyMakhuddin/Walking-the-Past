@@ -49,8 +49,11 @@ public class RubbleHealth : MonoBehaviour
     IEnumerator HitFeedback()
     {
         ParticleSystem ps = GetComponent<ParticleSystem>();
+        //vibration
         VibrationTypes.OnSwipeVibrate(true);
+        //smoke
         ps.Play();
+        //color flash
         foreach(Renderer childRenderer in GetComponentsInChildren<Renderer>())
         {
             childRenderer.material.color = feedbackCol;
@@ -66,6 +69,7 @@ public class RubbleHealth : MonoBehaviour
     void HandleDestruction()
     {
         minigame.RemoveRubble(this);
+        //spawn a random pipe object
         int id = Random.Range(0, toSpawn.Count);
         Quaternion rot = Quaternion.Euler(transform.rotation.x, transform.rotation.y, 90);
         Instantiate(toSpawn[id], transform.position, rot);

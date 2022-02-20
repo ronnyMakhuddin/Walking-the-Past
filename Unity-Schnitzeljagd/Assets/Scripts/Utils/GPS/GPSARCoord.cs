@@ -4,7 +4,10 @@ using UnityEngine;
 
 public static class GPSARCoord
 {
-    private static double earthRadiusMunichMeters = 6366844; //6372797.560856f
+    /// <summary>
+    /// Converts a GPS position to to a world coordinate
+    /// </summary>
+    private static double earthRadiusMunichMeters = 6366844;
     public static Vector3 CalculateRelativePosFromCoord(double latitude, double longitude, double altitude, bool isAnchor = false)
     {
         double dlat = latitude - GPSPositioningCam.Instance.GetCamLat();

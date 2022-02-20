@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+/// <summary>
+/// Debugging to display the cam position and pile position on the screen.
+/// </summary>
 public class CamPos : MonoBehaviour
 {
     public Text text;

@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Minigame super class, not heavily used right now, could be extended later for future minigames
+/// </summary>
 public abstract class Minigame : MonoBehaviour
 {
     public Button buttonAR; 

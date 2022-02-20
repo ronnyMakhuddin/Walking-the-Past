@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// Wrapper class for direct vibration calls for android devices. More control possible than standard Handheld.Vibrate()
+/// </summary>
 public static class CustomVibrate
 {
 #if UNITY_ANDROID && !UNITY_EDITOR

@@ -18,6 +18,7 @@ public class ARZone : MonoBehaviour
         {
             if (GameManager.Instance.GetCompletedCheckpoints().Contains(scene))
             {
+                //we don't want to replay ARGames
                 Destroy(gameObject);
             }
         }
@@ -55,6 +56,7 @@ public class ARZone : MonoBehaviour
         {
             playerPos = other.transform.position;
             playerOrientation = other.transform.rotation;
+            //measure time in zone
             timeSpentInZone += Time.deltaTime;
         }
     }

@@ -36,6 +36,7 @@ public class RubbleMinigame : Minigame
                 QuestFulfilled.rubbleGone = true;
                 //EnableTargetPositions();
             }
+            //proceed destruction
             if (destruction.GetStage() == 0 && rubblePiles.Count == Mathf.RoundToInt(initialNumPiles / 2f))
             {
                 destruction.ProgressState();
@@ -52,11 +53,6 @@ public class RubbleMinigame : Minigame
                 EndMinigame();
             }
         }
-
-    }
-
-    void WrapupSwipePiles()
-    {
 
     }
 

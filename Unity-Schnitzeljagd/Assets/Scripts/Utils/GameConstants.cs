@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class Schnitzelconstants
+public static class GameConstants
 {
     public static string WORLD_SCENE = "MunichMap";
     public static string MAXBURG_SCENE = "test";

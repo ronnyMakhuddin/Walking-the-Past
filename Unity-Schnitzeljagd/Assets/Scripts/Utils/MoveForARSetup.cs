@@ -15,7 +15,7 @@ public class MoveForARSetup : MonoBehaviour
     {
         bool trialMode = false;
 
-        isTownhall = SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName(Schnitzelconstants.OLD_TOWNHALL_SCENE));
+        isTownhall = SceneManager.GetActiveScene().Equals(SceneManager.GetSceneByName(GameConstants.OLD_TOWNHALL_SCENE));
         Debug.Log(isTownhall);
 
         if (isTownhall) scale_real_to_map = Vector3.Scale(scale_real_to_map, new Vector3(-1f, 1f, -1f));
@@ -38,7 +38,7 @@ public class MoveForARSetup : MonoBehaviour
                     else
                     {
                         Vector3 playerRot = GameManager.Instance.playerOrientation.eulerAngles;
-                        transform.Rotate(new Vector3(0f, playerRot.y + 180f, 0f)); // player's y direction is inverted on mapbox!
+                        transform.Rotate(new Vector3(0f, playerRot.y + 180f, 0f)); // player's y direction is inverted on mapbox for this specific starting point!
                     }
                 
             }

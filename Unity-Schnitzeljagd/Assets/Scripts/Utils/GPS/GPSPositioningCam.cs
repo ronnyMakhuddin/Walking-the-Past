@@ -1,3 +1,8 @@
+/*
+ * Inspired by:
+ * Mario Vairinhos 2020 
+ * DECA LAR - LOCATIVE AUGMENTED REALITY
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
