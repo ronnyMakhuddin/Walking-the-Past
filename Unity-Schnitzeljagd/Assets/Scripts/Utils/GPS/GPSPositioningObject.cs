@@ -40,6 +40,7 @@ public class GPSPositioningObject : MonoBehaviour
         debug.text = "" + (transform.position - GPSPositioningCam.Instance.gameObject.transform.position);
 
         /*
+         * Collect position calculations of the objects for some time and then take the average?
         if (positionUpdates)
         {
             if (timeFromSpawn < adjustTime)
