@@ -12,7 +12,6 @@ public class Inventory : MonoBehaviour
     public static bool AddItem(QuestItem item)
     {
         CheckTag(item);
-        
         for (int i = 0; i < items.Length; ++i)
         {
             if (!filled[i])
@@ -20,6 +19,7 @@ public class Inventory : MonoBehaviour
                 items[i] = item;
                 itemCount += 1;
                 filled[i] = true;
+                GameObject.Find("Menu System").GetComponent<MenuSystem>().DisplayItems();
                 return true;
             }
         }
