@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 8d3b0109209dfb9478a6eb347942befc, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 7da17ed931260f647b8d77e1f4b53049, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -483,7 +483,6 @@ MonoBehaviour:
   rubbleReplacement: {fileID: 984481889}
   smoke: {fileID: 601371054}
   dust: {fileID: 1758744853}
-  crackedLifetime: 2
   maxburg_visual_states:
   - {fileID: 919132149155446097, guid: 87dd0ff19c7dd964abf8045313ffb2e7, type: 3}
   - {fileID: 919132149155446097, guid: d4067a3879b037e48a71ca2fd1d09c92, type: 3}
