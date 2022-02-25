@@ -11,6 +11,7 @@ Many thanks to [Mapbox](https://www.mapbox.com/) for their awesome tool and data
 ## Building
 * Install Unity 2020.2.2f1
 * Build for Android (requires Oreo or higher)
+* Note: If you encounter a ton of Mapbox errors when you open the Unity project for the first time, make sure to reimport the Mapbox Unity SDK without any AR features!
 
 ## Access Rights
 * GPS Location: The game needs to know about your actual location as this drives the player on the map. Playing without this won't be possible!
