@@ -3,7 +3,7 @@ Welcome to the 1950s in Munich! Explore the inner city while learning about past
 
 "Walking the Past" is intended for tourists or people in general that take interest in the historic background of buildings and cities. It aids navigating through the city and offers optional infopoints at certain locations to learn about buildings that are not directly linked to the game so far but have fascinating stories to tell on their own.
 
-For more information on the development and content please refer to our [booklet](https://docs.google.com/document/d/1uy26Tam7BYeBQzCnhyBpbErdLWIzF02u8i4IO8V8eNM/edit#heading=h.98uwfqe3ipsm).
+For more information on the development and content please refer to our [booklet](https://drive.google.com/file/d/1L3AJ0lE9I1qe7vXzdIU_2jAFIGDULdgT/view?usp=sharing).
 
 Many thanks to [Mapbox](https://www.mapbox.com/) for their awesome tool and database to create location-based games in Unity3D!
 
