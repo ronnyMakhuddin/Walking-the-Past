@@ -17,19 +17,22 @@ public class GPSPositioningObject : MonoBehaviour
     public double latitude = 0f;
     public double longitude = 0f;
 
-    float timeFromSpawn = 0;
-    float adjustTime = 10;
-
     //Debugging
     public Text debug;
 
+    /*
+    float timeFromSpawn = 0;
+    float adjustTime = 10;
+    
+
     bool positionUpdates = true;
     private List<Vector3> positions;
+    */
 
     private void Awake()
     {
-        timeFromSpawn = 0;
-        positions = new List<Vector3>();
+        //timeFromSpawn = 0;
+        //positions = new List<Vector3>();
         transform.position = AdjustPosition();
     }
 

@@ -16,8 +16,6 @@ public class MaxburgDestruction : MonoBehaviour
     GameObject smoke;    
     [SerializeField]
     ParticleSystem dust;
-    [SerializeField]
-    float crackedLifetime = 1.5f;
 
     [Header("Cracked Versions")]
     public List<GameObject> maxburg_visual_states;
@@ -74,19 +72,6 @@ public class MaxburgDestruction : MonoBehaviour
             }
         }
         
-        /*
-        if(currentStage > materials_stages.Count)
-        {
-            Instantiate(maxburg_missing, maxburg_whole.transform);
-            Instantiate(maxburg_remain, maxburg_whole.transform);
-            Destroy(maxburg_whole);
-        }
-        else
-        {
-            // List<Material> updatedMats = materials_stages[currentStage - 1];
-            //maxburg_whole.GetComponent<Renderer>().material = materials[stage];
-        }
-        */
     }
 
     IEnumerator DestroyBrokenMaxburg()
@@ -110,6 +95,7 @@ public class MaxburgDestruction : MonoBehaviour
 
         //Hide maxburg
         StartCoroutine(Fade(smoke_duration, true));
+
         //Has rendering order issues
         //StartCoroutine(Fade(smoke_duration, false));
 

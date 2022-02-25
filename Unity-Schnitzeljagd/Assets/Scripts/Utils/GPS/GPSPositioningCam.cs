@@ -29,7 +29,6 @@ public class GPSPositioningCam : MonoBehaviour
     Gyroscope gyroscope;
     Quaternion rotation;
 
-    bool isCam = false;
     bool isEditor = true;
     private void Awake()
     {
